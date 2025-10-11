@@ -1,0 +1,288 @@
+[
+  {
+    "id": "1",
+    "slug": "toyota-camry-2024",
+    "brand": "Toyota",
+    "model": "Camry",
+    "year": 2024,
+    "body": "Sedan",
+    "fuel": "Hybrid",
+    "transmission": "Automatic",
+    "images": ["https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1623869675781-80aa31562249?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800&h=600&fit=crop"],
+    "specs": {
+      "engine": "2.5L 4-Cyl Hybrid",
+      "horsepower": 208,
+      "torque": "163 lb-ft",
+      "mpg": "51 city / 53 hwy",
+      "seating": 5,
+      "drivetrain": "FWD"
+    }
+  },
+  {
+    "id": "2",
+    "slug": "honda-accord-2024",
+    "brand": "Honda",
+    "model": "Accord",
+    "year": 2024,
+    "body": "Sedan",
+    "fuel": "Gasoline",
+    "transmission": "CVT",
+    "images": ["https://images.unsplash.com/photo-1590362891991-f776e747a588?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1619405399517-d7fce0f13302?w=800&h=600&fit=crop"],
+    "specs": {
+      "engine": "1.5L Turbo 4-Cyl",
+      "horsepower": 192,
+      "torque": "192 lb-ft",
+      "mpg": "30 city / 38 hwy",
+      "seating": 5,
+      "drivetrain": "FWD"
+    }
+  },
+  {
+    "id": "3",
+    "slug": "tesla-model-3-2024",
+    "brand": "Tesla",
+    "model": "Model 3",
+    "year": 2024,
+    "body": "Sedan",
+    "fuel": "Electric",
+    "transmission": "Single-Speed",
+    "images": ["https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1536700503339-1e4b06520771?w=800&h=600&fit=crop"],
+    "specs": {
+      "engine": "Electric Motor",
+      "horsepower": 283,
+      "torque": "317 lb-ft",
+      "range": "272 miles",
+      "seating": 5,
+      "drivetrain": "RWD"
+    }
+  },
+  {
+    "id": "4",
+    "slug": "ford-f150-2024",
+    "brand": "Ford",
+    "model": "F-150",
+    "year": 2024,
+    "body": "Truck",
+    "fuel": "Gasoline",
+    "transmission": "Automatic",
+    "images": ["https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&h=600&fit=crop"],
+    "specs": {
+      "engine": "3.5L V6 EcoBoost",
+      "horsepower": 400,
+      "torque": "500 lb-ft",
+      "mpg": "20 city / 26 hwy",
+      "seating": 6,
+      "drivetrain": "4WD"
+    }
+  },
+  {
+    "id": "5",
+    "slug": "mazda-cx5-2024",
+    "brand": "Mazda",
+    "model": "CX-5",
+    "year": 2024,
+    "body": "SUV",
+    "fuel": "Gasoline",
+    "transmission": "Automatic",
+    "images": ["https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1581540222194-0def2dda95b8?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop"],
+    "specs": {
+      "engine": "2.5L 4-Cyl",
+      "horsepower": 187,
+      "torque": "186 lb-ft",
+      "mpg": "25 city / 31 hwy",
+      "seating": 5,
+      "drivetrain": "AWD"
+    }
+  },
+  {
+    "id": "6",
+    "slug": "bmw-x5-2024",
+    "brand": "BMW",
+    "model": "X5",
+    "year": 2024,
+    "body": "SUV",
+    "fuel": "Gasoline",
+    "transmission": "Automatic",
+    "images": ["https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1617531653520-bd466ee81af7?w=800&h=600&fit=crop"],
+    "specs": {
+      "engine": "3.0L Inline-6 Turbo",
+      "horsepower": 375,
+      "torque": "383 lb-ft",
+      "mpg": "21 city / 26 hwy",
+      "seating": 7,
+      "drivetrain": "AWD"
+    }
+  },
+  {
+    "id": "7",
+    "slug": "hyundai-ioniq5-2024",
+    "brand": "Hyundai",
+    "model": "Ioniq 5",
+    "year": 2024,
+    "body": "SUV",
+    "fuel": "Electric",
+    "transmission": "Single-Speed",
+    "images": ["https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&h=600&fit=crop"],
+    "specs": {
+      "engine": "Electric Motor",
+      "horsepower": 225,
+      "torque": "258 lb-ft",
+      "range": "303 miles",
+      "seating": 5,
+      "drivetrain": "RWD"
+    }
+  },
+  {
+    "id": "8",
+    "slug": "chevrolet-corvette-2024",
+    "brand": "Chevrolet",
+    "model": "Corvette",
+    "year": 2024,
+    "body": "Coupe",
+    "fuel": "Gasoline",
+    "transmission": "Automatic",
+    "images": ["https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&h=600&fit=crop"],
+    "specs": {
+      "engine": "6.2L V8",
+      "horsepower": 495,
+      "torque": "470 lb-ft",
+      "mpg": "15 city / 27 hwy",
+      "seating": 2,
+      "drivetrain": "RWD"
+    }
+  },
+  {
+    "id": "9",
+    "slug": "subaru-outback-2024",
+    "brand": "Subaru",
+    "model": "Outback",
+    "year": 2024,
+    "body": "Wagon",
+    "fuel": "Gasoline",
+    "transmission": "CVT",
+    "images": ["https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&h=600&fit=crop"],
+    "specs": {
+      "engine": "2.4L 4-Cyl Turbo",
+      "horsepower": 260,
+      "torque": "277 lb-ft",
+      "mpg": "23 city / 30 hwy",
+      "seating": 5,
+      "drivetrain": "AWD"
+    }
+  },
+  {
+    "id": "10",
+    "slug": "audi-a4-2024",
+    "brand": "Audi",
+    "model": "A4",
+    "year": 2024,
+    "body": "Sedan",
+    "fuel": "Gasoline",
+    "transmission": "Automatic",
+    "images": ["https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1603386329225-868f9b1ee6b9?w=800&h=600&fit=crop"],
+    "specs": {
+      "engine": "2.0L 4-Cyl Turbo",
+      "horsepower": 201,
+      "torque": "236 lb-ft",
+      "mpg": "27 city / 34 hwy",
+      "seating": 5,
+      "drivetrain": "AWD"
+    }
+  },
+  {
+    "id": "11",
+    "slug": "lexus-rx-2024",
+    "brand": "Lexus",
+    "model": "RX",
+    "year": 2024,
+    "body": "SUV",
+    "fuel": "Hybrid",
+    "transmission": "CVT",
+    "images": ["https://images.unsplash.com/photo-1563720360172-67b8f3dce741?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=800&h=600&fit=crop"],
+    "specs": {
+      "engine": "2.5L 4-Cyl Hybrid",
+      "horsepower": 246,
+      "torque": "163 lb-ft",
+      "mpg": "37 city / 34 hwy",
+      "seating": 5,
+      "drivetrain": "AWD"
+    }
+  },
+  {
+    "id": "12",
+    "slug": "porsche-911-2024",
+    "brand": "Porsche",
+    "model": "911",
+    "year": 2024,
+    "body": "Coupe",
+    "fuel": "Gasoline",
+    "transmission": "PDK",
+    "images": ["https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1614162692292-7ac56d7f36c5?w=800&h=600&fit=crop"],
+    "specs": {
+      "engine": "3.0L Twin-Turbo Flat-6",
+      "horsepower": 379,
+      "torque": "331 lb-ft",
+      "mpg": "18 city / 24 hwy",
+      "seating": 4,
+      "drivetrain": "RWD"
+    }
+  },
+  {
+    "id": "13",
+    "slug": "kia-telluride-2024",
+    "brand": "Kia",
+    "model": "Telluride",
+    "year": 2024,
+    "body": "SUV",
+    "fuel": "Gasoline",
+    "transmission": "Automatic",
+    "images": ["https://images.unsplash.com/photo-1581540222194-0def2dda95b8?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop"],
+    "specs": {
+      "engine": "3.8L V6",
+      "horsepower": 291,
+      "torque": "262 lb-ft",
+      "mpg": "20 city / 26 hwy",
+      "seating": 8,
+      "drivetrain": "AWD"
+    }
+  },
+  {
+    "id": "14",
+    "slug": "volkswagen-id4-2024",
+    "brand": "Volkswagen",
+    "model": "ID.4",
+    "year": 2024,
+    "body": "SUV",
+    "fuel": "Electric",
+    "transmission": "Single-Speed",
+    "images": ["https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=800&h=600&fit=crop"],
+    "specs": {
+      "engine": "Electric Motor",
+      "horsepower": 201,
+      "torque": "229 lb-ft",
+      "range": "275 miles",
+      "seating": 5,
+      "drivetrain": "RWD"
+    }
+  },
+  {
+    "id": "15",
+    "slug": "nissan-rogue-2024",
+    "brand": "Nissan",
+    "model": "Rogue",
+    "year": 2024,
+    "body": "SUV",
+    "fuel": "Gasoline",
+    "transmission": "CVT",
+    "images": ["https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&h=600&fit=crop", "https://images.unsplash.com/photo-1581540222194-0def2dda95b8?w=800&h=600&fit=crop"],
+    "specs": {
+      "engine": "1.5L Turbo 3-Cyl",
+      "horsepower": 201,
+      "torque": "225 lb-ft",
+      "mpg": "30 city / 37 hwy",
+      "seating": 5,
+      "drivetrain": "FWD"
+    }
+  }
+]
+

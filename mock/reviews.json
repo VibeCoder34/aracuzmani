@@ -1,0 +1,326 @@
+[
+  {
+    "id": "r1",
+    "carId": "1",
+    "userId": "u1",
+    "createdAt": "2024-10-05T14:30:00.000Z",
+    "text": "The 2024 Camry Hybrid is an excellent choice for daily commuting. The fuel economy is outstanding, and the ride is smooth. Interior quality feels premium for the price point.",
+    "ratings": {
+      "comfort": 5,
+      "drive": 4,
+      "fuelEconomy": 5,
+      "reliability": 5,
+      "maintenance": 4,
+      "interior": 4,
+      "tech": 4,
+      "resale": 5
+    },
+    "overall": 4.5,
+    "helpfulCount": 12
+  },
+  {
+    "id": "r2",
+    "carId": "1",
+    "userId": "u3",
+    "createdAt": "2024-10-08T09:15:00.000Z",
+    "text": "Owned for 3 months now. Very reliable and comfortable. Tech features are good but not class-leading. Great value overall.",
+    "ratings": {
+      "comfort": 5,
+      "drive": 4,
+      "fuelEconomy": 5,
+      "reliability": 5,
+      "maintenance": 5,
+      "interior": 4,
+      "tech": 3,
+      "resale": 5
+    },
+    "overall": 4.5,
+    "helpfulCount": 8
+  },
+  {
+    "id": "r3",
+    "carId": "2",
+    "userId": "u2",
+    "createdAt": "2024-10-01T16:45:00.000Z",
+    "text": "The Accord continues to impress. Spacious interior, punchy turbo engine, and the CVT is surprisingly responsive. A solid family sedan.",
+    "ratings": {
+      "comfort": 4,
+      "drive": 5,
+      "fuelEconomy": 4,
+      "reliability": 5,
+      "maintenance": 4,
+      "interior": 5,
+      "tech": 4,
+      "resale": 4
+    },
+    "overall": 4.4,
+    "helpfulCount": 15
+  },
+  {
+    "id": "r4",
+    "carId": "3",
+    "userId": "u4",
+    "createdAt": "2024-10-09T11:20:00.000Z",
+    "text": "Best EV I've driven. Instant torque, minimalist interior, and Autopilot works great on highways. Charging infrastructure is unbeatable with Superchargers.",
+    "ratings": {
+      "comfort": 4,
+      "drive": 5,
+      "fuelEconomy": 5,
+      "reliability": 4,
+      "maintenance": 5,
+      "interior": 4,
+      "tech": 5,
+      "resale": 4
+    },
+    "overall": 4.5,
+    "helpfulCount": 24
+  },
+  {
+    "id": "r5",
+    "carId": "3",
+    "userId": "u5",
+    "createdAt": "2024-10-06T08:00:00.000Z",
+    "text": "Love the tech and performance, but build quality could be better. Some panel gaps and interior rattles. Still a great car overall.",
+    "ratings": {
+      "comfort": 3,
+      "drive": 5,
+      "fuelEconomy": 5,
+      "reliability": 3,
+      "maintenance": 4,
+      "interior": 3,
+      "tech": 5,
+      "resale": 4
+    },
+    "overall": 4.0,
+    "helpfulCount": 10
+  },
+  {
+    "id": "r6",
+    "carId": "4",
+    "userId": "u6",
+    "createdAt": "2024-10-03T13:30:00.000Z",
+    "text": "The F-150 is a workhorse. Powerful engine, comfortable cabin, and tons of tech features. Perfect for both work and family duties.",
+    "ratings": {
+      "comfort": 4,
+      "drive": 5,
+      "fuelEconomy": 3,
+      "reliability": 4,
+      "maintenance": 3,
+      "interior": 4,
+      "tech": 5,
+      "resale": 5
+    },
+    "overall": 4.1,
+    "helpfulCount": 18
+  },
+  {
+    "id": "r7",
+    "carId": "5",
+    "userId": "u1",
+    "createdAt": "2024-10-07T10:10:00.000Z",
+    "text": "Mazda's design and driving dynamics are top-notch. The CX-5 feels more upscale than its price suggests. Great all-around SUV.",
+    "ratings": {
+      "comfort": 4,
+      "drive": 5,
+      "fuelEconomy": 4,
+      "reliability": 4,
+      "maintenance": 4,
+      "interior": 5,
+      "tech": 4,
+      "resale": 4
+    },
+    "overall": 4.3,
+    "helpfulCount": 14
+  },
+  {
+    "id": "r8",
+    "carId": "6",
+    "userId": "u2",
+    "createdAt": "2024-10-02T15:20:00.000Z",
+    "text": "Luxury and performance combined. The X5 is spacious, comfortable, and powerful. Premium price but worth it for the quality.",
+    "ratings": {
+      "comfort": 5,
+      "drive": 5,
+      "fuelEconomy": 3,
+      "reliability": 4,
+      "maintenance": 2,
+      "interior": 5,
+      "tech": 5,
+      "resale": 4
+    },
+    "overall": 4.1,
+    "helpfulCount": 9
+  },
+  {
+    "id": "r9",
+    "carId": "7",
+    "userId": "u3",
+    "createdAt": "2024-10-10T12:45:00.000Z",
+    "text": "The Ioniq 5 is a game-changer. Unique design, fast charging, and a spacious interior. One of the best EVs for families.",
+    "ratings": {
+      "comfort": 5,
+      "drive": 4,
+      "fuelEconomy": 5,
+      "reliability": 4,
+      "maintenance": 5,
+      "interior": 5,
+      "tech": 5,
+      "resale": 4
+    },
+    "overall": 4.6,
+    "helpfulCount": 20
+  },
+  {
+    "id": "r10",
+    "carId": "8",
+    "userId": "u4",
+    "createdAt": "2024-10-04T17:00:00.000Z",
+    "text": "Pure driving excitement. The mid-engine layout transforms the Corvette. An absolute bargain for this level of performance.",
+    "ratings": {
+      "comfort": 3,
+      "drive": 5,
+      "fuelEconomy": 3,
+      "reliability": 4,
+      "maintenance": 3,
+      "interior": 4,
+      "tech": 4,
+      "resale": 4
+    },
+    "overall": 3.8,
+    "helpfulCount": 22
+  },
+  {
+    "id": "r11",
+    "carId": "11",
+    "userId": "u5",
+    "createdAt": "2024-10-09T14:25:00.000Z",
+    "text": "Lexus quality and reliability with excellent hybrid efficiency. The RX is a perfect luxury family SUV. Very refined and quiet.",
+    "ratings": {
+      "comfort": 5,
+      "drive": 4,
+      "fuelEconomy": 5,
+      "reliability": 5,
+      "maintenance": 4,
+      "interior": 5,
+      "tech": 4,
+      "resale": 5
+    },
+    "overall": 4.6,
+    "helpfulCount": 16
+  },
+  {
+    "id": "r12",
+    "carId": "13",
+    "userId": "u6",
+    "createdAt": "2024-10-08T11:30:00.000Z",
+    "text": "Best 3-row SUV for the money. Spacious, well-equipped, and handsome design. Kia's quality has really improved.",
+    "ratings": {
+      "comfort": 5,
+      "drive": 4,
+      "fuelEconomy": 3,
+      "reliability": 4,
+      "maintenance": 4,
+      "interior": 5,
+      "tech": 4,
+      "resale": 4
+    },
+    "overall": 4.1,
+    "helpfulCount": 19
+  },
+  {
+    "id": "r13",
+    "carId": "1",
+    "userId": "mock-user-1",
+    "createdAt": "2024-10-11T10:30:00.000Z",
+    "text": "Toyota Camry Hybrid ile 6 aydır sürüyorum ve çok memnunum. Yakıt ekonomisi gerçekten harika, şehir içinde 100 km'de ortalama 4.5 litre yakıyor. Hibrit sistemin geçişleri çok yumuşak, fark etmiyorsunuz bile. İç mekan kalitesi bu fiyat segmentinde çok iyi. Tavsiye ederim.",
+    "ratings": {
+      "comfort": 5,
+      "drive": 4,
+      "fuelEconomy": 5,
+      "reliability": 5,
+      "maintenance": 5,
+      "interior": 4,
+      "tech": 4,
+      "resale": 5
+    },
+    "overall": 4.6,
+    "helpfulCount": 8
+  },
+  {
+    "id": "r14",
+    "carId": "5",
+    "userId": "mock-user-1",
+    "createdAt": "2024-10-10T14:20:00.000Z",
+    "text": "Mazda CX-5'i test sürüşünde denedim ve çok etkilendim. Sürüş dinamikleri bir SUV için inanılmaz, spor sedan gibi hissediyorsunuz. İç mekan tasarımı ve malzeme kalitesi lüks segmente yakın. Motor gücü yeterli ama yakıt tüketimi biraz yüksek olabilir. Genel olarak harika bir araç.",
+    "ratings": {
+      "comfort": 4,
+      "drive": 5,
+      "fuelEconomy": 3,
+      "reliability": 4,
+      "maintenance": 4,
+      "interior": 5,
+      "tech": 4,
+      "resale": 4
+    },
+    "overall": 4.1,
+    "helpfulCount": 12
+  },
+  {
+    "id": "r15",
+    "carId": "3",
+    "userId": "mock-user-1",
+    "createdAt": "2024-10-09T16:45:00.000Z",
+    "text": "Tesla Model 3 ile elektrikli araç dünyasına adım attım ve pişman değilim. Performans inanılmaz, 0-100 hızlanması nefes kesiyor. Autopilot özelliği uzun yollarda çok rahat. Şarj altyapısı Supercharger sayesinde sorun değil. Tek eksi iç mekandaki bazı plastik parçalar, onun dışında mükemmel bir araç.",
+    "ratings": {
+      "comfort": 4,
+      "drive": 5,
+      "fuelEconomy": 5,
+      "reliability": 4,
+      "maintenance": 5,
+      "interior": 3,
+      "tech": 5,
+      "resale": 4
+    },
+    "overall": 4.4,
+    "helpfulCount": 15
+  },
+  {
+    "id": "r16",
+    "carId": "7",
+    "userId": "mock-user-1",
+    "createdAt": "2024-10-07T09:15:00.000Z",
+    "text": "Hyundai Ioniq 5 tasarımıyla dikkat çekiyor. Retro-fütüristik görünümü çok beğendim. Hızlı şarj özelliği muhteşem, 20 dakikada %80'e çıkıyor. İç mekan çok ferah ve konforlu. Aileler için ideal bir elektrikli SUV. Teknoloji özellikleri de son derece gelişmiş.",
+    "ratings": {
+      "comfort": 5,
+      "drive": 4,
+      "fuelEconomy": 5,
+      "reliability": 4,
+      "maintenance": 5,
+      "interior": 5,
+      "tech": 5,
+      "resale": 4
+    },
+    "overall": 4.6,
+    "helpfulCount": 20
+  },
+  {
+    "id": "r17",
+    "carId": "11",
+    "userId": "mock-user-1",
+    "createdAt": "2024-10-05T11:00:00.000Z",
+    "text": "Lexus RX Hybrid lüks ve konfor arayan ailelerin favorisi olmalı. Yol tutuşu mükemmel, ses yalıtımı harika. Hybrid motor hem güçlü hem de ekonomik. İç mekan kalitesi Lexus standartlarında, her detay düşünülmüş. Bakım maliyetleri makul. Uzun vadede değerini koruyor.",
+    "ratings": {
+      "comfort": 5,
+      "drive": 4,
+      "fuelEconomy": 5,
+      "reliability": 5,
+      "maintenance": 4,
+      "interior": 5,
+      "tech": 4,
+      "resale": 5
+    },
+    "overall": 4.6,
+    "helpfulCount": 18
+  }
+]
+

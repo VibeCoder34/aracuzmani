@@ -6,19 +6,42 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import { useAuthStore } from "@/lib/store";
+import { createClient } from "@/lib/supabase/client";
 import { Bell, User, Shield, Palette, Globe } from "lucide-react";
 
 export default function SettingsPage() {
   const router = useRouter();
-  const { user } = useAuthStore();
+  const [user, setUser] = useState<{
+    id: string;
+    email?: string;
+  } | null>(null);
+  const [profile, setProfile] = useState<{
+    full_name?: string;
+    username?: string;
+    avatar_url?: string;
+  } | null>(null);
   const [isSaving, setIsSaving] = useState(false);
+  const supabase = createClient();
 
   useEffect(() => {
-    if (!user) {
-      router.push("/auth");
-    }
-  }, [user, router]);
+    const getUser = async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (user) {
+        setUser(user);
+        // Get profile
+        const { data: profile } = await supabase
+          .from('profiles')
+          .select('*')
+          .eq('id', user.id)
+          .single();
+        setProfile(profile);
+      } else {
+        router.push("/login");
+      }
+    };
+
+    getUser();
+  }, [supabase, router]);
 
   if (!user) {
     return null;
@@ -62,7 +85,7 @@ export default function SettingsPage() {
                 <Label htmlFor="name">Ad Soyad</Label>
                 <Input
                   id="name"
-                  defaultValue={user.name}
+                  defaultValue={profile?.full_name || ""}
                   placeholder="Adınızı girin"
                 />
               </div>
@@ -71,7 +94,7 @@ export default function SettingsPage() {
                 <Input
                   id="email"
                   type="email"
-                  defaultValue={user.email}
+                  defaultValue={user?.email || ""}
                   placeholder="E-posta adresiniz"
                 />
               </div>

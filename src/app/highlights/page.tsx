@@ -1,22 +1,88 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CarCard } from "@/components/car/card-car";
 import { TrendingUp, Star, MessageSquare } from "lucide-react";
 import carsData from "@/mock/cars.json";
-import reviewsData from "@/mock/reviews.json";
-import type { Car, Review } from "@/types/car";
-import { computeOverallAverage } from "@/lib/rating-helpers";
+import type { Car } from "@/types/car";
 
 const cars = carsData as Car[];
-const reviews = reviewsData as Review[];
+
+interface CarStats {
+  carId: string;
+  reviewCount: number;
+  averageRating: number;
+}
 
 export default function HighlightsPage() {
-  // Get this week's most reviewed (mock: just most reviewed overall)
+  const [carStats, setCarStats] = useState<CarStats[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  // Fetch review statistics from database
+  useEffect(() => {
+    const fetchCarStats = async () => {
+      try {
+        const response = await fetch('/api/cars/stats');
+        if (response.ok) {
+          const data = await response.json();
+          setCarStats(data.stats || []);
+        } else {
+          console.error('Failed to fetch car stats');
+        }
+      } catch (error) {
+        console.error('Error fetching car stats:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchCarStats();
+  }, []);
+
+  // Fallback: If stats are empty (no DB aggregation yet), compute from reviews endpoint
+  useEffect(() => {
+    const buildStatsFromReviews = async () => {
+      if (loading) return;           // wait until initial load done
+      if (carStats.length > 0) return; // already have stats
+
+      try {
+        const resp = await fetch('/api/reviews');
+        if (!resp.ok) return;
+        const data = await resp.json();
+        const reviews: Array<{ carId: string; overall: number }> = data.reviews || [];
+
+        const map = new Map<string, { count: number; total: number }>();
+        for (const r of reviews) {
+          if (!r.carId) continue;
+          const agg = map.get(r.carId) || { count: 0, total: 0 };
+          map.set(r.carId, { count: agg.count + 1, total: agg.total + (r.overall || 0) });
+        }
+
+        const statsFromReviews = Array.from(map.entries()).map(([carId, agg]) => ({
+          carId,
+          reviewCount: agg.count,
+          averageRating: agg.count > 0 ? agg.total / agg.count : 0,
+        }));
+
+        if (statsFromReviews.length > 0) {
+          setCarStats(statsFromReviews);
+        }
+      } catch (e) {
+        console.error('Error building highlights stats from reviews:', e);
+      }
+    };
+
+    buildStatsFromReviews();
+  }, [loading, carStats.length]);
+
+  // Get this week's most reviewed cars
   const carReviewCounts = cars.map((car) => {
-    const carReviews = reviews.filter((r) => r.carId === car.id);
+    const stats = carStats.find(s => s.carId === car.id);
     return {
       car,
-      reviewCount: carReviews.length,
-      avgRating: computeOverallAverage(carReviews),
+      reviewCount: stats?.reviewCount || 0,
+      avgRating: stats?.averageRating || 0,
     };
   });
 
@@ -108,7 +174,9 @@ export default function HighlightsPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-3xl font-bold">{reviews.length}</div>
+                <div className="text-3xl font-bold">
+                  {loading ? "..." : carStats.reduce((sum, s) => sum + s.reviewCount, 0)}
+                </div>
               </CardContent>
             </Card>
 
@@ -120,7 +188,7 @@ export default function HighlightsPage() {
               </CardHeader>
               <CardContent>
                 <div className="text-3xl font-bold">
-                  {new Set(reviews.map((r) => r.carId)).size}
+                  {loading ? "..." : carStats.filter(s => s.reviewCount > 0).length}
                 </div>
               </CardContent>
             </Card>
@@ -133,7 +201,10 @@ export default function HighlightsPage() {
               </CardHeader>
               <CardContent>
                 <div className="text-3xl font-bold">
-                  {computeOverallAverage(reviews).toFixed(1)}
+                  {loading ? "..." : carStats.length > 0 
+                    ? (carStats.reduce((sum, s) => sum + s.averageRating * s.reviewCount, 0) / 
+                       carStats.reduce((sum, s) => sum + s.reviewCount, 0)).toFixed(1)
+                    : "0.0"}
                 </div>
               </CardContent>
             </Card>

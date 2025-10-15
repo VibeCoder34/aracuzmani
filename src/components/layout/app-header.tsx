@@ -4,19 +4,80 @@ import Link from "next/link";
 import { Search, Menu, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { useAuthStore } from "@/lib/store";
-import { useState } from "react";
+import { createClient } from "@/lib/supabase/client";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export function AppHeader() {
-  const { user, signOut } = useAuthStore();
+  const [user, setUser] = useState<{
+    id: string;
+    email?: string;
+  } | null>(null);
+  const [profile, setProfile] = useState<{
+    full_name?: string;
+    username?: string;
+    avatar_url?: string;
+    role?: string;
+  } | null>(null);
   const [showUserMenu, setShowUserMenu] = useState(false);
+  const supabase = createClient();
+  const router = useRouter();
 
-  const initials = user?.name
-    .split(" ")
-    .map((n) => n[0])
-    .join("")
-    .toUpperCase()
-    .slice(0, 2);
+  useEffect(() => {
+    // Get initial user
+    const getUser = async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (user) {
+        setUser(user);
+        // Get profile
+        const { data: profile } = await supabase
+          .from('profiles')
+          .select('*')
+          .eq('id', user.id)
+          .single();
+        setProfile(profile);
+      }
+    };
+
+    getUser();
+
+    // Listen for auth changes
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      if (session?.user) {
+        setUser(session.user);
+        // Get profile
+        supabase
+          .from('profiles')
+          .select('*')
+          .eq('id', session.user.id)
+          .single()
+          .then(({ data }) => setProfile(data));
+      } else {
+        setUser(null);
+        setProfile(null);
+      }
+    });
+
+    return () => subscription.unsubscribe();
+  }, [supabase]);
+
+  const handleSignOut = async () => {
+    await supabase.auth.signOut();
+    router.push('/login');
+  };
+
+  const displayName = profile?.username 
+    ? `@${profile.username}` 
+    : (profile?.full_name || user?.email?.split('@')[0] || 'Kullanıcı');
+  
+  const initials = profile?.username 
+    ? profile.username.slice(0, 2).toUpperCase()
+    : displayName
+        .split(" ")
+        .map((n) => n[0])
+        .join("")
+        .toUpperCase()
+        .slice(0, 2);
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -50,6 +111,14 @@ export function AppHeader() {
             >
               Öne Çıkanlar
             </Link>
+            {profile?.role && ['admin', 'moderator'].includes(profile.role) && (
+              <Link
+                href="/admin"
+                className="transition-colors hover:text-foreground/80 text-primary font-semibold"
+              >
+                Admin Panel
+              </Link>
+            )}
           </nav>
         </div>
 
@@ -66,15 +135,15 @@ export function AppHeader() {
                 className="flex items-center gap-2 rounded-full hover:bg-accent px-2 py-1.5 transition-colors"
               >
                 <Avatar className="h-8 w-8 border-2 border-primary/20">
-                  {user.avatarUrl && (
-                    <AvatarImage src={user.avatarUrl} alt={user.name} />
+                  {profile?.avatar_url && (
+                    <AvatarImage src={profile.avatar_url} alt={displayName} />
                   )}
                   <AvatarFallback className="bg-primary/10 text-primary font-medium">
                     {initials}
                   </AvatarFallback>
                 </Avatar>
                 <span className="hidden sm:block text-sm font-medium">
-                  {user.name.split(" ")[0]}
+                  {profile?.username ? displayName : displayName.split(" ")[0]}
                 </span>
               </button>
 
@@ -86,8 +155,11 @@ export function AppHeader() {
                   />
                   <div className="absolute right-0 mt-2 w-56 rounded-lg border border-border bg-background shadow-lg z-50">
                     <div className="p-3 border-b border-border">
-                      <p className="text-sm font-medium">{user.name}</p>
-                      <p className="text-xs text-muted-foreground">{user.email}</p>
+                      <p className="text-sm font-medium">{displayName}</p>
+                      {profile?.username && profile?.full_name && (
+                        <p className="text-xs text-muted-foreground">{profile.full_name}</p>
+                      )}
+                      <p className="text-xs text-muted-foreground">{user?.email}</p>
                     </div>
                     <div className="p-2">
                       <Link
@@ -104,9 +176,18 @@ export function AppHeader() {
                       >
                         Ayarlar
                       </Link>
+                      {profile?.role && ['admin', 'moderator'].includes(profile.role) && (
+                        <Link
+                          href="/admin"
+                          className="block px-3 py-2 text-sm rounded-md hover:bg-accent text-primary font-semibold transition-colors"
+                          onClick={() => setShowUserMenu(false)}
+                        >
+                          Admin Panel
+                        </Link>
+                      )}
                       <button
                         onClick={() => {
-                          signOut();
+                          handleSignOut();
                           setShowUserMenu(false);
                         }}
                         className="block w-full text-left px-3 py-2 text-sm rounded-md hover:bg-accent text-red-600 transition-colors"
@@ -119,7 +200,7 @@ export function AppHeader() {
               )}
             </div>
           ) : (
-            <Link href="/auth">
+            <Link href="/login">
               <Button variant="outline" size="sm">
                 <User className="h-4 w-4 mr-2" />
                 Giriş Yap

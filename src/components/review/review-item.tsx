@@ -1,53 +1,90 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { StarRating } from "@/components/ui/star-rating";
 import { Progress } from "@/components/ui/progress";
 import { ThumbsUp } from "lucide-react";
-import type { Review, User } from "@/types/car";
+import type { Review } from "@/types/car";
 import { formatRelativeTime } from "@/lib/formatters";
 import { getCategoryLabel } from "@/lib/rating-helpers";
 import { cn } from "@/lib/cn";
 import { useReviewStore } from "@/lib/store";
 
 interface ReviewItemProps {
-  review: Review;
-  user?: User;
+  review: Review & { user?: { id: string; name: string; username?: string | null; fullName?: string | null; avatarUrl?: string | null } };
   showCategories?: boolean;
   className?: string;
 }
 
 export function ReviewItem({
   review,
-  user,
   showCategories = true,
   className,
 }: ReviewItemProps) {
-  const { markReviewHelpful, isReviewMarkedHelpful } = useReviewStore();
-  const isMarkedHelpful = isReviewMarkedHelpful(review.id);
+  const [isMarkedHelpful, setIsMarkedHelpful] = useState(false);
+  const [helpfulCount, setHelpfulCount] = useState(review.helpfulCount);
+  const { updateReviewHelpfulCount } = useReviewStore();
+
+  // Check if user has voted on mount
+  useEffect(() => {
+    const checkVoteStatus = async () => {
+      try {
+        const response = await fetch(`/api/reviews/${review.id}/vote`);
+        if (response.ok) {
+          const data = await response.json();
+          setIsMarkedHelpful(data.hasVoted);
+        }
+      } catch (error) {
+        console.error('Error checking vote status:', error);
+      }
+    };
+    checkVoteStatus();
+  }, [review.id]);
   
-  const initials = user?.name
-    .split(" ")
-    .map((n) => n[0])
-    .join("")
-    .toUpperCase()
-    .slice(0, 2);
+  const user = review.user;
   
-  const handleHelpfulClick = () => {
-    markReviewHelpful(review.id);
+  // Get display name - prioritize username, fallback to full name
+  const displayName = user?.username ? `@${user.username}` : (user?.fullName || user?.name || "Anonymous");
+  
+  // Get initials from username or full name
+  const initials = user?.username 
+    ? user.username.slice(0, 2).toUpperCase()
+    : (user?.fullName || user?.name || "A")
+        .split(" ")
+        .map((n) => n[0])
+        .join("")
+        .toUpperCase()
+        .slice(0, 2);
+  
+  const handleHelpfulClick = async () => {
+    try {
+      const response = await fetch(`/api/reviews/${review.id}/vote`, {
+        method: 'POST',
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        setIsMarkedHelpful(data.action === 'added');
+        setHelpfulCount(data.helpfulCount);
+        updateReviewHelpfulCount(review.id, data.helpfulCount);
+      }
+    } catch (error) {
+      console.error('Error toggling helpful vote:', error);
+    }
   };
 
   return (
     <div className={cn("border border-border rounded-lg p-4 space-y-4", className)}>
       <div className="flex items-start gap-3">
         <Avatar>
-          {user?.avatarUrl && <AvatarImage src={user.avatarUrl} alt={user.name} />}
+          {user?.avatarUrl && <AvatarImage src={user.avatarUrl} alt={displayName} />}
           <AvatarFallback>{initials || "?"}</AvatarFallback>
         </Avatar>
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 flex-wrap">
-            <p className="font-semibold">{user?.name || "Anonymous"}</p>
+            <p className="font-semibold">{displayName}</p>
             <span className="text-sm text-muted-foreground">
               {formatRelativeTime(review.createdAt)}
             </span>
@@ -91,7 +128,7 @@ export function ReviewItem({
           )}
         >
           <ThumbsUp className={cn("h-4 w-4 transition-all", isMarkedHelpful && "fill-primary")} />
-          <span>Faydalı ({review.helpfulCount})</span>
+          <span>Faydalı ({helpfulCount})</span>
         </button>
       </div>
     </div>

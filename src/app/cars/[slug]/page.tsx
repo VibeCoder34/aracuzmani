@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, use } from "react";
+import { useState, use, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -11,16 +11,16 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { StarRating } from "@/components/ui/star-rating";
 import { CarSpecTable } from "@/components/car/car-spec-table";
 import { CarAvgBadges } from "@/components/car/car-avg-badges";
+import { CarRatingsCollapsible } from "@/components/car/car-ratings-collapsible";
 import { ReviewItem } from "@/components/review/review-item";
 import { ReviewForm, type ReviewFormData } from "@/components/review/review-form";
 import { EmptyState } from "@/components/common/empty-state";
+import { LoadingSpinner } from "@/components/common/loading-spinner";
 import { ChevronLeft, Plus } from "lucide-react";
-import carsData from "@/mock/cars.json";
-import type { Car } from "@/types/car";
-import { useAuthStore, useReviewStore, getUserById } from "@/lib/store";
+import type { Car, Review } from "@/types/car";
+import { useReviewStore } from "@/lib/store";
 import { computeCategoryAverages, computeOverallAverage } from "@/lib/rating-helpers";
-
-const cars = carsData as Car[];
+import { createClient } from "@/lib/supabase/client";
 
 export default function CarDetailPage({
   params,
@@ -28,18 +28,112 @@ export default function CarDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = use(params);
-  const car = cars.find((c) => c.slug === slug);
-
-  if (!car) {
-    notFound();
-  }
+  const [car, setCar] = useState<Car | null>(null);
+  const [carLoading, setCarLoading] = useState(true);
 
   const [activeTab, setActiveTab] = useState("overview");
   const [showReviewDialog, setShowReviewDialog] = useState(false);
   const [reviewSort, setReviewSort] = useState<"newest" | "rating">("newest");
+  const [user, setUser] = useState<{
+    id: string;
+    email?: string;
+    created_at?: string;
+  } | null>(null);
+  const [profile, setProfile] = useState<{
+    full_name?: string;
+    username?: string;
+    avatar_url?: string;
+  } | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [submitting, setSubmitting] = useState(false);
 
-  const { user } = useAuthStore();
-  const { reviews: allReviews, addReview } = useReviewStore();
+  const supabase = createClient();
+  const { reviews: allReviews, setReviews, addReview: addReviewToStore } = useReviewStore();
+
+  // Fetch car data from API
+  useEffect(() => {
+    const fetchCar = async () => {
+      setCarLoading(true);
+      try {
+        const response = await fetch('/api/cars');
+        if (response.ok) {
+          const data = await response.json();
+          const foundCar = data.cars.find((c: Car) => c.slug === slug);
+          if (foundCar) {
+            setCar(foundCar);
+          }
+        }
+      } catch (error) {
+        console.error('Error fetching car:', error);
+      } finally {
+        setCarLoading(false);
+      }
+    };
+
+    fetchCar();
+  }, [slug]);
+
+  // Get authenticated user from Supabase
+  useEffect(() => {
+    const getUser = async () => {
+      const { data: { user } } = await supabase.auth.getUser();
+      if (user) {
+        setUser(user);
+        // Get profile data
+        const { data: profile } = await supabase
+          .from('profiles')
+          .select('*')
+          .eq('id', user.id)
+          .single();
+        setProfile(profile);
+      }
+    };
+
+    getUser();
+
+    // Listen for auth changes
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      if (session?.user) {
+        setUser(session.user);
+        supabase
+          .from('profiles')
+          .select('*')
+          .eq('id', session.user.id)
+          .single()
+          .then(({ data }) => setProfile(data));
+      } else {
+        setUser(null);
+        setProfile(null);
+      }
+    });
+
+    return () => subscription.unsubscribe();
+  }, [supabase]);
+
+  // Fetch reviews from database
+  useEffect(() => {
+    if (!car) return;
+    
+    const fetchReviews = async () => {
+      setLoading(true);
+      try {
+        const response = await fetch(`/api/reviews?carId=${car.id}`);
+        if (response.ok) {
+          const data = await response.json();
+          setReviews(data.reviews || []);
+          console.log(`[CarDetail] Fetched ${data.reviews?.length || 0} reviews for ${car.id}`);
+        } else {
+          console.error('Failed to fetch reviews');
+        }
+      } catch (error) {
+        console.error('Error fetching reviews:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchReviews();
+  }, [car, setReviews]);
 
   const carReviews = allReviews.filter((r) => r.carId === car.id);
   const categoryAverages = computeCategoryAverages(carReviews);
@@ -52,25 +146,64 @@ export default function CarDetailPage({
     return b.overall - a.overall;
   });
 
-  const handleReviewSubmit = (data: ReviewFormData) => {
+  const handleReviewSubmit = async (data: ReviewFormData) => {
     if (!user) {
-      alert("Please sign in to submit a review");
+      alert("Yorum yapmak için lütfen giriş yapın");
       return;
     }
 
-    const overall =
-      Object.values(data.ratings).reduce((sum, val) => sum + val, 0) / 8;
+    if (!car) {
+      alert("Araç bilgisi yükleniyor, lütfen bekleyin");
+      return;
+    }
 
-    addReview({
-      carId: car.id,
-      userId: user.id,
-      text: data.text,
-      ratings: data.ratings,
-      overall,
-    });
+    setSubmitting(true);
+    try {
+      const response = await fetch('/api/reviews', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          carId: car.id,
+          text: data.text,
+          ratings: data.ratings,
+        }),
+      });
 
-    setShowReviewDialog(false);
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.error || 'Failed to submit review');
+      }
+
+      const result = await response.json();
+      
+      // Add the new review to local state
+      addReviewToStore(result.review);
+
+      setShowReviewDialog(false);
+      alert("Yorumunuz başarıyla eklendi! 🎉");
+    } catch (error) {
+      console.error('Error submitting review:', error);
+      alert('Yorum gönderilirken bir hata oluştu. Lütfen tekrar deneyin.');
+    } finally {
+      setSubmitting(false);
+    }
   };
+
+  // Show loading spinner while car data is being fetched
+  if (carLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <LoadingSpinner />
+      </div>
+    );
+  }
+
+  // Show 404 if car not found
+  if (!car) {
+    notFound();
+  }
 
   return (
     <div className="min-h-screen pb-20 md:pb-0">
@@ -158,14 +291,9 @@ export default function CarDetailPage({
             {carReviews.length > 0 && (
               <div>
                 <h2 className="text-2xl font-semibold mb-4">Kullanıcı Puanları</h2>
-                <CarAvgBadges averages={categoryAverages} />
+                <CarRatingsCollapsible averages={categoryAverages} car={car} />
               </div>
             )}
-            
-            <div>
-              <h2 className="text-2xl font-semibold mb-4">Teknik Özellikler</h2>
-              <CarSpecTable specs={car.specs} />
-            </div>
           </TabsContent>
 
           <TabsContent value="reviews" className="space-y-6 mt-6">
@@ -181,13 +309,16 @@ export default function CarDetailPage({
               </select>
             </div>
 
-            {sortedReviews.length > 0 ? (
+            {loading ? (
+              <div className="flex justify-center py-12">
+                <LoadingSpinner />
+              </div>
+            ) : sortedReviews.length > 0 ? (
               <div className="space-y-4">
                 {sortedReviews.map((review) => (
                   <ReviewItem
                     key={review.id}
                     review={review}
-                    user={getUserById(review.userId)}
                   />
                 ))}
               </div>
@@ -229,13 +360,14 @@ export default function CarDetailPage({
             <ReviewForm
               onSubmit={handleReviewSubmit}
               onCancel={() => setShowReviewDialog(false)}
+              disabled={submitting}
             />
           ) : (
             <div className="py-8 text-center">
               <p className="text-muted-foreground mb-4">
                 Yorum yazmak için lütfen giriş yapın
               </p>
-              <Link href="/auth">
+              <Link href="/login">
                 <Button>Giriş Yap</Button>
               </Link>
             </div>

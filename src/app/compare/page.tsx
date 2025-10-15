@@ -1,38 +1,113 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { StarRating } from "@/components/ui/star-rating";
 import { EmptyState } from "@/components/common/empty-state";
-import { X, Plus } from "lucide-react";
+import { ReviewItem } from "@/components/review/review-item";
+import { X, Plus, MessageSquare } from "lucide-react";
 import carsData from "@/mock/cars.json";
-import reviewsData from "@/mock/reviews.json";
-import type { Car, Review, RatingCategory } from "@/types/car";
-import {
-  computeCategoryAverages,
-  computeOverallAverage,
-  getCategoryLabel,
-} from "@/lib/rating-helpers";
+import type { Car, RatingCategory, Review } from "@/types/car";
+import { getCategoryLabel } from "@/lib/rating-helpers";
 import { translateSpecKey } from "@/lib/spec-translator";
 
 const cars = carsData as Car[];
-const reviews = reviewsData as Review[];
+
+interface CarStats {
+  carId: string;
+  reviewCount: number;
+  averageRating: number;
+}
+
+interface CarReviews {
+  carId: string;
+  reviews: (Review & { user?: { id: string; name: string; avatarUrl?: string | null } })[];
+}
 
 export default function ComparePage() {
   const [selectedCarIds, setSelectedCarIds] = useState<string[]>([]);
   const [showSelector, setShowSelector] = useState(false);
+  const [carStats, setCarStats] = useState<CarStats[]>([]);
+  const [carReviews, setCarReviews] = useState<CarReviews[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [loadingReviews, setLoadingReviews] = useState(false);
+
+  // Fetch review statistics for selected cars
+  useEffect(() => {
+    const fetchCarStats = async () => {
+      if (selectedCarIds.length === 0) {
+        setCarStats([]);
+        setLoading(false);
+        return;
+      }
+
+      setLoading(true);
+      try {
+        const carIdsParam = selectedCarIds.join(',');
+        const response = await fetch(`/api/cars/stats?carIds=${carIdsParam}`);
+        if (response.ok) {
+          const data = await response.json();
+          setCarStats(data.stats || []);
+        } else {
+          console.error('Failed to fetch car stats');
+        }
+      } catch (error) {
+        console.error('Error fetching car stats:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchCarStats();
+  }, [selectedCarIds]);
+
+  // Fetch reviews for selected cars
+  useEffect(() => {
+    const fetchReviews = async () => {
+      if (selectedCarIds.length === 0) {
+        setCarReviews([]);
+        return;
+      }
+
+      setLoadingReviews(true);
+      try {
+        const reviewPromises = selectedCarIds.map(async (carId) => {
+          const response = await fetch(`/api/reviews?carId=${carId}&limit=5`);
+          if (response.ok) {
+            const data = await response.json();
+            return {
+              carId,
+              reviews: data.reviews || [],
+            };
+          }
+          return { carId, reviews: [] };
+        });
+
+        const results = await Promise.all(reviewPromises);
+        setCarReviews(results);
+      } catch (error) {
+        console.error('Error fetching reviews:', error);
+      } finally {
+        setLoadingReviews(false);
+      }
+    };
+
+    fetchReviews();
+  }, [selectedCarIds]);
 
   const selectedCars = selectedCarIds.map((id) => {
     const car = cars.find((c) => c.id === id)!;
-    const carReviews = reviews.filter((r) => r.carId === id);
+    const stats = carStats.find(s => s.carId === id);
+    const carReviewData = carReviews.find(r => r.carId === id);
     return {
       car,
-      reviews: carReviews,
-      avgRating: computeOverallAverage(carReviews),
-      categoryAvg: computeCategoryAverages(carReviews),
+      reviews: carReviewData?.reviews || [],
+      avgRating: stats?.averageRating || 0,
+      reviewCount: stats?.reviewCount || 0,
+      categoryAvg: {}, // Category averages would need individual review data
     };
   });
 
@@ -93,7 +168,7 @@ export default function ComparePage() {
           <div className="space-y-8">
             {/* Car Cards with Images */}
             <div className={`grid gap-6 ${selectedCars.length === 1 ? 'md:grid-cols-1 max-w-2xl mx-auto' : selectedCars.length === 2 ? 'md:grid-cols-2' : 'md:grid-cols-3'}`}>
-              {selectedCars.map(({ car, reviews, avgRating }) => (
+              {selectedCars.map(({ car, reviews, avgRating, reviewCount }) => (
                 <Card key={car.id} className="overflow-hidden group hover:shadow-lg transition-shadow">
                   <div className="relative h-48 bg-muted">
                     {car.images[0] && (
@@ -121,13 +196,22 @@ export default function ComparePage() {
                       <Badge variant="secondary">{car.year}</Badge>
                       <Badge variant="outline">{car.body}</Badge>
                     </div>
-                    <div className="flex items-center gap-2 mb-4">
-                      <StarRating value={avgRating} readonly size="sm" />
-                      <span className="text-lg font-semibold">{avgRating.toFixed(1)}</span>
-                      <span className="text-sm text-muted-foreground">
-                        ({reviews.length} yorum)
-                      </span>
-                    </div>
+                    {loading ? (
+                      <div className="flex items-center gap-2 mb-4 h-8">
+                        <div className="animate-pulse flex items-center gap-2">
+                          <div className="h-4 w-24 bg-muted rounded"></div>
+                          <div className="h-4 w-16 bg-muted rounded"></div>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="flex items-center gap-2 mb-4">
+                        <StarRating value={avgRating} readonly size="sm" />
+                        <span className="text-lg font-semibold">{avgRating.toFixed(1)}</span>
+                        <span className="text-sm text-muted-foreground">
+                          ({reviewCount} yorum)
+                        </span>
+                      </div>
+                    )}
                     <div className="space-y-2 text-sm">
                       <div className="flex justify-between">
                         <span className="text-muted-foreground">Yakıt:</span>
@@ -161,56 +245,46 @@ export default function ComparePage() {
               )}
             </div>
 
-            {/* Rating Comparison */}
-            {ratingCategories.length > 0 && (
-              <Card>
-                <CardHeader>
-                  <CardTitle>Kategori Puanları Karşılaştırması</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-6">
-                    {ratingCategories.map((category) => {
-                      const maxValue = Math.max(
-                        ...selectedCars.map(({ categoryAvg }) => categoryAvg[category] || 0)
-                      );
+            {/* Overall Rating Comparison */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Genel Puan Karşılaştırması</CardTitle>
+              </CardHeader>
+              <CardContent>
+                {loading ? (
+                  <div className="flex items-center justify-center py-8">
+                    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+                  </div>
+                ) : (
+                  <div className="space-y-4">
+                    {selectedCars.map(({ car, avgRating, reviewCount }) => {
+                      const maxRating = Math.max(...selectedCars.map(c => c.avgRating));
+                      const isMax = avgRating === maxRating && avgRating > 0;
                       return (
-                        <div key={category}>
-                          <div className="text-sm font-medium mb-3 capitalize">
-                            {getCategoryLabel(category as RatingCategory)}
+                        <div key={car.id} className="space-y-2">
+                          <div className="flex justify-between text-sm">
+                            <span className="text-muted-foreground">
+                              {car.brand} {car.model}
+                            </span>
+                            <span className={`font-semibold ${isMax ? 'text-primary' : ''}`}>
+                              {avgRating.toFixed(1)} ({reviewCount} yorum)
+                            </span>
                           </div>
-                          <div className="space-y-3">
-                            {selectedCars.map(({ car, categoryAvg }) => {
-                              const value = categoryAvg[category] || 0;
-                              const isMax = value === maxValue && value > 0;
-                              return (
-                                <div key={car.id} className="space-y-1">
-                                  <div className="flex justify-between text-sm">
-                                    <span className="text-muted-foreground">
-                                      {car.brand} {car.model}
-                                    </span>
-                                    <span className={`font-semibold ${isMax ? 'text-primary' : ''}`}>
-                                      {value.toFixed(1)}
-                                    </span>
-                                  </div>
-                                  <div className="h-2 bg-muted rounded-full overflow-hidden">
-                                    <div
-                                      className={`h-full rounded-full transition-all ${
-                                        isMax ? 'bg-primary' : 'bg-primary/60'
-                                      }`}
-                                      style={{ width: `${(value / 5) * 100}%` }}
-                                    />
-                                  </div>
-                                </div>
-                              );
-                            })}
+                          <div className="h-2 bg-muted rounded-full overflow-hidden">
+                            <div
+                              className={`h-full rounded-full transition-all ${
+                                isMax ? 'bg-primary' : 'bg-primary/60'
+                              }`}
+                              style={{ width: `${(avgRating / 5) * 100}%` }}
+                            />
                           </div>
                         </div>
                       );
                     })}
                   </div>
-                </CardContent>
-              </Card>
-            )}
+                )}
+              </CardContent>
+            </Card>
 
             {/* Technical Specifications */}
             <Card>
@@ -273,6 +347,56 @@ export default function ComparePage() {
                       </tr>
                     </tbody>
                   </table>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Reviews Comparison */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <MessageSquare className="h-5 w-5" />
+                  Kullanıcı Yorumları
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className={`grid gap-6 ${selectedCars.length === 1 ? 'md:grid-cols-1' : selectedCars.length === 2 ? 'md:grid-cols-2' : 'md:grid-cols-3'}`}>
+                  {selectedCars.map(({ car, reviews, reviewCount }) => (
+                    <div key={car.id} className="space-y-4">
+                      <div className="pb-3 border-b">
+                        <h3 className="font-semibold text-lg">
+                          {car.brand} {car.model}
+                        </h3>
+                        <p className="text-sm text-muted-foreground">
+                          {reviewCount} yorum • Son 5 yorum gösteriliyor
+                        </p>
+                      </div>
+                      
+                      {loadingReviews ? (
+                        <div className="flex items-center justify-center py-8">
+                          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+                        </div>
+                      ) : reviews.length > 0 ? (
+                        <div className="space-y-3">
+                          {reviews.map((review) => (
+                            <ReviewItem 
+                              key={review.id} 
+                              review={review}
+                              showCategories={false}
+                              className="text-sm"
+                            />
+                          ))}
+                        </div>
+                      ) : (
+                        <div className="flex flex-col items-center justify-center py-8 text-center">
+                          <MessageSquare className="h-10 w-10 text-muted-foreground/30 mb-2" />
+                          <p className="text-sm text-muted-foreground">
+                            Henüz yorum yok
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  ))}
                 </div>
               </CardContent>
             </Card>

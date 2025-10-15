@@ -1,12 +1,38 @@
 export type RatingCategory =
-  | "comfort"
-  | "drive"
+  | "interiorDesign"
+  | "exteriorDesign"
   | "fuelEconomy"
-  | "reliability"
-  | "maintenance"
-  | "interior"
-  | "tech"
-  | "resale";
+  | "performance"
+  | "comfort"
+  | "driveSafety"
+  | "technology"
+  | "pricePerformance";
+
+export type CarSpecs = {
+  // Interior Design specs
+  seatCount?: number;
+  trunkVolume?: number;
+  
+  // Exterior Design specs
+  doorCount?: number;
+  width?: number;
+  length?: number;
+  height?: number;
+  weight?: number;
+  bodyType?: string;
+  
+  // Fuel Economy specs
+  fuelType?: string;
+  avgConsumption?: number;
+  
+  // Performance specs
+  maxTorque?: number;
+  maxSpeed?: number;
+  acceleration0to100?: number;
+  horsepower?: number;
+  transmissionType?: string;
+  driveType?: string;
+};
 
 export type Car = {
   id: string;
@@ -18,7 +44,7 @@ export type Car = {
   fuel: string;
   transmission: string;
   images: string[];
-  specs: Record<string, string | number>;
+  specs: Record<string, string | number> & CarSpecs;
 };
 
 export type Review = {
@@ -35,9 +61,11 @@ export type Review = {
 export type User = {
   id: string;
   name: string;
-  email: string;
-  avatarUrl?: string;
-  joinDate: string;
+  username?: string | null;
+  fullName?: string | null;
+  email?: string;
+  avatarUrl?: string | null;
+  joinDate?: string;
 };
 
 export type CategoryAverages = Record<RatingCategory, number>;

@@ -16,14 +16,14 @@ export function CarAvgBadges({
   showProgress = true,
 }: CarAvgBadgesProps) {
   const categories: RatingCategory[] = [
-    "comfort",
-    "drive",
+    "interiorDesign",
+    "exteriorDesign",
     "fuelEconomy",
-    "reliability",
-    "maintenance",
-    "interior",
-    "tech",
-    "resale",
+    "performance",
+    "comfort",
+    "driveSafety",
+    "technology",
+    "pricePerformance",
   ];
 
   return (

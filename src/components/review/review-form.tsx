@@ -11,6 +11,7 @@ import type { RatingCategory } from "@/types/car";
 interface ReviewFormProps {
   onSubmit: (data: ReviewFormData) => void;
   onCancel: () => void;
+  disabled?: boolean;
 }
 
 export interface ReviewFormData {
@@ -19,27 +20,27 @@ export interface ReviewFormData {
 }
 
 const categories: RatingCategory[] = [
-  "comfort",
-  "drive",
+  "interiorDesign",
+  "exteriorDesign",
   "fuelEconomy",
-  "reliability",
-  "maintenance",
-  "interior",
-  "tech",
-  "resale",
+  "performance",
+  "comfort",
+  "driveSafety",
+  "technology",
+  "pricePerformance",
 ];
 
-export function ReviewForm({ onSubmit, onCancel }: ReviewFormProps) {
+export function ReviewForm({ onSubmit, onCancel, disabled = false }: ReviewFormProps) {
   const [text, setText] = React.useState("");
   const [ratings, setRatings] = React.useState<Record<RatingCategory, number>>({
-    comfort: 3,
-    drive: 3,
+    interiorDesign: 3,
+    exteriorDesign: 3,
     fuelEconomy: 3,
-    reliability: 3,
-    maintenance: 3,
-    interior: 3,
-    tech: 3,
-    resale: 3,
+    performance: 3,
+    comfort: 3,
+    driveSafety: 3,
+    technology: 3,
+    pricePerformance: 3,
   });
 
   const handleRatingChange = (category: RatingCategory, value: number) => {
@@ -92,10 +93,12 @@ export function ReviewForm({ onSubmit, onCancel }: ReviewFormProps) {
       </div>
 
       <div className="flex justify-end gap-3 pt-4">
-        <Button type="button" variant="outline" onClick={onCancel}>
+        <Button type="button" variant="outline" onClick={onCancel} disabled={disabled}>
           İptal
         </Button>
-        <Button type="submit">Yorumu Gönder</Button>
+        <Button type="submit" disabled={disabled}>
+          {disabled ? "Gönderiliyor..." : "Yorumu Gönder"}
+        </Button>
       </div>
     </form>
   );

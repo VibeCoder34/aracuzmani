@@ -6,26 +6,26 @@ import type { Review, CategoryAverages, RatingCategory } from "@/types/car";
 export function computeCategoryAverages(reviews: Review[]): CategoryAverages {
   if (reviews.length === 0) {
     return {
-      comfort: 0,
-      drive: 0,
+      interiorDesign: 0,
+      exteriorDesign: 0,
       fuelEconomy: 0,
-      reliability: 0,
-      maintenance: 0,
-      interior: 0,
-      tech: 0,
-      resale: 0,
+      performance: 0,
+      comfort: 0,
+      driveSafety: 0,
+      technology: 0,
+      pricePerformance: 0,
     };
   }
 
   const categories: RatingCategory[] = [
-    "comfort",
-    "drive",
+    "interiorDesign",
+    "exteriorDesign",
     "fuelEconomy",
-    "reliability",
-    "maintenance",
-    "interior",
-    "tech",
-    "resale",
+    "performance",
+    "comfort",
+    "driveSafety",
+    "technology",
+    "pricePerformance",
   ];
 
   const averages = {} as CategoryAverages;
@@ -52,14 +52,14 @@ export function computeOverallAverage(reviews: Review[]): number {
  */
 export function getCategoryLabel(category: RatingCategory): string {
   const labels: Record<RatingCategory, string> = {
-    comfort: "Konfor",
-    drive: "Sürüş",
+    interiorDesign: "İç Tasarım",
+    exteriorDesign: "Dış Tasarım",
     fuelEconomy: "Yakıt Ekonomisi",
-    reliability: "Güvenilirlik",
-    maintenance: "Bakım Maliyeti",
-    interior: "İç Mekan",
-    tech: "Teknoloji",
-    resale: "İkinci El Değeri",
+    performance: "Performans",
+    comfort: "Konfor",
+    driveSafety: "Sürüş Güvenliği / Konforu",
+    technology: "Teknoloji ve Yenilik",
+    pricePerformance: "Fiyat-Performans",
   };
   return labels[category];
 }

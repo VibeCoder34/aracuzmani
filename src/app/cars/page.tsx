@@ -7,19 +7,23 @@ import { Input } from "@/components/ui/input";
 import { CarCard } from "@/components/car/card-car";
 import { FilterSheet } from "@/components/search/filter-sheet";
 import { EmptyState } from "@/components/common/empty-state";
+import { LoadingSpinner } from "@/components/common/loading-spinner";
 import { Filter, Search } from "lucide-react";
-import carsData from "@/mock/cars.json";
-import reviewsData from "@/mock/reviews.json";
-import type { Car, Review } from "@/types/car";
-import { computeOverallAverage } from "@/lib/rating-helpers";
+import type { Car } from "@/types/car";
 
-const cars = carsData as Car[];
-const reviews = reviewsData as Review[];
+interface CarStats {
+  carId: string;
+  reviewCount: number;
+  averageRating: number;
+}
 
 function CarsPageContent() {
   const searchParams = useSearchParams();
   const [showFilters, setShowFilters] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [cars, setCars] = useState<Car[]>([]);
+  const [carStats, setCarStats] = useState<CarStats[]>([]);
+  const [loading, setLoading] = useState(true);
   const [filters, setFilters] = useState({
     brand: "",
     year: "",
@@ -28,6 +32,43 @@ function CarsPageContent() {
     transmission: "",
     minRating: "",
   });
+
+  // Fetch cars and review statistics from database
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // Fetch cars from database
+        console.log('[CarsPage] Fetching cars from /api/cars...');
+        const carsResponse = await fetch('/api/cars');
+        console.log('[CarsPage] Cars response status:', carsResponse.status);
+        
+        if (carsResponse.ok) {
+          const carsData = await carsResponse.json();
+          console.log('[CarsPage] Cars data:', carsData);
+          console.log('[CarsPage] Number of cars:', carsData.cars?.length || 0);
+          setCars(carsData.cars || []);
+        } else {
+          const errorText = await carsResponse.text();
+          console.error('[CarsPage] Failed to fetch cars:', carsResponse.status, errorText);
+        }
+
+        // Fetch review statistics
+        const statsResponse = await fetch('/api/cars/stats');
+        if (statsResponse.ok) {
+          const statsData = await statsResponse.json();
+          setCarStats(statsData.stats || []);
+        } else {
+          console.error('[CarsPage] Failed to fetch car stats');
+        }
+      } catch (error) {
+        console.error('[CarsPage] Error fetching data:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   useEffect(() => {
     const brandParam = searchParams.get("brand");
@@ -83,23 +124,29 @@ function CarsPageContent() {
     if (filters.minRating) {
       const minRating = parseFloat(filters.minRating);
       result = result.filter((car) => {
-        const carReviews = reviews.filter((r) => r.carId === car.id);
-        const avgRating = computeOverallAverage(carReviews);
-        return avgRating >= minRating;
+        const stats = carStats.find(s => s.carId === car.id);
+        return stats && stats.averageRating >= minRating;
       });
     }
 
     return result;
-  }, [searchQuery, filters]);
+  }, [cars, carStats, searchQuery, filters]);
 
   const carsWithStats = filteredCars.map((car) => {
-    const carReviews = reviews.filter((r) => r.carId === car.id);
+    const stats = carStats.find(s => s.carId === car.id);
     return {
       car,
-      reviewCount: carReviews.length,
-      avgRating: computeOverallAverage(carReviews),
+      reviewCount: stats?.reviewCount || 0,
+      avgRating: stats?.averageRating || 0,
     };
   });
+
+  // Debug log
+  console.log('[CarsPage] Total cars:', cars.length);
+  console.log('[CarsPage] Filtered cars:', filteredCars.length);
+  console.log('[CarsPage] Cars with stats:', carsWithStats.length);
+  console.log('[CarsPage] Active filters:', filters);
+  console.log('[CarsPage] Search query:', searchQuery);
 
   return (
     <div className="min-h-screen pb-20 md:pb-0">
@@ -162,9 +209,19 @@ function CarsPageContent() {
           {/* Results */}
           <div className="flex-1">
             <p className="text-sm text-muted-foreground mb-4">
-              {carsWithStats.length} sonuç gösteriliyor
+              {loading ? "Yükleniyor..." : `${carsWithStats.length} sonuç gösteriliyor`}
             </p>
-            {carsWithStats.length > 0 ? (
+            {loading ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+                {Array.from({ length: 6 }).map((_, i) => (
+                  <div key={i} className="border border-border rounded-lg p-4 animate-pulse">
+                    <div className="aspect-video bg-muted rounded mb-4"></div>
+                    <div className="h-4 bg-muted rounded mb-2"></div>
+                    <div className="h-3 bg-muted rounded w-2/3"></div>
+                  </div>
+                ))}
+              </div>
+            ) : carsWithStats.length > 0 ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
                 {carsWithStats.map(({ car, reviewCount, avgRating }) => (
                   <CarCard

@@ -64,7 +64,7 @@ export async function GET(request: NextRequest) {
     console.log('[API /api/cars] First trim:', trims?.[0]);
 
     // Transform database trims to Car format for frontend
-    const cars = (trims || []).map((trim: any) => {
+    const cars = (trims || []).map((trim) => {
       const brand = trim.car_models.car_brands.name
       const model = trim.car_models.name
       const year = trim.year

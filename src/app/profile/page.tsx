@@ -13,8 +13,6 @@ import { Label } from '@/components/ui/label'
 import { LoadingSpinner } from '@/components/common/loading-spinner'
 import { Star, MessageSquare, Calendar, TrendingUp, Upload, Settings } from 'lucide-react'
 import type { Database } from '@/lib/supabase/types'
-import { useReviewStore } from '@/lib/store'
-import type { Review as LocalReview } from '@/types/car'
 import carsData from '@/mock/cars.json'
 
 type Profile = Database['public']['Tables']['profiles']['Row']
@@ -27,7 +25,6 @@ export default function ProfilePage() {
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
   const [profile, setProfile] = useState<Profile | null>(null)
-  const [userId, setUserId] = useState<string | null>(null)
   const [reviews, setReviews] = useState<Review[]>([])
   const [activeTab, setActiveTab] = useState('overview')
   const [error, setError] = useState<string | null>(null)
@@ -39,12 +36,6 @@ export default function ProfilePage() {
   const [username, setUsername] = useState('')
   const [bio, setBio] = useState('')
   const [avatarFile, setAvatarFile] = useState<File | null>(null)
-
-  useEffect(() => {
-    loadProfile()
-  }, [])
-  
-  // No longer needed - we use database reviews directly
 
   const loadProfile = async () => {
     try {
@@ -72,7 +63,6 @@ export default function ProfilePage() {
       }
 
       setProfile(profileData)
-      setUserId(user.id)
       setFullName(profileData.full_name || '')
       setUsername(profileData.username || '')
       setBio(profileData.bio || '')
@@ -83,15 +73,17 @@ export default function ProfilePage() {
         if (response.ok) {
           const data = await response.json();
           // Filter reviews by current user
-          const userReviews = data.reviews.filter((r: any) => r.userId === user.id);
+          const userReviews = data.reviews.filter((r: Review & { userId: string }) => r.userId === user.id);
           
           // Debug: Log the reviews to help identify duplicates
           console.log('[Profile] Raw user reviews from API:', userReviews);
           console.log('[Profile] User ID:', user.id);
           console.log('[Profile] Total reviews found:', userReviews.length);
           
+          type ReviewWithUser = Review & { userId: string; carId: string; text: string; createdAt: string; overall: number };
+          
           // Remove duplicates based on unique combination of carId and text
-          const uniqueReviews = userReviews.reduce((acc: any[], current: any) => {
+          const uniqueReviews = userReviews.reduce((acc: ReviewWithUser[], current: ReviewWithUser) => {
             const isDuplicate = acc.some(review => 
               review.carId === current.carId && 
               review.text === current.text &&
@@ -107,7 +99,7 @@ export default function ProfilePage() {
           
           console.log('[Profile] Unique reviews after deduplication:', uniqueReviews.length);
           
-          setReviews(uniqueReviews.map((r: any) => ({
+          setReviews(uniqueReviews.map((r: ReviewWithUser) => ({
             id: parseInt(r.id),
             author_id: r.userId,
             car_id: r.carId,
@@ -132,6 +124,11 @@ export default function ProfilePage() {
       setLoading(false)
     }
   }
+
+  useEffect(() => {
+    loadProfile()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const handleSignOut = async () => {
     await supabase.auth.signOut()

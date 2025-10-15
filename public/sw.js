@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 // Placeholder Service Worker for PWA
 // This is a minimal service worker for demonstration purposes
 // In production, you would use workbox or next-pwa for proper caching strategies
 
 const CACHE_NAME = 'carreviews-v1';
 
-self.addEventListener('install', (event) => {
+self.addEventListener('install', () => {
   console.log('Service Worker installing.');
   self.skipWaiting();
 });

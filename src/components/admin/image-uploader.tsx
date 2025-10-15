@@ -198,6 +198,7 @@ export function ImageUploader({ onUploadComplete }: ImageUploaderProps) {
                   key={image.path}
                   className="relative group rounded-lg overflow-hidden border border-border"
                 >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={image.url}
                     alt={image.fileName}

@@ -9,7 +9,6 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { StarRating } from "@/components/ui/star-rating";
-import { CarSpecTable } from "@/components/car/car-spec-table";
 import { CarAvgBadges } from "@/components/car/car-avg-badges";
 import { CarRatingsCollapsible } from "@/components/car/car-ratings-collapsible";
 import { ReviewItem } from "@/components/review/review-item";
@@ -17,7 +16,7 @@ import { ReviewForm, type ReviewFormData } from "@/components/review/review-form
 import { EmptyState } from "@/components/common/empty-state";
 import { LoadingSpinner } from "@/components/common/loading-spinner";
 import { ChevronLeft, Plus } from "lucide-react";
-import type { Car, Review } from "@/types/car";
+import type { Car } from "@/types/car";
 import { useReviewStore } from "@/lib/store";
 import { computeCategoryAverages, computeOverallAverage } from "@/lib/rating-helpers";
 import { createClient } from "@/lib/supabase/client";
@@ -38,11 +37,6 @@ export default function CarDetailPage({
     id: string;
     email?: string;
     created_at?: string;
-  } | null>(null);
-  const [profile, setProfile] = useState<{
-    full_name?: string;
-    username?: string;
-    avatar_url?: string;
   } | null>(null);
   const [loading, setLoading] = useState(true);
   const [submitting, setSubmitting] = useState(false);
@@ -79,31 +73,17 @@ export default function CarDetailPage({
       const { data: { user } } = await supabase.auth.getUser();
       if (user) {
         setUser(user);
-        // Get profile data
-        const { data: profile } = await supabase
-          .from('profiles')
-          .select('*')
-          .eq('id', user.id)
-          .single();
-        setProfile(profile);
       }
     };
 
     getUser();
 
     // Listen for auth changes
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       if (session?.user) {
         setUser(session.user);
-        supabase
-          .from('profiles')
-          .select('*')
-          .eq('id', session.user.id)
-          .single()
-          .then(({ data }) => setProfile(data));
       } else {
         setUser(null);
-        setProfile(null);
       }
     });
 

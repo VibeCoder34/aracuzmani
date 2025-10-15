@@ -47,7 +47,7 @@ export default function LoginPage() {
       // Successful login - redirect to profile or previous page
       router.push('/profile')
       router.refresh()
-    } catch (err) {
+    } catch {
       setError('Bir hata oluştu. Lütfen tekrar deneyin.')
     } finally {
       setLoading(false)
@@ -77,7 +77,7 @@ export default function LoginPage() {
       }
 
       setMagicLinkSent(true)
-    } catch (err) {
+    } catch {
       setError('Bir hata oluştu. Lütfen tekrar deneyin.')
     } finally {
       setLoading(false)
@@ -99,7 +99,7 @@ export default function LoginPage() {
       if (error) {
         setError('Google ile giriş yapılamadı. Lütfen tekrar deneyin.')
       }
-    } catch (err) {
+    } catch {
       setError('Bir hata oluştu. Lütfen tekrar deneyin.')
     } finally {
       setLoading(false)

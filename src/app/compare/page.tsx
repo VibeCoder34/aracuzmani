@@ -10,8 +10,7 @@ import { EmptyState } from "@/components/common/empty-state";
 import { ReviewItem } from "@/components/review/review-item";
 import { X, Plus, MessageSquare } from "lucide-react";
 import carsData from "@/mock/cars.json";
-import type { Car, RatingCategory, Review } from "@/types/car";
-import { getCategoryLabel } from "@/lib/rating-helpers";
+import type { Car } from "@/types/car";
 import { translateSpecKey } from "@/lib/spec-translator";
 
 const cars = carsData as Car[];
@@ -104,7 +103,7 @@ export default function ComparePage() {
     const carReviewData = carReviews.find(r => r.carId === id);
     return {
       car,
-      reviews: carReviewData?.reviews || [],
+      carReviews: carReviewData?.reviews || [],
       avgRating: stats?.averageRating || 0,
       reviewCount: stats?.reviewCount || 0,
       categoryAvg: {}, // Category averages would need individual review data
@@ -135,14 +134,6 @@ export default function ComparePage() {
     return Array.from(keys);
   }, [selectedCars]);
 
-  // Get category labels for rating comparison
-  const ratingCategories = useMemo(() => {
-    if (selectedCars.length === 0) return [];
-    const firstCar = selectedCars[0];
-    if (!firstCar.categoryAvg) return [];
-    return Object.keys(firstCar.categoryAvg);
-  }, [selectedCars]);
-
   return (
     <div className="min-h-screen pb-20 md:pb-0">
       <div className="container px-6 md:px-8 lg:px-12 py-10 md:py-12 max-w-7xl mx-auto">
@@ -168,7 +159,7 @@ export default function ComparePage() {
           <div className="space-y-8">
             {/* Car Cards with Images */}
             <div className={`grid gap-6 ${selectedCars.length === 1 ? 'md:grid-cols-1 max-w-2xl mx-auto' : selectedCars.length === 2 ? 'md:grid-cols-2' : 'md:grid-cols-3'}`}>
-              {selectedCars.map(({ car, reviews, avgRating, reviewCount }) => (
+              {selectedCars.map(({ car, avgRating, reviewCount }) => (
                 <Card key={car.id} className="overflow-hidden group hover:shadow-lg transition-shadow">
                   <div className="relative h-48 bg-muted">
                     {car.images[0] && (
@@ -361,7 +352,7 @@ export default function ComparePage() {
               </CardHeader>
               <CardContent>
                 <div className={`grid gap-6 ${selectedCars.length === 1 ? 'md:grid-cols-1' : selectedCars.length === 2 ? 'md:grid-cols-2' : 'md:grid-cols-3'}`}>
-                  {selectedCars.map(({ car, reviews, reviewCount }) => (
+                  {selectedCars.map(({ car, carReviews, reviewCount }) => (
                     <div key={car.id} className="space-y-4">
                       <div className="pb-3 border-b">
                         <h3 className="font-semibold text-lg">
@@ -376,9 +367,9 @@ export default function ComparePage() {
                         <div className="flex items-center justify-center py-8">
                           <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
                         </div>
-                      ) : reviews.length > 0 ? (
+                      ) : carReviews.length > 0 ? (
                         <div className="space-y-3">
-                          {reviews.map((review) => (
+                          {carReviews.map((review) => (
                             <ReviewItem 
                               key={review.id} 
                               review={review}

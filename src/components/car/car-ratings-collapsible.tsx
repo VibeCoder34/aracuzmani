@@ -33,12 +33,6 @@ export function CarRatingsCollapsible({
     });
   };
 
-  const getRatingColor = (value: number) => {
-    if (value >= 4) return "bg-green-500";
-    if (value >= 3) return "bg-yellow-500";
-    return "bg-red-500";
-  };
-
   // Collapsible sections with sub-metrics
   const renderCollapsibleSection = (
     key: keyof CategoryAverages,

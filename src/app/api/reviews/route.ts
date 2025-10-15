@@ -48,7 +48,7 @@ export async function GET(request: NextRequest) {
 
     // Also get vote counts for each review
     const reviewIds = reviews?.map(r => r.id) || [];
-    let votesData: any[] = [];
+    let votesData: Array<{ review_id: number; is_helpful: boolean }> = [];
     
     if (reviewIds.length > 0) {
       const { data: votes } = await supabase

@@ -17,8 +17,7 @@ export async function GET(request: NextRequest) {
   return NextResponse.redirect(new URL('/login', requestUrl.origin))
 }
 
-export async function POST(request: NextRequest) {
-  const requestUrl = new URL(request.url)
+export async function POST() {
   const supabase = await createClient()
 
   // Sign out

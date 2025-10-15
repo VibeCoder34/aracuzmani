@@ -7,7 +7,6 @@ import { Input } from "@/components/ui/input";
 import { CarCard } from "@/components/car/card-car";
 import { FilterSheet } from "@/components/search/filter-sheet";
 import { EmptyState } from "@/components/common/empty-state";
-import { LoadingSpinner } from "@/components/common/loading-spinner";
 import { Filter, Search } from "lucide-react";
 import type { Car } from "@/types/car";
 

@@ -106,7 +106,7 @@ export default function SignupPage() {
       }
 
       setSuccess(true)
-    } catch (err) {
+    } catch {
       setError('Bir hata oluştu. Lütfen tekrar deneyin.')
     } finally {
       setLoading(false)
@@ -128,7 +128,7 @@ export default function SignupPage() {
       if (error) {
         setError('Google ile kayıt olunamadı. Lütfen tekrar deneyin.')
       }
-    } catch (err) {
+    } catch {
       setError('Bir hata oluştu. Lütfen tekrar deneyin.')
     } finally {
       setLoading(false)

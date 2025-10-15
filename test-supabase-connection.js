@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 // Quick test script to verify Supabase credentials
 require('dotenv').config({ path: '.env.local' })
 

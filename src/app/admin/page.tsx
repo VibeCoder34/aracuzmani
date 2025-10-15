@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
-import { Tabs } from "@/components/ui/tabs";
 import { Plus, Trash2, Loader2, AlertCircle, Upload, X } from "lucide-react";
 import { ImageUploader } from "@/components/admin/image-uploader";
 
@@ -1061,6 +1060,7 @@ export default function AdminPage() {
                           key={idx}
                           className="relative group rounded-lg overflow-hidden border border-border"
                         >
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img
                             src={url}
                             alt={`Car ${idx + 1}`}
@@ -1082,7 +1082,7 @@ export default function AdminPage() {
                 {/* Manual URL Input (Optional) */}
                 <div className="mt-4">
                   <Label htmlFor="trim-image-urls" className="text-xs text-muted-foreground">
-                    Veya URL'leri manuel girin (virgülle ayırın)
+                    Veya URL&apos;leri manuel girin (virgülle ayırın)
                   </Label>
                   <textarea
                     id="trim-image-urls"
@@ -1161,10 +1161,10 @@ export default function AdminPage() {
           <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
             <h3 className="font-semibold text-blue-900 mb-2">📝 Instructions:</h3>
             <ol className="text-sm text-blue-800 space-y-1 list-decimal list-inside">
-              <li>Enter a unique car slug (e.g., "toyota-corolla-2024")</li>
+              <li>Enter a unique car slug (e.g., &quot;toyota-corolla-2024&quot;)</li>
               <li>Upload one or multiple images for the car</li>
               <li>Copy the public URLs and use them in your application</li>
-              <li>Images are stored in Supabase Storage under "review-images/cars/"</li>
+              <li>Images are stored in Supabase Storage under &quot;review-images/cars/&quot;</li>
             </ol>
           </div>
         </div>

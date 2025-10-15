@@ -23,7 +23,23 @@ interface CarStats {
 
 interface CarReviews {
   carId: string;
-  reviews: (Review & { user?: { id: string; name: string; avatarUrl?: string | null } })[];
+  reviews: Array<{
+    id: string;
+    carId: string;
+    userId: string;
+    text: string;
+    overall: number;
+    createdAt: string;
+    ratings: Record<string, number>;
+    helpfulCount: number;
+    user?: { 
+      id: string; 
+      name: string; 
+      username?: string | null;
+      fullName?: string | null;
+      avatarUrl?: string | null;
+    };
+  }>;
 }
 
 export default function ComparePage() {

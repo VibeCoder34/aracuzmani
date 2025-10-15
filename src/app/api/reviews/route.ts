@@ -67,23 +67,28 @@ export async function GET(request: NextRequest) {
     }, {});
 
     // Transform to frontend format
-    const transformedReviews = reviews?.map(review => ({
-      id: review.id.toString(),
-      carId: review.car_id || '',
-      userId: review.author_id,
-      createdAt: review.created_at,
-      text: review.body || '',
-      ratings: review.ratings as Record<string, number>,
-      overall: review.avg_score || 0,
-      helpfulCount: voteCountMap[review.id] || 0,
-      user: review.profiles ? {
-        id: review.profiles.id,
-        name: review.profiles.username || review.profiles.full_name || 'User',
-        username: review.profiles.username || null,
-        fullName: review.profiles.full_name || null,
-        avatarUrl: review.profiles.avatar_url || null,
-      } : null,
-    })) || [];
+    const transformedReviews = reviews?.map(review => {
+      // Handle profiles - Supabase returns it as a single object, but TypeScript might infer as array
+      const profile = Array.isArray(review.profiles) ? review.profiles[0] : review.profiles;
+      
+      return {
+        id: review.id.toString(),
+        carId: review.car_id || '',
+        userId: review.author_id,
+        createdAt: review.created_at,
+        text: review.body || '',
+        ratings: review.ratings as Record<string, number>,
+        overall: review.avg_score || 0,
+        helpfulCount: voteCountMap[review.id] || 0,
+        user: profile ? {
+          id: profile.id,
+          name: profile.username || profile.full_name || 'User',
+          username: profile.username || null,
+          fullName: profile.full_name || null,
+          avatarUrl: profile.avatar_url || null,
+        } : null,
+      };
+    }) || [];
 
     return NextResponse.json({ reviews: transformedReviews });
   } catch (error) {
@@ -163,6 +168,9 @@ export async function POST(request: NextRequest) {
     }
 
     // Transform to frontend format
+    // Handle profiles - Supabase returns it as a single object, but TypeScript might infer as array
+    const profile = Array.isArray(review.profiles) ? review.profiles[0] : review.profiles;
+    
     const transformedReview = {
       id: review.id.toString(),
       carId: review.car_id || '',
@@ -172,12 +180,12 @@ export async function POST(request: NextRequest) {
       ratings: review.ratings as Record<string, number>,
       overall: review.avg_score || 0,
       helpfulCount: 0,
-      user: review.profiles ? {
-        id: review.profiles.id,
-        name: review.profiles.username || review.profiles.full_name || 'User',
-        username: review.profiles.username || null,
-        fullName: review.profiles.full_name || null,
-        avatarUrl: review.profiles.avatar_url || null,
+      user: profile ? {
+        id: profile.id,
+        name: profile.username || profile.full_name || 'User',
+        username: profile.username || null,
+        fullName: profile.full_name || null,
+        avatarUrl: profile.avatar_url || null,
       } : null,
     };
 

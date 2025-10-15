@@ -17,6 +17,7 @@ import carsData from '@/mock/cars.json'
 
 type Profile = Database['public']['Tables']['profiles']['Row']
 type Review = Database['public']['Tables']['reviews']['Row']
+type ReviewWithCarId = Review & { car_id: string }
 
 export default function ProfilePage() {
   const router = useRouter()
@@ -25,7 +26,7 @@ export default function ProfilePage() {
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
   const [profile, setProfile] = useState<Profile | null>(null)
-  const [reviews, setReviews] = useState<Review[]>([])
+  const [reviews, setReviews] = useState<ReviewWithCarId[]>([])
   const [activeTab, setActiveTab] = useState('overview')
   const [error, setError] = useState<string | null>(null)
   const [success, setSuccess] = useState<string | null>(null)
@@ -100,19 +101,21 @@ export default function ProfilePage() {
           console.log('[Profile] Unique reviews after deduplication:', uniqueReviews.length);
           
           setReviews(uniqueReviews.map((r: ReviewWithUser) => ({
-            id: parseInt(r.id),
+            id: typeof r.id === 'string' ? parseInt(r.id) : r.id,
             author_id: r.userId,
-            car_id: r.carId,
-            title: null, // We'll use car name instead
+            trim_id: 0, // Not used in UI, we use car_id in custom field
+            title: '',
             body: r.text,
-            ratings: r.ratings,
+            ratings: r.ratings as Record<string, unknown>,
             avg_score: r.overall,
             pros: [],
             cons: [],
             status: 'published' as const,
             created_at: r.createdAt,
             updated_at: r.createdAt,
-          })));
+            // Add car_id as custom property for UI usage
+            car_id: r.carId,
+          } as Review & { car_id: string })));
         }
       } catch (error) {
         console.error('Error fetching user reviews:', error);

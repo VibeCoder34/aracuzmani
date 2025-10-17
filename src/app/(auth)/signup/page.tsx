@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import { createClient } from '@/lib/supabase/client'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -139,6 +140,16 @@ export default function SignupPage() {
     return (
       <div className="flex min-h-screen items-center justify-center px-4">
         <div className="w-full max-w-md space-y-6 rounded-lg border bg-card p-8 text-center">
+          <div className="flex justify-center mb-4">
+            <Image 
+              src="/arkaplanlibeyaz.png" 
+              alt="AracUzmanı" 
+              width={168}
+              height={56}
+              className="h-14 w-auto"
+              priority
+            />
+          </div>
           <div className="space-y-2">
             <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100 text-2xl">
               ✓
@@ -166,11 +177,23 @@ export default function SignupPage() {
   return (
     <div className="flex min-h-screen items-center justify-center px-4 py-8">
       <div className="w-full max-w-md space-y-6 rounded-lg border bg-card p-8">
-        <div className="space-y-2 text-center">
-          <h1 className="text-3xl font-bold">Kayıt Ol</h1>
-          <p className="text-muted-foreground">
-            AracUzmanı&apos;na katılın ve deneyimlerinizi paylaşın
-          </p>
+        <div className="space-y-4 text-center">
+          <div className="flex justify-center">
+            <Image 
+              src="/arkaplanlibeyaz.png" 
+              alt="AracUzmanı" 
+              width={192}
+              height={64}
+              className="h-16 w-auto"
+              priority
+            />
+          </div>
+          <div className="space-y-2">
+            <h1 className="text-3xl font-bold">Kayıt Ol</h1>
+            <p className="text-muted-foreground">
+              AracUzmanı&apos;na katılın ve deneyimlerinizi paylaşın
+            </p>
+          </div>
         </div>
 
         {error && (

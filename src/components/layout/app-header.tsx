@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Search, Menu, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -84,12 +85,22 @@ export function AppHeader() {
       <div className="container flex h-16 items-center justify-between px-4">
         <div className="flex items-center gap-6">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">CR</span>
-            </div>
-            <span className="hidden font-bold sm:inline-block">
-              Araç Uzmanı
-            </span>
+            <Image 
+              src="/arkaplansizsiyah.png" 
+              alt="AracUzmanı" 
+              width={120}
+              height={40}
+              className="h-10 w-auto dark:hidden"
+              priority
+            />
+            <Image 
+              src="/arkaplansizbeyaz.png" 
+              alt="AracUzmanı" 
+              width={120}
+              height={40}
+              className="h-10 w-auto hidden dark:block"
+              priority
+            />
           </Link>
 
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">

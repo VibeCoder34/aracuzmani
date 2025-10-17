@@ -1,9 +1,26 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function AppFooter() {
   return (
     <footer className="border-t border-border bg-background">
       <div className="container px-4 py-8">
+        <div className="mb-8">
+          <Image 
+            src="/arkaplansizsiyah.png" 
+            alt="AracUzmanı" 
+            width={144}
+            height={48}
+            className="h-12 w-auto dark:hidden"
+          />
+          <Image 
+            src="/arkaplansizbeyaz.png" 
+            alt="AracUzmanı" 
+            width={144}
+            height={48}
+            className="h-12 w-auto hidden dark:block"
+          />
+        </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
             <h3 className="font-semibold mb-3">Hakkında</h3>

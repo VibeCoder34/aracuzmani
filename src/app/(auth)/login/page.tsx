@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import { createClient } from '@/lib/supabase/client'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -110,6 +111,16 @@ export default function LoginPage() {
     return (
       <div className="flex min-h-screen items-center justify-center px-4">
         <div className="w-full max-w-md space-y-6 rounded-lg border bg-card p-8 text-center">
+          <div className="flex justify-center mb-4">
+            <Image 
+              src="/arkaplanlibeyaz.png" 
+              alt="AracUzmanı" 
+              width={168}
+              height={56}
+              className="h-14 w-auto"
+              priority
+            />
+          </div>
           <div className="space-y-2">
             <h1 className="text-2xl font-bold">✉️ E-posta Gönderildi</h1>
             <p className="text-muted-foreground">
@@ -137,11 +148,23 @@ export default function LoginPage() {
   return (
     <div className="flex min-h-screen items-center justify-center px-4">
       <div className="w-full max-w-md space-y-6 rounded-lg border bg-card p-8">
-        <div className="space-y-2 text-center">
-          <h1 className="text-3xl font-bold">Giriş Yap</h1>
-          <p className="text-muted-foreground">
-            AracUzmanı hesabınıza giriş yapın
-          </p>
+        <div className="space-y-4 text-center">
+          <div className="flex justify-center">
+            <Image 
+              src="/arkaplanlibeyaz.png" 
+              alt="AracUzmanı" 
+              width={192}
+              height={64}
+              className="h-16 w-auto"
+              priority
+            />
+          </div>
+          <div className="space-y-2">
+            <h1 className="text-3xl font-bold">Giriş Yap</h1>
+            <p className="text-muted-foreground">
+              AracUzmanı hesabınıza giriş yapın
+            </p>
+          </div>
         </div>
 
         {error && (

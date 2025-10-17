@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "db:types": "echo 'Generate Supabase types: npx supabase gen types typescript --project-id YOUR_PROJECT_REF > src/lib/supabase/types.ts'",

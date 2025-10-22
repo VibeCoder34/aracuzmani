@@ -122,6 +122,12 @@ export function AppHeader() {
             >
               Öne Çıkanlar
             </Link>
+            <Link
+              href="/blog"
+              className="transition-colors hover:text-foreground/80 text-foreground"
+            >
+              Blog
+            </Link>
             {profile?.role && ['admin', 'moderator'].includes(profile.role) && (
               <Link
                 href="/admin"

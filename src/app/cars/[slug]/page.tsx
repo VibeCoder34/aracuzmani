@@ -9,7 +9,6 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { StarRating } from "@/components/ui/star-rating";
-import { CarAvgBadges } from "@/components/car/car-avg-badges";
 import { CarRatingsCollapsible } from "@/components/car/car-ratings-collapsible";
 import { ReviewItem } from "@/components/review/review-item";
 import { ReviewForm, type ReviewFormData } from "@/components/review/review-form";
@@ -21,16 +20,54 @@ import { useReviewStore } from "@/lib/store";
 import { computeCategoryAverages, computeOverallAverage } from "@/lib/rating-helpers";
 import { createClient } from "@/lib/supabase/client";
 
+type CarModel = {
+  id: string;
+  slug: string;
+  brand: string;
+  brandCountry: string | null;
+  name: string;
+  startYear: number | null;
+  endYear: number | null;
+  images: string[];
+};
+
+type CarTrim = {
+  id: string;
+  model_id: string;
+  year: number;
+  trim_name: string | null;
+  engine: string | null;
+  transmission: string | null;
+  fuel_type: string | null;
+  body_type: string | null;
+  horsepower: number | null;
+  max_torque: number | null;
+  max_speed: number | null;
+  acceleration_0_to_100: number | null;
+  avg_consumption: number | null;
+  urban_consumption: number | null;
+  extra_urban_consumption: number | null;
+  drive_type: string | null;
+  width: number | null;
+  length: number | null;
+  height: number | null;
+  weight: number | null;
+  trunk_volume: number | null;
+  seat_count: number | null;
+  door_count: number | null;
+};
+
 export default function CarDetailPage({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = use(params);
-  const [car, setCar] = useState<Car | null>(null);
+  const [carModel, setCarModel] = useState<CarModel | null>(null);
+  const [selectedTrim, setSelectedTrim] = useState<CarTrim | null>(null);
   const [carLoading, setCarLoading] = useState(true);
 
-  const [activeTab, setActiveTab] = useState("overview");
+  const [activeTab, setActiveTab] = useState("reviews");
   const [showReviewDialog, setShowReviewDialog] = useState(false);
   const [reviewSort, setReviewSort] = useState<"newest" | "rating">("newest");
   const [user, setUser] = useState<{
@@ -44,27 +81,42 @@ export default function CarDetailPage({
   const supabase = createClient();
   const { reviews: allReviews, setReviews, addReview: addReviewToStore } = useReviewStore();
 
-  // Fetch car data from API
+  // Fetch car model and trims from new API
   useEffect(() => {
-    const fetchCar = async () => {
+    const fetchCarData = async () => {
       setCarLoading(true);
       try {
-        const response = await fetch('/api/cars');
+        console.log(`[CarDetail] Fetching car data for slug: ${slug}`);
+        const response = await fetch(`/api/cars/${slug}`);
+        console.log(`[CarDetail] API response status: ${response.status}`);
+        
         if (response.ok) {
           const data = await response.json();
-          const foundCar = data.cars.find((c: Car) => c.slug === slug);
-          if (foundCar) {
-            setCar(foundCar);
+          console.log(`[CarDetail] Received data:`, {
+            model: data.model?.name,
+            trims: data.trims?.length
+          });
+          setCarModel(data.model);
+          // Auto-select newest trim (first one)
+          if (data.trims && data.trims.length > 0) {
+            setSelectedTrim(data.trims[0]);
           }
+        } else {
+          const errorText = await response.text();
+          console.error(`[CarDetail] Failed to fetch car data:`, {
+            status: response.status,
+            statusText: response.statusText,
+            error: errorText
+          });
         }
       } catch (error) {
-        console.error('Error fetching car:', error);
+        console.error('[CarDetail] Error fetching car:', error);
       } finally {
         setCarLoading(false);
       }
     };
 
-    fetchCar();
+    fetchCarData();
   }, [slug]);
 
   // Get authenticated user from Supabase
@@ -90,18 +142,18 @@ export default function CarDetailPage({
     return () => subscription.unsubscribe();
   }, [supabase]);
 
-  // Fetch reviews from database
+  // Fetch reviews from database for the selected trim
   useEffect(() => {
-    if (!car) return;
+    if (!selectedTrim) return;
     
     const fetchReviews = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`/api/reviews?carId=${car.id}`);
+        const response = await fetch(`/api/reviews?carId=${selectedTrim.id}`);
         if (response.ok) {
           const data = await response.json();
           setReviews(data.reviews || []);
-          console.log(`[CarDetail] Fetched ${data.reviews?.length || 0} reviews for ${car.id}`);
+          console.log(`[CarDetail] Fetched ${data.reviews?.length || 0} reviews for trim ${selectedTrim.id}`);
         } else {
           console.error('Failed to fetch reviews');
         }
@@ -113,9 +165,9 @@ export default function CarDetailPage({
     };
 
     fetchReviews();
-  }, [car, setReviews]);
+  }, [selectedTrim, setReviews]);
 
-  const carReviews = allReviews.filter((r) => r.carId === car.id);
+  const carReviews = selectedTrim ? allReviews.filter((r) => r.carId === selectedTrim.id) : [];
   const categoryAverages = computeCategoryAverages(carReviews);
   const overallAverage = computeOverallAverage(carReviews);
 
@@ -132,8 +184,8 @@ export default function CarDetailPage({
       return;
     }
 
-    if (!car) {
-      alert("Araç bilgisi yükleniyor, lütfen bekleyin");
+    if (!selectedTrim) {
+      alert("Araç bilgileri yükleniyor, lütfen bekleyin");
       return;
     }
 
@@ -145,7 +197,7 @@ export default function CarDetailPage({
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          carId: car.id,
+          carId: selectedTrim.id,
           text: data.text,
           ratings: data.ratings,
         }),
@@ -181,9 +233,43 @@ export default function CarDetailPage({
   }
 
   // Show 404 if car not found
-  if (!car) {
+  if (!carModel) {
     notFound();
   }
+
+  // Create a fake Car object for backwards compatibility with some components
+  const legacyCar: Car = {
+    id: selectedTrim?.id || '',
+    slug: carModel.slug,
+    brand: carModel.brand,
+    model: carModel.name,
+    year: selectedTrim?.year || 0,
+    body: selectedTrim?.body_type || 'N/A',
+    fuel: selectedTrim?.fuel_type || 'N/A',
+    transmission: selectedTrim?.transmission || 'N/A',
+    images: carModel.images,
+    specs: {
+      // From Supabase selectedTrim
+      horsepower: selectedTrim?.horsepower ?? undefined,
+      maxTorque: selectedTrim?.max_torque ?? undefined,
+      maxSpeed: selectedTrim?.max_speed ?? undefined,
+      acceleration0to100: selectedTrim?.acceleration_0_to_100 ?? undefined,
+      avgConsumption: selectedTrim?.avg_consumption ?? undefined,
+      urbanConsumption: selectedTrim?.urban_consumption ?? undefined,
+      extraUrbanConsumption: selectedTrim?.extra_urban_consumption ?? undefined,
+      fuelType: selectedTrim?.fuel_type ?? undefined,
+      transmissionType: selectedTrim?.transmission ?? undefined,
+      bodyType: selectedTrim?.body_type ?? undefined,
+      driveType: selectedTrim?.drive_type ?? undefined,
+      seatCount: selectedTrim?.seat_count ?? undefined,
+      doorCount: selectedTrim?.door_count ?? undefined,
+      trunkVolume: selectedTrim?.trunk_volume ?? undefined,
+      width: selectedTrim?.width ?? undefined,
+      length: selectedTrim?.length ?? undefined,
+      height: selectedTrim?.height ?? undefined,
+      weight: selectedTrim?.weight ?? undefined,
+    },
+  };
 
   return (
     <div className="min-h-screen pb-20 md:pb-0">
@@ -200,12 +286,20 @@ export default function CarDetailPage({
           <div className="flex items-start justify-between gap-4">
             <div>
               <h1 className="text-3xl md:text-4xl font-bold mb-2">
-                {car.brand} {car.model}
+                {carModel.brand} {carModel.name}
               </h1>
               <div className="flex items-center gap-3 flex-wrap">
-                <Badge variant="secondary">{car.year}</Badge>
-                <Badge variant="outline">{car.body}</Badge>
-                <Badge variant="outline">{car.fuel}</Badge>
+                {selectedTrim && (
+                  <>
+                    <Badge variant="secondary">{selectedTrim.year}</Badge>
+                    {selectedTrim.body_type && (
+                      <Badge variant="outline">{selectedTrim.body_type}</Badge>
+                    )}
+                    {selectedTrim.fuel_type && (
+                      <Badge variant="outline">{selectedTrim.fuel_type}</Badge>
+                    )}
+                  </>
+                )}
                 {carReviews.length > 0 && (
                   <div className="flex items-center gap-2">
                     <StarRating value={overallAverage} readonly size="sm" />
@@ -216,7 +310,7 @@ export default function CarDetailPage({
                 )}
               </div>
             </div>
-            <Button onClick={() => setShowReviewDialog(true)}>
+            <Button onClick={() => setShowReviewDialog(true)} disabled={!selectedTrim}>
               <Plus className="h-4 w-4 mr-2" />
               Yorum Ekle
             </Button>
@@ -228,10 +322,10 @@ export default function CarDetailPage({
       <div className="container px-6 md:px-8 lg:px-12 py-10 md:py-12 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="relative aspect-video bg-muted rounded-lg overflow-hidden">
-            {car.images[0] && (
+            {carModel.images[0] && (
               <Image
-                src={car.images[0]}
-                alt={`${car.brand} ${car.model}`}
+                src={carModel.images[0]}
+                alt={`${carModel.brand} ${carModel.name}`}
                 fill
                 className="object-cover"
                 priority
@@ -239,14 +333,14 @@ export default function CarDetailPage({
             )}
           </div>
           <div className="grid grid-cols-2 gap-4">
-            {car.images.slice(1, 5).map((img, i) => (
+            {carModel.images.slice(1, 5).map((img, i) => (
               <div
                 key={i}
                 className="relative aspect-video bg-muted rounded-lg overflow-hidden"
               >
                 <Image
                   src={img}
-                  alt={`${car.brand} ${car.model} ${i + 2}`}
+                  alt={`${carModel.brand} ${carModel.name} ${i + 2}`}
                   fill
                   className="object-cover"
                 />
@@ -260,21 +354,11 @@ export default function CarDetailPage({
       <div className="container px-6 md:px-8 lg:px-12 pb-12 md:pb-16 max-w-7xl mx-auto">
         <Tabs value={activeTab} onValueChange={setActiveTab}>
           <TabsList className="w-full sm:w-auto">
-            <TabsTrigger value="overview">Genel Bakış</TabsTrigger>
             <TabsTrigger value="reviews">
               Yorumlar ({carReviews.length})
             </TabsTrigger>
             <TabsTrigger value="stats">İstatistikler</TabsTrigger>
           </TabsList>
-
-          <TabsContent value="overview" className="space-y-8 mt-6">
-            {carReviews.length > 0 && (
-              <div>
-                <h2 className="text-2xl font-semibold mb-4">Kullanıcı Puanları</h2>
-                <CarRatingsCollapsible averages={categoryAverages} car={car} />
-              </div>
-            )}
-          </TabsContent>
 
           <TabsContent value="reviews" className="space-y-6 mt-6">
             <div className="flex items-center justify-between">
@@ -312,18 +396,34 @@ export default function CarDetailPage({
           </TabsContent>
 
           <TabsContent value="stats" className="space-y-8 mt-6">
-            <div>
-              <h2 className="text-2xl font-semibold mb-4">Kategori Puanları</h2>
-              {carReviews.length > 0 ? (
-                <CarAvgBadges averages={categoryAverages} />
-              ) : (
-                <EmptyState
-                  title="Henüz değerlendirme yok"
-                  description="Yorumlar gönderildikten sonra burada görünecek"
-                  icon="file"
-                />
-              )}
-            </div>
+            {selectedTrim && (
+              <div>
+                <h2 className="text-2xl font-semibold mb-4">Kullanıcı Puanları</h2>
+                {carReviews.length > 0 ? (
+                  <CarRatingsCollapsible 
+                    averages={categoryAverages} 
+                    car={legacyCar}
+                    hasRatings={true}
+                  />
+                ) : (
+                  <div className="space-y-4">
+                    <div className="bg-muted/50 border border-border rounded-lg p-6 text-center">
+                      <p className="text-muted-foreground mb-2 font-medium">
+                        Bu araç için henüz kullanıcı puanlaması yapılmamış
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        İlk yorumu siz yaparak diğer kullanıcılara yardımcı olabilirsiniz!
+                      </p>
+                    </div>
+                    <CarRatingsCollapsible 
+                      averages={categoryAverages} 
+                      car={legacyCar}
+                      hasRatings={false}
+                    />
+                  </div>
+                )}
+              </div>
+            )}
           </TabsContent>
         </Tabs>
       </div>
@@ -333,7 +433,12 @@ export default function CarDetailPage({
         <DialogContent className="max-w-2xl">
           <DialogHeader>
             <DialogTitle>
-              {car.brand} {car.model} için Yorum Yaz
+              {carModel.brand} {carModel.name} için Yorum Yaz
+              {selectedTrim && selectedTrim.year && (
+                <span className="text-sm font-normal text-muted-foreground block mt-1">
+                  {selectedTrim.year} {selectedTrim.trim_name || ''}
+                </span>
+              )}
             </DialogTitle>
           </DialogHeader>
           {user ? (

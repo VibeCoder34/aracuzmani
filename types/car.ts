@@ -24,6 +24,8 @@ export type CarSpecs = {
   // Fuel Economy specs
   fuelType?: string;
   avgConsumption?: number;
+  urbanConsumption?: number;
+  extraUrbanConsumption?: number;
   
   // Performance specs
   maxTorque?: number;
@@ -69,4 +71,31 @@ export type User = {
 };
 
 export type CategoryAverages = Record<RatingCategory, number>;
+
+export type CarTrim = {
+  id: string;
+  model_id: string;
+  year: number;
+  trim_name: string | null;
+  engine?: string | null;
+  transmission?: string | null;
+  fuel_type?: string | null;
+  body_type?: string | null;
+  horsepower?: number | null;
+  max_torque?: number | null;
+  max_speed?: number | null;
+  acceleration_0_to_100?: number | null;
+  avg_consumption?: number | null;
+  urban_consumption?: number | null;
+  extra_urban_consumption?: number | null;
+  drive_type?: string | null;
+  width?: number | null;
+  length?: number | null;
+  height?: number | null;
+  weight?: number | null;
+  trunk_volume?: number | null;
+  seat_count?: number | null;
+  door_count?: number | null;
+  drivetrain?: string | null;
+};
 

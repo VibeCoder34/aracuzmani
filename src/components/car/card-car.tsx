@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { StarRating } from "@/components/ui/star-rating";
 import type { Car } from "@/types/car";
 import { cn } from "@/lib/cn";
+import { translateBodyType, translateFuelType, translateTransmissionType } from "@/lib/translations";
 
 interface CarCardProps {
   car: Car;
@@ -51,15 +52,15 @@ export function CarCard({
               <p className="text-sm text-muted-foreground">{car.year}</p>
             </div>
             <Badge variant="secondary" className="shrink-0">
-              {car.body}
+              {translateBodyType(car.body)}
             </Badge>
           </div>
         </CardHeader>
         <CardContent className="pt-0 space-y-2">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <span>{car.fuel}</span>
+            <span>{translateFuelType(car.fuel)}</span>
             <span>•</span>
-            <span>{car.transmission}</span>
+            <span>{translateTransmissionType(car.transmission)}</span>
           </div>
           {reviewCount > 0 && (
             <div className="flex items-center gap-2">

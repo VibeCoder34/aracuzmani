@@ -1,0 +1,5428 @@
+🚀 Starting car data import...
+
+📖 Reading JSON file...
+✅ Found 64 brands, 1737 models
+
+
+📦 Processing brand: Abarth
+(node:8270) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+  ↪ Brand already exists (ID: 41)
+  🏷️  Processing model: Abarth 595
+    ↪ Model already exists (ID: 55)
+    📋 Found 6 trims
+  🏷️  Processing model: Abarth 595 Cabrio
+    ↪ Model already exists (ID: 56)
+    📋 Found 4 trims
+  🏷️  Processing model: Abarth 124 Spider
+    ↪ Model already exists (ID: 57)
+    📋 Found 2 trims
+  🏷️  Processing model: Abarth 695
+    ↪ Model already exists (ID: 58)
+    📋 Found 4 trims
+  🏷️  Processing model: Abarth Punto Evo
+    ↪ Model already exists (ID: 59)
+    📋 Found 4 trims
+  🏷️  Processing model: Abarth 500C
+    ↪ Model already exists (ID: 60)
+    📋 Found 8 trims
+  🏷️  Processing model: Abarth Grande Punto
+    ↪ Model already exists (ID: 61)
+    📋 Found 2 trims
+  🏷️  Processing model: Abarth 500
+    ↪ Model already exists (ID: 62)
+    📋 Found 8 trims
+
+📦 Processing brand: Alfa Romeo
+  ↪ Brand already exists (ID: 42)
+  🏷️  Processing model: Alfa Romeo Stelvio
+    ↪ Model already exists (ID: 63)
+    📋 Found 8 trims
+  🏷️  Processing model: Alfa Romeo Giulia
+    ↪ Model already exists (ID: 64)
+    📋 Found 10 trims
+  🏷️  Processing model: Alfa Romeo 4C Spider
+    ↪ Model already exists (ID: 65)
+    📋 Found 4 trims
+  🏷️  Processing model: Alfa Romeo 4C
+    ↪ Model already exists (ID: 66)
+    📋 Found 4 trims
+  🏷️  Processing model: Alfa Romeo 8C Spider
+    ↪ Model already exists (ID: 67)
+    📋 Found 2 trims
+  🏷️  Processing model: Alfa Romeo 8C Competizione
+    ↪ Model already exists (ID: 68)
+    📋 Found 2 trims
+  🏷️  Processing model: Alfa Romeo MiTo
+    ↪ Model already exists (ID: 69)
+    📋 Found 24 trims
+  🏷️  Processing model: Alfa Romeo Brera
+    ✅ Model added (ID: 70)
+    📋 Found 10 trims
+  🏷️  Processing model: Alfa Romeo 159 Sportwagon
+    ✅ Model added (ID: 71)
+    📋 Found 12 trims
+  🏷️  Processing model: Alfa Romeo Crosswagon
+    ✅ Model added (ID: 72)
+    📋 Found 2 trims
+  🏷️  Processing model: Alfa Romeo 159
+    ✅ Model added (ID: 73)
+    📋 Found 14 trims
+  🏷️  Processing model: Alfa Romeo GT
+    ✅ Model added (ID: 74)
+    📋 Found 10 trims
+  🏷️  Processing model: Alfa Romeo 147
+    ✅ Model added (ID: 75)
+    📋 Found 18 trims
+  🏷️  Processing model: Alfa Romeo 156 Sportwagon
+    ✅ Model added (ID: 76)
+    📋 Found 14 trims
+  🏷️  Processing model: Alfa Romeo 166
+    ✅ Model added (ID: 77)
+    📋 Found 8 trims
+  🏷️  Processing model: Alfa Romeo 156
+    ✅ Model added (ID: 78)
+    📋 Found 18 trims
+  🏷️  Processing model: Alfa Romeo 146
+    ✅ Model added (ID: 79)
+    📋 Found 10 trims
+  🏷️  Processing model: Alfa Romeo Spider
+    ✅ Model added (ID: 80)
+    📋 Found 26 trims
+  🏷️  Processing model: Alfa Romeo 145
+    ✅ Model added (ID: 81)
+    📋 Found 12 trims
+  🏷️  Processing model: Alfa Romeo 155
+    ✅ Model added (ID: 82)
+    📋 Found 8 trims
+  🏷️  Processing model: Alfa Romeo 33 SportWagon
+    ✅ Model added (ID: 83)
+    📋 Found 6 trims
+  🏷️  Processing model: Alfa Romeo 164
+    ✅ Model added (ID: 84)
+    📋 Found 12 trims
+  🏷️  Processing model: Alfa Romeo 75
+    ✅ Model added (ID: 85)
+    📋 Found 10 trims
+  🏷️  Processing model: Alfa Romeo 33 Giardinetta
+    ✅ Model added (ID: 86)
+    📋 Found 2 trims
+  🏷️  Processing model: Alfa Romeo 90
+    ✅ Model added (ID: 87)
+    📋 Found 2 trims
+  🏷️  Processing model: Alfa Romeo 33
+    ✅ Model added (ID: 88)
+    📋 Found 16 trims
+  🏷️  Processing model: Alfa Romeo GTV
+    ✅ Model added (ID: 89)
+    📋 Found 14 trims
+  🏷️  Processing model: Alfa Romeo Alfasud
+    ✅ Model added (ID: 90)
+    📋 Found 8 trims
+  🏷️  Processing model: Alfa Romeo Alfa 6
+    ✅ Model added (ID: 91)
+    📋 Found 4 trims
+  🏷️  Processing model: Alfa Romeo Giulietta
+    ✅ Model added (ID: 92)
+    📋 Found 30 trims
+  🏷️  Processing model: Alfa Romeo Sprint
+    ✅ Model added (ID: 93)
+    📋 Found 6 trims
+  🏷️  Processing model: Alfa Romeo Alfetta GTV
+    ✅ Model added (ID: 94)
+    📋 Found 2 trims
+  🏷️  Processing model: Alfa Romeo Alfetta
+    ✅ Model added (ID: 95)
+    📋 Found 14 trims
+
+📦 Processing brand: Alpine
+  ✅ Brand added (ID: 43)
+  🏷️  Processing model: Alpine A110
+    ✅ Model added (ID: 96)
+    📋 Found 4 trims
+
+📦 Processing brand: Aston Martin
+  ✅ Brand added (ID: 44)
+  🏷️  Processing model: Aston Martin Vantage
+    ✅ Model added (ID: 97)
+    📋 Found 2 trims
+  🏷️  Processing model: Aston Martin DB11 Volante
+    ✅ Model added (ID: 98)
+    📋 Found 2 trims
+  🏷️  Processing model: Aston Martin DB11 Coupe
+    ✅ Model added (ID: 99)
+    📋 Found 4 trims
+  🏷️  Processing model: Aston Martin Vanquish Volante
+    ✅ Model added (ID: 100)
+    📋 Found 2 trims
+  🏷️  Processing model: Aston Martin DB9 Coupe
+    ✅ Model added (ID: 101)
+    📋 Found 2 trims
+  🏷️  Processing model: Aston Martin V12 Vantage Roadster
+    ✅ Model added (ID: 102)
+    📋 Found 4 trims
+  🏷️  Processing model: Aston Martin Virage Volante
+    ✅ Model added (ID: 103)
+    📋 Found 2 trims
+  🏷️  Processing model: Aston Martin Vanquish
+    ✅ Model added (ID: 104)
+    📋 Found 2 trims
+  🏷️  Processing model: Aston Martin Cygnet
+    ✅ Model added (ID: 105)
+    📋 Found 2 trims
+  🏷️  Processing model: Aston Martin V12 Vantage Coupe
+    ✅ Model added (ID: 106)
+    📋 Found 4 trims
+  🏷️  Processing model: Aston Martin DBS Volante
+    ✅ Model added (ID: 107)
+    📋 Found 4 trims
+  🏷️  Processing model: Aston Martin Rapide
+    ✅ Model added (ID: 108)
+    📋 Found 4 trims
+  🏷️  Processing model: Aston Martin DBS
+    ✅ Model added (ID: 109)
+    📋 Found 4 trims
+  🏷️  Processing model: Aston Martin V8 Vantage Roadster
+    ✅ Model added (ID: 110)
+    📋 Found 6 trims
+  🏷️  Processing model: Aston Martin V8 Vantage
+    ✅ Model added (ID: 111)
+    📋 Found 6 trims
+  🏷️  Processing model: Aston Martin DB9
+    ✅ Model added (ID: 112)
+    📋 Found 4 trims
+  🏷️  Processing model: Aston Martin DB9 Volante
+    ✅ Model added (ID: 113)
+    📋 Found 6 trims
+  🏷️  Processing model: Aston Martin V12 Vanquish
+    ✅ Model added (ID: 114)
+    📋 Found 4 trims
+  🏷️  Processing model: Aston Martin V8 Volante
+    ✅ Model added (ID: 115)
+    📋 Found 2 trims
+  🏷️  Processing model: Aston Martin V8 Coupe
+    ✅ Model added (ID: 116)
+    📋 Found 2 trims
+  🏷️  Processing model: Aston Martin DB7 Volante
+    ✅ Model added (ID: 117)
+    📋 Found 4 trims
+  🏷️  Processing model: Aston Martin DB7
+    ✅ Model added (ID: 118)
+    📋 Found 6 trims
+  🏷️  Processing model: Aston Martin Volante
+    ✅ Model added (ID: 119)
+    📋 Found 2 trims
+  🏷️  Processing model: Aston Martin Virage
+    ✅ Model added (ID: 120)
+    📋 Found 4 trims
+
+📦 Processing brand: Audi
+  ↪ Brand already exists (ID: 35)
+  🏷️  Processing model: Audi e-tron Sportback
+    ✅ Model added (ID: 121)
+    📋 Found 2 trims
+  🏷️  Processing model: Audi RS5 Sportback
+    ✅ Model added (ID: 122)
+    📋 Found 4 trims
+  🏷️  Processing model: Audi Q3 Sportback
+    ✅ Model added (ID: 123)
+    📋 Found 4 trims
+  🏷️  Processing model: Audi e-tron
+    ✅ Model added (ID: 124)
+    📋 Found 6 trims
+  🏷️  Processing model: Audi Q8
+    ✅ Model added (ID: 125)
+    📋 Found 6 trims
+  🏷️  Processing model: Audi RS3 Limousine
+    ✅ Model added (ID: 126)
+    📋 Found 2 trims
+  🏷️  Processing model: Audi Q2
+    ✅ Model added (ID: 127)
+    📋 Found 10 trims
+  🏷️  Processing model: Audi R8 Coupe
+    ✅ Model added (ID: 128)
+    📋 Found 6 trims
+  🏷️  Processing model: Audi S7 Sportback
+    ✅ Model added (ID: 129)
+    📋 Found 6 trims
+  🏷️  Processing model: Audi S3 Cabriolet
+    ✅ Model added (ID: 130)
+    📋 Found 4 trims
+  🏷️  Processing model: Audi S3 Limousine
+    ✅ Model added (ID: 131)
+    📋 Found 6 trims
+  🏷️  Processing model: Audi S1
+    ✅ Model added (ID: 132)
+    📋 Found 4 trims
+  🏷️  Processing model: Audi S1 Sportback
+    ✅ Model added (ID: 133)
+    📋 Found 4 trims
+  🏷️  Processing model: Audi RS7 Sportback
+    ✅ Model added (ID: 134)
+    📋 Found 6 trims
+  🏷️  Processing model: Audi RS5 Cabriolet
+    ✅ Model added (ID: 135)
+    📋 Found 2 trims
+  🏷️  Processing model: Audi A3 Limousine
+    ✅ Model added (ID: 136)
+    📋 Found 16 trims
+  🏷️  Processing model: Audi A1 Sportback
+    ✅ Model added (ID: 137)
+    📋 Found 12 trims
+  🏷️  Processing model: Audi RS5 Coupe
+    ✅ Model added (ID: 138)
+    📋 Found 8 trims
+  🏷️  Processing model: Audi S5 Sportback
+    ✅ Model added (ID: 139)
+    📋 Found 10 trims
+  🏷️  Processing model: Audi Q3
+    ✅ Model added (ID: 140)
+    📋 Found 16 trims
+  🏷️  Processing model: Audi RS3 Sportback
+    ✅ Model added (ID: 141)
+    📋 Found 6 trims
+  🏷️  Processing model: Audi A1
+    ✅ Model added (ID: 142)
+    📋 Found 10 trims
+  🏷️  Processing model: Audi R8 Spyder
+    ✅ Model added (ID: 143)
+    📋 Found 12 trims
+  🏷️  Processing model: Audi A7 Sportback
+    ✅ Model added (ID: 144)
+    📋 Found 16 trims
+  🏷️  Processing model: Audi S5 Cabriolet
+    ✅ Model added (ID: 145)
+    📋 Found 10 trims
+  🏷️  Processing model: Audi A5 Cabriolet
+    ✅ Model added (ID: 146)
+    📋 Found 22 trims
+  🏷️  Processing model: Audi A5 Sportback
+    ✅ Model added (ID: 147)
+    📋 Found 24 trims
+  🏷️  Processing model: Audi A4 allroad
+    ✅ Model added (ID: 148)
+    📋 Found 18 trims
+  🏷️  Processing model: Audi A3 Cabriolet
+    ✅ Model added (ID: 149)
+    📋 Found 26 trims
+  🏷️  Processing model: Audi S3 Sportback
+    ✅ Model added (ID: 150)
+    📋 Found 10 trims
+  🏷️  Processing model: Audi Q5
+    ✅ Model added (ID: 151)
+    📋 Found 22 trims
+  🏷️  Processing model: Audi S5 Coupe
+    ✅ Model added (ID: 152)
+    📋 Found 12 trims
+  🏷️  Processing model: Audi A5 Coupe
+    ✅ Model added (ID: 153)
+    📋 Found 28 trims
+  🏷️  Processing model: Audi R8
+    ✅ Model added (ID: 154)
+    📋 Found 8 trims
+  🏷️  Processing model: Audi RS4 Cabriolet
+    ✅ Model added (ID: 155)
+    📋 Found 2 trims
+  🏷️  Processing model: Audi Q7
+    ✅ Model added (ID: 156)
+    📋 Found 24 trims
+  🏷️  Processing model: Audi RS4
+    ✅ Model added (ID: 157)
+    📋 Found 2 trims
+  🏷️  Processing model: Audi A3 Sportback
+    ✅ Model added (ID: 158)
+    📋 Found 32 trims
+  🏷️  Processing model: Audi S4 Cabriolet
+    ✅ Model added (ID: 159)
+    📋 Found 6 trims
+  🏷️  Processing model: Audi A4 Cabriolet
+    ✅ Model added (ID: 160)
+    📋 Found 14 trims
+  🏷️  Processing model: Audi RS6 Avant
+    ✅ Model added (ID: 161)
+    📋 Found 10 trims
+  🏷️  Processing model: Audi RS6
+    ✅ Model added (ID: 162)
+    📋 Found 4 trims
+  🏷️  Processing model: Audi A6 Avant
+    ✅ Model added (ID: 163)
+    📋 Found 54 trims
+  🏷️  Processing model: Audi S3
+    ✅ Model added (ID: 164)
+    📋 Found 16 trims
+  🏷️  Processing model: Audi RS4 Avant
+    ✅ Model added (ID: 165)
+    📋 Found 10 trims
+  🏷️  Processing model: Audi A2
+    ✅ Model added (ID: 166)
+    📋 Found 8 trims
+  🏷️  Processing model: Audi A6 allroad
+    ✅ Model added (ID: 167)
+    📋 Found 22 trims
+  🏷️  Processing model: Audi TT Roadster
+    ✅ Model added (ID: 168)
+    📋 Found 28 trims
+  🏷️  Processing model: Audi TT Coupe
+    ✅ Model added (ID: 169)
+    📋 Found 32 trims
+  🏷️  Processing model: Audi S4
+    ✅ Model added (ID: 170)
+    📋 Found 18 trims
+  🏷️  Processing model: Audi S4 Avant
+    ✅ Model added (ID: 171)
+    📋 Found 18 trims
+  🏷️  Processing model: Audi A3
+    ✅ Model added (ID: 172)
+    📋 Found 44 trims
+  🏷️  Processing model: Audi S8
+    ✅ Model added (ID: 173)
+    📋 Found 20 trims
+  🏷️  Processing model: Audi A4 Avant
+    ✅ Model added (ID: 174)
+    📋 Found 54 trims
+  🏷️  Processing model: Audi A4
+    ✅ Model added (ID: 175)
+    📋 Found 60 trims
+  🏷️  Processing model: Audi S6 Avant
+    ✅ Model added (ID: 176)
+    📋 Found 24 trims
+  🏷️  Processing model: Audi A6
+    ✅ Model added (ID: 177)
+    📋 Found 56 trims
+  🏷️  Processing model: Audi S6
+    ✅ Model added (ID: 178)
+    📋 Found 22 trims
+  🏷️  Processing model: Audi A8
+    ✅ Model added (ID: 179)
+    📋 Found 48 trims
+  🏷️  Processing model: Audi Cabriolet
+    ✅ Model added (ID: 180)
+    📋 Found 10 trims
+  🏷️  Processing model: Audi 80 Avant
+    ✅ Model added (ID: 181)
+    📋 Found 6 trims
+  🏷️  Processing model: Audi V8
+    ✅ Model added (ID: 182)
+    📋 Found 6 trims
+  🏷️  Processing model: Audi 200 Avant
+    ✅ Model added (ID: 183)
+    📋 Found 6 trims
+  🏷️  Processing model: Audi 90
+    ✅ Model added (ID: 184)
+    📋 Found 8 trims
+  🏷️  Processing model: Audi 200
+    ✅ Model added (ID: 185)
+    📋 Found 8 trims
+  🏷️  Processing model: Audi Quattro
+    ✅ Model added (ID: 186)
+    📋 Found 6 trims
+  🏷️  Processing model: Audi Coupe
+    ✅ Model added (ID: 187)
+    📋 Found 24 trims
+  🏷️  Processing model: Audi 80
+    ✅ Model added (ID: 188)
+    📋 Found 34 trims
+  🏷️  Processing model: Audi 100 Avant
+    ✅ Model added (ID: 189)
+    📋 Found 24 trims
+  🏷️  Processing model: Audi 100
+    ✅ Model added (ID: 190)
+    📋 Found 32 trims
+
+📦 Processing brand: BMW
+  ↪ Brand already exists (ID: 34)
+  🏷️  Processing model: BMW 2-series Gran Coupe
+    ✅ Model added (ID: 191)
+    📋 Found 2 trims
+  🏷️  Processing model: BMW iX3
+    ✅ Model added (ID: 192)
+    📋 Found 2 trims
+  🏷️  Processing model: BMW 8-series Cabrio
+    ✅ Model added (ID: 193)
+    📋 Found 4 trims
+  🏷️  Processing model: BMW 8-series Gran Coupe
+    ✅ Model added (ID: 194)
+    📋 Found 4 trims
+  🏷️  Processing model: BMW X7
+    ✅ Model added (ID: 195)
+    📋 Found 4 trims
+  🏷️  Processing model: BMW 8-series Coupe
+    ✅ Model added (ID: 196)
+    📋 Found 6 trims
+  🏷️  Processing model: BMW i8 Roadster
+    ✅ Model added (ID: 197)
+    📋 Found 2 trims
+  🏷️  Processing model: BMW i8 Coupe
+    ✅ Model added (ID: 198)
+    📋 Found 2 trims
+  🏷️  Processing model: BMW X2
+    ✅ Model added (ID: 199)
+    📋 Found 6 trims
+  🏷️  Processing model: BMW 6-series GT
+    ✅ Model added (ID: 200)
+    📋 Found 6 trims
+  🏷️  Processing model: BMW 2-series Gran Tourer
+    ✅ Model added (ID: 201)
+    📋 Found 10 trims
+  🏷️  Processing model: BMW 2-series Cabrio
+    ✅ Model added (ID: 202)
+    📋 Found 6 trims
+  🏷️  Processing model: BMW 4-series Cabrio
+    ✅ Model added (ID: 203)
+    📋 Found 8 trims
+  🏷️  Processing model: BMW 4-series Gran Coupe
+    ✅ Model added (ID: 204)
+    📋 Found 12 trims
+  🏷️  Processing model: BMW 2-series Active Tourer
+    ✅ Model added (ID: 205)
+    📋 Found 10 trims
+  🏷️  Processing model: BMW X4
+    ✅ Model added (ID: 206)
+    📋 Found 10 trims
+  🏷️  Processing model: BMW i8
+    ✅ Model added (ID: 207)
+    📋 Found 8 trims
+  🏷️  Processing model: BMW 2-series Coupe
+    ✅ Model added (ID: 208)
+    📋 Found 12 trims
+  🏷️  Processing model: BMW i3
+    ✅ Model added (ID: 209)
+    📋 Found 15 trims
+  🏷️  Processing model: BMW 3-series Gran Turismo
+    ✅ Model added (ID: 210)
+    📋 Found 10 trims
+  🏷️  Processing model: BMW 4-series Coupe
+    ✅ Model added (ID: 211)
+    📋 Found 12 trims
+  🏷️  Processing model: BMW 6-series Gran Coupe
+    ✅ Model added (ID: 212)
+    📋 Found 6 trims
+  🏷️  Processing model: BMW 6-series Coupe
+    ✅ Model added (ID: 213)
+    📋 Found 8 trims
+  🏷️  Processing model: BMW 1-series Cabrio
+    ✅ Model added (ID: 214)
+    📋 Found 6 trims
+  🏷️  Processing model: BMW 5-series Gran Turismo
+    ✅ Model added (ID: 215)
+    📋 Found 10 trims
+  🏷️  Processing model: BMW X1
+    ✅ Model added (ID: 216)
+    📋 Found 22 trims
+  🏷️  Processing model: BMW X6
+    ✅ Model added (ID: 217)
+    📋 Found 18 trims
+  🏷️  Processing model: BMW 1-series Coupe
+    ✅ Model added (ID: 218)
+    📋 Found 10 trims
+  🏷️  Processing model: BMW Z4 Coupe
+    ✅ Model added (ID: 219)
+    📋 Found 2 trims
+  🏷️  Processing model: BMW Z4 Roadster
+    ✅ Model added (ID: 220)
+    📋 Found 20 trims
+  🏷️  Processing model: BMW 6-series Cabrio
+    ✅ Model added (ID: 221)
+    📋 Found 16 trims
+  🏷️  Processing model: BMW 1-series
+    ✅ Model added (ID: 222)
+    📋 Found 38 trims
+  🏷️  Processing model: BMW X3
+    ✅ Model added (ID: 223)
+    📋 Found 30 trims
+  🏷️  Processing model: BMW Z8
+    ✅ Model added (ID: 224)
+    📋 Found 2 trims
+  🏷️  Processing model: BMW X5
+    ✅ Model added (ID: 225)
+    📋 Found 34 trims
+  🏷️  Processing model: BMW Z3 coupe
+    ✅ Model added (ID: 226)
+    📋 Found 6 trims
+  🏷️  Processing model: BMW Z3 roadster
+    ✅ Model added (ID: 227)
+    📋 Found 12 trims
+  🏷️  Processing model: BMW 3-series Compact
+    ✅ Model added (ID: 228)
+    📋 Found 18 trims
+  🏷️  Processing model: BMW 5-series Touring
+    ✅ Model added (ID: 229)
+    📋 Found 50 trims
+  🏷️  Processing model: BMW 3-series Coupe
+    ✅ Model added (ID: 230)
+    📋 Found 34 trims
+  🏷️  Processing model: BMW 8-series
+    ✅ Model added (ID: 231)
+    📋 Found 8 trims
+  🏷️  Processing model: BMW Z1
+    ✅ Model added (ID: 232)
+    📋 Found 2 trims
+  🏷️  Processing model: BMW 3-series Touring
+    ✅ Model added (ID: 233)
+    📋 Found 60 trims
+  🏷️  Processing model: BMW 3-series Cabrio
+    ✅ Model added (ID: 234)
+    📋 Found 30 trims
+  🏷️  Processing model: BMW 5-series
+    ✅ Model added (ID: 235)
+    📋 Found 80 trims
+  🏷️  Processing model: BMW 7-series
+    ✅ Model added (ID: 236)
+    📋 Found 56 trims
+  🏷️  Processing model: BMW 3-series
+    ✅ Model added (ID: 237)
+    📋 Found 74 trims
+  🏷️  Processing model: BMW 6-series
+    ✅ Model added (ID: 238)
+    📋 Found 20 trims
+
+📦 Processing brand: Bentley
+  ✅ Brand added (ID: 45)
+  🏷️  Processing model: Bentley Bentayga
+    ✅ Model added (ID: 239)
+    📋 Found 4 trims
+  🏷️  Processing model: Bentley Flying Spur
+    ✅ Model added (ID: 240)
+    📋 Found 8 trims
+  🏷️  Processing model: Bentley Continental GT Convertible
+    ✅ Model added (ID: 241)
+    📋 Found 6 trims
+  🏷️  Processing model: Bentley Mulsanne
+    ✅ Model added (ID: 242)
+    📋 Found 4 trims
+  🏷️  Processing model: Bentley Azure
+    ✅ Model added (ID: 243)
+    📋 Found 4 trims
+  🏷️  Processing model: Bentley Continental GTC
+    ✅ Model added (ID: 244)
+    📋 Found 10 trims
+  🏷️  Processing model: Bentley Continental Flying Spur
+    ✅ Model added (ID: 245)
+    📋 Found 4 trims
+  🏷️  Processing model: Bentley Continental GT
+    ✅ Model added (ID: 246)
+    📋 Found 18 trims
+  🏷️  Processing model: Bentley Arnage
+    ✅ Model added (ID: 247)
+    📋 Found 10 trims
+  🏷️  Processing model: Bentley Brooklands
+    ✅ Model added (ID: 248)
+    📋 Found 6 trims
+  🏷️  Processing model: Bentley Continental
+    ✅ Model added (ID: 249)
+    📋 Found 6 trims
+
+📦 Processing brand: Buick
+  ✅ Brand added (ID: 46)
+  🏷️  Processing model: Buick Park Avenue
+    ✅ Model added (ID: 250)
+    📋 Found 4 trims
+
+📦 Processing brand: Cadillac
+  ✅ Brand added (ID: 47)
+  🏷️  Processing model: Cadillac CT6
+    ✅ Model added (ID: 251)
+    📋 Found 2 trims
+  🏷️  Processing model: Cadillac XT5
+    ✅ Model added (ID: 252)
+    📋 Found 2 trims
+  🏷️  Processing model: Cadillac ATS Coupe
+    ✅ Model added (ID: 253)
+    📋 Found 2 trims
+  🏷️  Processing model: Cadillac ATS
+    ✅ Model added (ID: 254)
+    📋 Found 4 trims
+  🏷️  Processing model: Cadillac CTS Coupe
+    ✅ Model added (ID: 255)
+    📋 Found 2 trims
+  🏷️  Processing model: Cadillac CTS Wagon
+    ✅ Model added (ID: 256)
+    📋 Found 4 trims
+  🏷️  Processing model: Cadillac BLS Wagon
+    ✅ Model added (ID: 257)
+    📋 Found 4 trims
+  🏷️  Processing model: Cadillac Escalade
+    ✅ Model added (ID: 258)
+    📋 Found 12 trims
+  🏷️  Processing model: Cadillac BLS
+    ✅ Model added (ID: 259)
+    📋 Found 6 trims
+  🏷️  Processing model: Cadillac STS
+    ✅ Model added (ID: 260)
+    📋 Found 6 trims
+  🏷️  Processing model: Cadillac SRX
+    ✅ Model added (ID: 261)
+    📋 Found 8 trims
+  🏷️  Processing model: Cadillac XLR
+    ✅ Model added (ID: 262)
+    📋 Found 4 trims
+  🏷️  Processing model: Cadillac CTS
+    ✅ Model added (ID: 263)
+    📋 Found 16 trims
+  🏷️  Processing model: Cadillac Eldorado
+    ✅ Model added (ID: 264)
+    📋 Found 2 trims
+  🏷️  Processing model: Cadillac Seville
+    ✅ Model added (ID: 265)
+    📋 Found 6 trims
+
+📦 Processing brand: Chevrolet
+  ✅ Brand added (ID: 48)
+  🏷️  Processing model: Chevrolet Trax
+    ✅ Model added (ID: 266)
+    📋 Found 4 trims
+  🏷️  Processing model: Chevrolet Cruze Stationwagon
+    ✅ Model added (ID: 267)
+    📋 Found 4 trims
+  🏷️  Processing model: Chevrolet Orlando
+    ✅ Model added (ID: 268)
+    📋 Found 6 trims
+  🏷️  Processing model: Chevrolet Volt
+    ✅ Model added (ID: 269)
+    📋 Found 4 trims
+  🏷️  Processing model: Chevrolet Spark
+    ✅ Model added (ID: 270)
+    📋 Found 8 trims
+  🏷️  Processing model: Chevrolet Cruze
+    ✅ Model added (ID: 271)
+    📋 Found 14 trims
+  🏷️  Processing model: Chevrolet HHR
+    ✅ Model added (ID: 272)
+    📋 Found 2 trims
+  🏷️  Processing model: Chevrolet Epica
+    ✅ Model added (ID: 273)
+    📋 Found 4 trims
+  🏷️  Processing model: Chevrolet Captiva
+    ✅ Model added (ID: 274)
+    📋 Found 12 trims
+  🏷️  Processing model: Chevrolet Aveo
+    ✅ Model added (ID: 275)
+    📋 Found 16 trims
+  🏷️  Processing model: Chevrolet Nubira
+    ✅ Model added (ID: 276)
+    📋 Found 2 trims
+  🏷️  Processing model: Chevrolet Nubira Station Wagon
+    ✅ Model added (ID: 277)
+    📋 Found 4 trims
+  🏷️  Processing model: Chevrolet Evanda
+    ✅ Model added (ID: 278)
+    📋 Found 2 trims
+  🏷️  Processing model: Chevrolet Tacuma
+    ✅ Model added (ID: 279)
+    📋 Found 4 trims
+  🏷️  Processing model: Chevrolet Kalos
+    ✅ Model added (ID: 280)
+    📋 Found 6 trims
+  🏷️  Processing model: Chevrolet Lacetti
+    ✅ Model added (ID: 281)
+    📋 Found 4 trims
+  🏷️  Processing model: Chevrolet Matiz
+    ✅ Model added (ID: 282)
+    📋 Found 6 trims
+  🏷️  Processing model: Chevrolet TrailBlazer
+    ✅ Model added (ID: 283)
+    📋 Found 2 trims
+  🏷️  Processing model: Chevrolet Tahoe
+    ✅ Model added (ID: 284)
+    📋 Found 2 trims
+  🏷️  Processing model: Chevrolet Alero
+    ✅ Model added (ID: 285)
+    📋 Found 4 trims
+  🏷️  Processing model: Chevrolet Blazer Wagon
+    ✅ Model added (ID: 286)
+    📋 Found 2 trims
+  🏷️  Processing model: Chevrolet Blazer ZR2
+    ✅ Model added (ID: 287)
+    📋 Found 2 trims
+  🏷️  Processing model: Chevrolet Camaro Convertible
+    ✅ Model added (ID: 288)
+    📋 Found 6 trims
+  🏷️  Processing model: Chevrolet Camaro Coupe
+    ✅ Model added (ID: 289)
+    📋 Found 6 trims
+  🏷️  Processing model: Chevrolet Trans Sport
+    ✅ Model added (ID: 290)
+    📋 Found 6 trims
+  🏷️  Processing model: Chevrolet Blazer
+    ✅ Model added (ID: 291)
+    📋 Found 2 trims
+  🏷️  Processing model: Chevrolet Corvette Convertible
+    ✅ Model added (ID: 292)
+    📋 Found 12 trims
+  🏷️  Processing model: Chevrolet Corvette Coupe
+    ✅ Model added (ID: 293)
+    📋 Found 10 trims
+  🏷️  Processing model: Chevrolet Caprice
+    ✅ Model added (ID: 294)
+    📋 Found 2 trims
+  🏷️  Processing model: Chevrolet Lumina APV
+    ✅ Model added (ID: 295)
+    📋 Found 2 trims
+  🏷️  Processing model: Chevrolet Lumina
+    ✅ Model added (ID: 296)
+    📋 Found 4 trims
+  🏷️  Processing model: Chevrolet Beretta
+    ✅ Model added (ID: 297)
+    📋 Found 6 trims
+  🏷️  Processing model: Chevrolet Corsica
+    ✅ Model added (ID: 298)
+    📋 Found 10 trims
+
+📦 Processing brand: Chrysler
+  ✅ Brand added (ID: 49)
+  🏷️  Processing model: Chrysler Grand Voyager
+    ✅ Model added (ID: 299)
+    📋 Found 24 trims
+  🏷️  Processing model: Chrysler 300C
+    ✅ Model added (ID: 300)
+    📋 Found 8 trims
+  🏷️  Processing model: Chrysler 300C Touring
+    ✅ Model added (ID: 301)
+    📋 Found 8 trims
+  🏷️  Processing model: Chrysler Crossfire Roadster
+    ✅ Model added (ID: 302)
+    📋 Found 4 trims
+  🏷️  Processing model: Chrysler PT Cruiser Cabrio
+    ✅ Model added (ID: 303)
+    📋 Found 6 trims
+  🏷️  Processing model: Chrysler Crossfire
+    ✅ Model added (ID: 304)
+    📋 Found 6 trims
+  🏷️  Processing model: Chrysler Sebring Cabrio
+    ✅ Model added (ID: 305)
+    📋 Found 10 trims
+  🏷️  Processing model: Chrysler Sebring
+    ✅ Model added (ID: 306)
+    📋 Found 10 trims
+  🏷️  Processing model: Chrysler PT Cruiser
+    ✅ Model added (ID: 307)
+    📋 Found 12 trims
+  🏷️  Processing model: Chrysler 300M
+    ✅ Model added (ID: 308)
+    📋 Found 4 trims
+  🏷️  Processing model: Chrysler Viper GTS
+    ✅ Model added (ID: 309)
+    📋 Found 2 trims
+  🏷️  Processing model: Chrysler Stratus Convertible
+    ✅ Model added (ID: 310)
+    📋 Found 4 trims
+  🏷️  Processing model: Chrysler Stratus
+    ✅ Model added (ID: 311)
+    📋 Found 6 trims
+  🏷️  Processing model: Chrysler New Yorker
+    ✅ Model added (ID: 312)
+    📋 Found 2 trims
+  🏷️  Processing model: Chrysler Neon
+    ✅ Model added (ID: 313)
+    📋 Found 12 trims
+  🏷️  Processing model: Chrysler Viper
+    ✅ Model added (ID: 314)
+    📋 Found 2 trims
+  🏷️  Processing model: Chrysler Vision
+    ✅ Model added (ID: 315)
+    📋 Found 2 trims
+  🏷️  Processing model: Chrysler Daytona
+    ✅ Model added (ID: 316)
+    📋 Found 2 trims
+  🏷️  Processing model: Chrysler Saratoga
+    ✅ Model added (ID: 317)
+    📋 Found 4 trims
+  🏷️  Processing model: Chrysler GS
+    ✅ Model added (ID: 318)
+    📋 Found 2 trims
+  🏷️  Processing model: Chrysler GTS
+    ✅ Model added (ID: 319)
+    📋 Found 4 trims
+  🏷️  Processing model: Chrysler Le Baron Coupe
+    ✅ Model added (ID: 320)
+    📋 Found 6 trims
+  🏷️  Processing model: Chrysler Le Baron Convertible
+    ✅ Model added (ID: 321)
+    📋 Found 8 trims
+  🏷️  Processing model: Chrysler Voyager
+    ✅ Model added (ID: 322)
+    📋 Found 24 trims
+  🏷️  Processing model: Chrysler ES
+    ✅ Model added (ID: 323)
+    📋 Found 4 trims
+
+📦 Processing brand: Citroen
+  ✅ Brand added (ID: 50)
+  🏷️  Processing model: Citroen e-Jumpy
+    ✅ Model added (ID: 324)
+    📋 Found 2 trims
+  🏷️  Processing model: Citroen e-Jumpy Combi
+    ✅ Model added (ID: 325)
+    📋 Found 2 trims
+  🏷️  Processing model: Citroen Ã«-C4
+    ✅ Model added (ID: 326)
+    📋 Found 2 trims
+  🏷️  Processing model: Citroen e-SpaceTourer
+    ✅ Model added (ID: 327)
+    📋 Found 2 trims
+  🏷️  Processing model: Citroen C5 Aircross
+    ✅ Model added (ID: 328)
+    📋 Found 4 trims
+  🏷️  Processing model: Citroen C4 SpaceTourer
+    ✅ Model added (ID: 329)
+    📋 Found 4 trims
+  🏷️  Processing model: Citroen Berlingo Van
+    ✅ Model added (ID: 330)
+    📋 Found 4 trims
+  🏷️  Processing model: Citroen Grand C4 SpaceTourer
+    ✅ Model added (ID: 331)
+    📋 Found 6 trims
+  🏷️  Processing model: Citroen SpaceTourer
+    ✅ Model added (ID: 332)
+    📋 Found 8 trims
+  🏷️  Processing model: Citroen C3 Aircross
+    ✅ Model added (ID: 333)
+    📋 Found 8 trims
+  🏷️  Processing model: Citroen Berlingo Multispace
+    ✅ Model added (ID: 334)
+    📋 Found 10 trims
+  🏷️  Processing model: Citroen C4 Cactus
+    ✅ Model added (ID: 335)
+    📋 Found 14 trims
+  🏷️  Processing model: Citroen DS3 Cabrio
+    ✅ Model added (ID: 336)
+    📋 Found 4 trims
+  🏷️  Processing model: Citroen Jumper
+    ✅ Model added (ID: 337)
+    📋 Found 8 trims
+  🏷️  Processing model: Citroen Jumper Combi
+    ✅ Model added (ID: 338)
+    📋 Found 6 trims
+  🏷️  Processing model: Citroen Jumper Dubbele Cabine
+    ✅ Model added (ID: 339)
+    📋 Found 2 trims
+  🏷️  Processing model: Citroen Jumpy Dubbele Cabine
+    ✅ Model added (ID: 340)
+    📋 Found 2 trims
+  🏷️  Processing model: Citroen Jumpy
+    ✅ Model added (ID: 341)
+    📋 Found 6 trims
+  🏷️  Processing model: Citroen Jumpy Combi
+    ✅ Model added (ID: 342)
+    📋 Found 10 trims
+  🏷️  Processing model: Citroen C4 Aircross
+    ✅ Model added (ID: 343)
+    📋 Found 4 trims
+  🏷️  Processing model: Citroen Jumpy Multispace
+    ✅ Model added (ID: 344)
+    📋 Found 2 trims
+  🏷️  Processing model: Citroen DS4
+    ✅ Model added (ID: 345)
+    📋 Found 10 trims
+  🏷️  Processing model: Citroen DS5
+    ✅ Model added (ID: 346)
+    📋 Found 10 trims
+  🏷️  Processing model: Citroen C-Crosser Van
+    ✅ Model added (ID: 347)
+    📋 Found 2 trims
+  🏷️  Processing model: Citroen DS3
+    ✅ Model added (ID: 348)
+    📋 Found 14 trims
+  🏷️  Processing model: Citroen C-Zero
+    ✅ Model added (ID: 349)
+    📋 Found 4 trims
+  🏷️  Processing model: Citroen Nemo Multispace
+    ✅ Model added (ID: 350)
+    📋 Found 2 trims
+  🏷️  Processing model: Citroen C3 Picasso
+    ✅ Model added (ID: 351)
+    📋 Found 12 trims
+  🏷️  Processing model: Citroen Nemo
+    ✅ Model added (ID: 352)
+    📋 Found 4 trims
+  🏷️  Processing model: Citroen C2
+    ✅ Model added (ID: 353)
+    📋 Found 12 trims
+  🏷️  Processing model: Citroen C5 Tourer
+    ✅ Model added (ID: 354)
+    📋 Found 16 trims
+  🏷️  Processing model: Citroen C-Crosser
+    ✅ Model added (ID: 355)
+    📋 Found 6 trims
+  🏷️  Processing model: Citroen C4 Picasso
+    ✅ Model added (ID: 356)
+    📋 Found 20 trims
+  🏷️  Processing model: Citroen C6
+    ✅ Model added (ID: 357)
+    📋 Found 8 trims
+  🏷️  Processing model: Citroen Grand C4 Picasso
+    ✅ Model added (ID: 358)
+    📋 Found 24 trims
+  🏷️  Processing model: Citroen C1
+    ✅ Model added (ID: 359)
+    📋 Found 26 trims
+  🏷️  Processing model: Citroen C4
+    ✅ Model added (ID: 360)
+    📋 Found 26 trims
+  🏷️  Processing model: Citroen C4 Coupe
+    ✅ Model added (ID: 361)
+    📋 Found 12 trims
+  🏷️  Processing model: Citroen C3 Pluriel
+    ✅ Model added (ID: 362)
+    📋 Found 8 trims
+  🏷️  Processing model: Citroen C3
+    ✅ Model added (ID: 363)
+    📋 Found 44 trims
+  🏷️  Processing model: Citroen C8
+    ✅ Model added (ID: 364)
+    📋 Found 12 trims
+  🏷️  Processing model: Citroen C5
+    ✅ Model added (ID: 365)
+    📋 Found 28 trims
+  🏷️  Processing model: Citroen C5 Break
+    ✅ Model added (ID: 366)
+    📋 Found 12 trims
+  🏷️  Processing model: Citroen Xsara Picasso
+    ✅ Model added (ID: 367)
+    📋 Found 16 trims
+  🏷️  Processing model: Citroen Xsara Coupe
+    ✅ Model added (ID: 368)
+    📋 Found 14 trims
+  🏷️  Processing model: Citroen Xsara Break
+    ✅ Model added (ID: 369)
+    📋 Found 14 trims
+  🏷️  Processing model: Citroen Berlingo
+    ✅ Model added (ID: 370)
+    📋 Found 40 trims
+  🏷️  Processing model: Citroen Xsara
+    ✅ Model added (ID: 371)
+    📋 Found 14 trims
+  🏷️  Processing model: Citroen Saxo
+    ✅ Model added (ID: 372)
+    📋 Found 14 trims
+  🏷️  Processing model: Citroen Xantia Break
+    ✅ Model added (ID: 373)
+    📋 Found 12 trims
+  🏷️  Processing model: Citroen ZX Break
+    ✅ Model added (ID: 374)
+    📋 Found 4 trims
+  🏷️  Processing model: Citroen Evasion
+    ✅ Model added (ID: 375)
+    📋 Found 12 trims
+  🏷️  Processing model: Citroen Xantia
+    ✅ Model added (ID: 376)
+    📋 Found 16 trims
+  🏷️  Processing model: Citroen XM Break
+    ✅ Model added (ID: 377)
+    📋 Found 8 trims
+  🏷️  Processing model: Citroen ZX
+    ✅ Model added (ID: 378)
+    📋 Found 14 trims
+  🏷️  Processing model: Citroen XM
+    ✅ Model added (ID: 379)
+    📋 Found 10 trims
+  🏷️  Processing model: Citroen AX
+    ✅ Model added (ID: 380)
+    📋 Found 18 trims
+  🏷️  Processing model: Citroen Axel
+    ✅ Model added (ID: 381)
+    📋 Found 2 trims
+  🏷️  Processing model: Citroen BX Break
+    ✅ Model added (ID: 382)
+    📋 Found 8 trims
+  🏷️  Processing model: Citroen Visa Decouvrable
+    ✅ Model added (ID: 383)
+    📋 Found 2 trims
+  🏷️  Processing model: Citroen BX
+    ✅ Model added (ID: 384)
+    📋 Found 14 trims
+  🏷️  Processing model: Citroen GSA
+    ✅ Model added (ID: 385)
+    📋 Found 4 trims
+  🏷️  Processing model: Citroen GSA Break
+    ✅ Model added (ID: 386)
+    📋 Found 4 trims
+  🏷️  Processing model: Citroen Visa
+    ✅ Model added (ID: 387)
+    📋 Found 10 trims
+  🏷️  Processing model: Citroen LNA
+    ✅ Model added (ID: 388)
+    📋 Found 4 trims
+  🏷️  Processing model: Citroen CX
+    ✅ Model added (ID: 389)
+    📋 Found 22 trims
+  🏷️  Processing model: Citroen CX Break
+    ✅ Model added (ID: 390)
+    📋 Found 20 trims
+  🏷️  Processing model: Citroen 2CV
+    ✅ Model added (ID: 391)
+    📋 Found 4 trims
+  🏷️  Processing model: Citroen Dyane
+    ✅ Model added (ID: 392)
+    📋 Found 2 trims
+
+📦 Processing brand: Cupra
+  ✅ Brand added (ID: 51)
+  🏷️  Processing model: Cupra Formentor
+    ✅ Model added (ID: 393)
+    📋 Found 2 trims
+  🏷️  Processing model: Cupra Leon Sportstourer
+    ✅ Model added (ID: 394)
+    📋 Found 2 trims
+  🏷️  Processing model: Cupra Leon
+    ✅ Model added (ID: 395)
+    📋 Found 2 trims
+
+📦 Processing brand: Dacia
+  ↪ Brand already exists (ID: 37)
+  🏷️  Processing model: Dacia Dokker
+    ✅ Model added (ID: 396)
+    📋 Found 12 trims
+  🏷️  Processing model: Dacia Dokker Van
+    ✅ Model added (ID: 397)
+    📋 Found 8 trims
+  🏷️  Processing model: Dacia Lodgy
+    ✅ Model added (ID: 398)
+    📋 Found 14 trims
+  🏷️  Processing model: Dacia Logan Van
+    ✅ Model added (ID: 399)
+    📋 Found 2 trims
+  🏷️  Processing model: Dacia Logan Pick-Up
+    ✅ Model added (ID: 400)
+    📋 Found 2 trims
+  🏷️  Processing model: Dacia Duster
+    ✅ Model added (ID: 401)
+    📋 Found 18 trims
+  🏷️  Processing model: Dacia Sandero
+    ✅ Model added (ID: 402)
+    📋 Found 22 trims
+  🏷️  Processing model: Dacia Logan MCV
+    ✅ Model added (ID: 403)
+    📋 Found 22 trims
+  🏷️  Processing model: Dacia Logan
+    ✅ Model added (ID: 404)
+    📋 Found 4 trims
+
+📦 Processing brand: Daewoo
+  ✅ Brand added (ID: 52)
+  🏷️  Processing model: Daewoo Lacetti
+    ✅ Model added (ID: 405)
+    📋 Found 2 trims
+  🏷️  Processing model: Daewoo Evanda
+    ✅ Model added (ID: 406)
+    📋 Found 2 trims
+  🏷️  Processing model: Daewoo Kalos
+    ✅ Model added (ID: 407)
+    📋 Found 8 trims
+  🏷️  Processing model: Daewoo Tacuma
+    ✅ Model added (ID: 408)
+    📋 Found 6 trims
+  🏷️  Processing model: Daewoo Matiz
+    ✅ Model added (ID: 409)
+    📋 Found 8 trims
+  🏷️  Processing model: Daewoo Lanos
+    ✅ Model added (ID: 410)
+    📋 Found 10 trims
+  🏷️  Processing model: Daewoo Leganza
+    ✅ Model added (ID: 411)
+    📋 Found 4 trims
+  🏷️  Processing model: Daewoo Nubira
+    ✅ Model added (ID: 412)
+    📋 Found 12 trims
+  🏷️  Processing model: Daewoo Nubira Wagon
+    ✅ Model added (ID: 413)
+    📋 Found 4 trims
+  🏷️  Processing model: Daewoo Espero
+    ✅ Model added (ID: 414)
+    📋 Found 2 trims
+  🏷️  Processing model: Daewoo Nexia
+    ✅ Model added (ID: 415)
+    📋 Found 4 trims
+
+📦 Processing brand: Daihatsu
+  ✅ Brand added (ID: 53)
+  🏷️  Processing model: Daihatsu Materia
+    ✅ Model added (ID: 416)
+    📋 Found 4 trims
+  🏷️  Processing model: Daihatsu Trevis
+    ✅ Model added (ID: 417)
+    📋 Found 2 trims
+  🏷️  Processing model: Daihatsu Sirion 2
+    ✅ Model added (ID: 418)
+    📋 Found 8 trims
+  🏷️  Processing model: Daihatsu Copen
+    ✅ Model added (ID: 419)
+    📋 Found 4 trims
+  🏷️  Processing model: Daihatsu Young RV
+    ✅ Model added (ID: 420)
+    📋 Found 4 trims
+  🏷️  Processing model: Daihatsu Terios
+    ✅ Model added (ID: 421)
+    📋 Found 8 trims
+  🏷️  Processing model: Daihatsu Sirion
+    ✅ Model added (ID: 422)
+    📋 Found 8 trims
+  🏷️  Processing model: Daihatsu Gran Move
+    ✅ Model added (ID: 423)
+    📋 Found 8 trims
+  🏷️  Processing model: Daihatsu Move
+    ✅ Model added (ID: 424)
+    📋 Found 6 trims
+  🏷️  Processing model: Daihatsu Valera
+    ✅ Model added (ID: 425)
+    📋 Found 6 trims
+  🏷️  Processing model: Daihatsu Rocky
+    ✅ Model added (ID: 426)
+    📋 Found 2 trims
+  🏷️  Processing model: Daihatsu Feroza
+    ✅ Model added (ID: 427)
+    📋 Found 6 trims
+  🏷️  Processing model: Daihatsu Applause
+    ✅ Model added (ID: 428)
+    📋 Found 6 trims
+  🏷️  Processing model: Daihatsu Rocky Hardtop
+    ✅ Model added (ID: 429)
+    📋 Found 4 trims
+  🏷️  Processing model: Daihatsu Rocky Softtop
+    ✅ Model added (ID: 430)
+    📋 Found 2 trims
+  🏷️  Processing model: Daihatsu Rocky Wagon
+    ✅ Model added (ID: 431)
+    📋 Found 4 trims
+  🏷️  Processing model: Daihatsu Charmant
+    ✅ Model added (ID: 432)
+    📋 Found 6 trims
+  🏷️  Processing model: Daihatsu Charmant Combi
+    ✅ Model added (ID: 433)
+    📋 Found 2 trims
+  🏷️  Processing model: Daihatsu Cuore
+    ✅ Model added (ID: 434)
+    📋 Found 30 trims
+  🏷️  Processing model: Daihatsu Charade
+    ✅ Model added (ID: 435)
+    📋 Found 26 trims
+
+📦 Processing brand: Dodge
+  ✅ Brand added (ID: 54)
+  🏷️  Processing model: Dodge Journey
+    ✅ Model added (ID: 436)
+    📋 Found 6 trims
+  🏷️  Processing model: Dodge Nitro
+    ✅ Model added (ID: 437)
+    📋 Found 2 trims
+  🏷️  Processing model: Dodge Avenger
+    ✅ Model added (ID: 438)
+    📋 Found 2 trims
+  🏷️  Processing model: Dodge Caliber
+    ✅ Model added (ID: 439)
+    📋 Found 8 trims
+  🏷️  Processing model: Dodge Viper
+    ✅ Model added (ID: 440)
+    📋 Found 2 trims
+
+📦 Processing brand: Ferrari
+  ✅ Brand added (ID: 55)
+  🏷️  Processing model: Ferrari Roma
+    ✅ Model added (ID: 441)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari SF90 Stradale
+    ✅ Model added (ID: 442)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari F8 Spider
+    ✅ Model added (ID: 443)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari 812 GTS
+    ✅ Model added (ID: 444)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari F8 Tributo
+    ✅ Model added (ID: 445)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari Portofino
+    ✅ Model added (ID: 446)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari 812 Superfast
+    ✅ Model added (ID: 447)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari GTC4
+    ✅ Model added (ID: 448)
+    📋 Found 4 trims
+  🏷️  Processing model: Ferrari 488 GTB
+    ✅ Model added (ID: 449)
+    📋 Found 4 trims
+  🏷️  Processing model: Ferrari 488 Spider
+    ✅ Model added (ID: 450)
+    📋 Found 4 trims
+  🏷️  Processing model: Ferrari LaFerrari
+    ✅ Model added (ID: 451)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari F12 Berlinetta
+    ✅ Model added (ID: 452)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari 458 Spider
+    ✅ Model added (ID: 453)
+    📋 Found 4 trims
+  🏷️  Processing model: Ferrari FF
+    ✅ Model added (ID: 454)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari 458 Italia
+    ✅ Model added (ID: 455)
+    📋 Found 6 trims
+  🏷️  Processing model: Ferrari California
+    ✅ Model added (ID: 456)
+    📋 Found 8 trims
+  🏷️  Processing model: Ferrari 599
+    ✅ Model added (ID: 457)
+    📋 Found 4 trims
+  🏷️  Processing model: Ferrari F430 Spider
+    ✅ Model added (ID: 458)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari Superamerica F1
+    ✅ Model added (ID: 459)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari F430
+    ✅ Model added (ID: 460)
+    📋 Found 4 trims
+  🏷️  Processing model: Ferrari 612 Scaglietti
+    ✅ Model added (ID: 461)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari 575M Maranello
+    ✅ Model added (ID: 462)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari Enzo
+    ✅ Model added (ID: 463)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari 360 Spider
+    ✅ Model added (ID: 464)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari 360 Modena
+    ✅ Model added (ID: 465)
+    📋 Found 4 trims
+  🏷️  Processing model: Ferrari 550 Maranello
+    ✅ Model added (ID: 466)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari F355 Spider
+    ✅ Model added (ID: 467)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari F50
+    ✅ Model added (ID: 468)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari F355
+    ✅ Model added (ID: 469)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari F512 M
+    ✅ Model added (ID: 470)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari 456
+    ✅ Model added (ID: 471)
+    📋 Found 6 trims
+  🏷️  Processing model: Ferrari 348 Spider
+    ✅ Model added (ID: 472)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari 512 TR
+    ✅ Model added (ID: 473)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari 348
+    ✅ Model added (ID: 474)
+    📋 Found 4 trims
+  🏷️  Processing model: Ferrari Mondial
+    ✅ Model added (ID: 475)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari Mondial Cabriolet
+    ✅ Model added (ID: 476)
+    📋 Found 2 trims
+  🏷️  Processing model: Ferrari F40
+    ✅ Model added (ID: 477)
+    📋 Found 2 trims
+
+📦 Processing brand: Fiat
+  ↪ Brand already exists (ID: 25)
+  🏷️  Processing model: Fiat 500e
+    ✅ Model added (ID: 478)
+    📋 Found 2 trims
+  🏷️  Processing model: Fiat 500eC
+    ✅ Model added (ID: 479)
+    📋 Found 2 trims
+  🏷️  Processing model: Fiat 500L Wagon
+    ✅ Model added (ID: 480)
+    📋 Found 2 trims
+  🏷️  Processing model: Fiat Tipo Stationwagon
+    ✅ Model added (ID: 481)
+    📋 Found 4 trims
+  🏷️  Processing model: Fiat 124 Spider
+    ✅ Model added (ID: 482)
+    📋 Found 4 trims
+  🏷️  Processing model: Fiat Talento
+    ✅ Model added (ID: 483)
+    📋 Found 6 trims
+  🏷️  Processing model: Fiat Talento Combi
+    ✅ Model added (ID: 484)
+    📋 Found 4 trims
+  🏷️  Processing model: Fiat Fullback Double Cab
+    ✅ Model added (ID: 485)
+    📋 Found 2 trims
+  🏷️  Processing model: Fiat Fullback Extended Cab
+    ✅ Model added (ID: 486)
+    📋 Found 2 trims
+  🏷️  Processing model: Fiat 500X
+    ✅ Model added (ID: 487)
+    📋 Found 12 trims
+  🏷️  Processing model: Fiat 500L Living
+    ✅ Model added (ID: 488)
+    📋 Found 6 trims
+  🏷️  Processing model: Fiat Strada
+    ✅ Model added (ID: 489)
+    📋 Found 2 trims
+  🏷️  Processing model: Fiat Doblo Combinato
+    ✅ Model added (ID: 490)
+    📋 Found 2 trims
+  🏷️  Processing model: Fiat Scudo
+    ✅ Model added (ID: 491)
+    📋 Found 2 trims
+  🏷️  Processing model: Fiat Ducato
+    ✅ Model added (ID: 492)
+    📋 Found 8 trims
+  🏷️  Processing model: Fiat Scudo Combi
+    ✅ Model added (ID: 493)
+    📋 Found 2 trims
+  🏷️  Processing model: Fiat Ducato Combinato
+    ✅ Model added (ID: 494)
+    📋 Found 6 trims
+  🏷️  Processing model: Fiat Scudo Dubbele Cabine
+    ✅ Model added (ID: 495)
+    📋 Found 2 trims
+  🏷️  Processing model: Fiat Ducato Dubbele Cabine
+    ✅ Model added (ID: 496)
+    📋 Found 2 trims
+  🏷️  Processing model: Fiat Panda Classic
+    ✅ Model added (ID: 497)
+    📋 Found 2 trims
+  🏷️  Processing model: Fiat 500L
+    ✅ Model added (ID: 498)
+    📋 Found 14 trims
+  🏷️  Processing model: Fiat Doblo Cargo
+    ✅ Model added (ID: 499)
+    📋 Found 16 trims
+  🏷️  Processing model: Fiat 500C
+    ✅ Model added (ID: 500)
+    📋 Found 24 trims
+  🏷️  Processing model: Fiat Punto Evo
+    ✅ Model added (ID: 501)
+    📋 Found 6 trims
+  🏷️  Processing model: Fiat Fiorino
+    ✅ Model added (ID: 502)
+    📋 Found 10 trims
+  🏷️  Processing model: Fiat Qubo
+    ✅ Model added (ID: 503)
+    📋 Found 12 trims
+  🏷️  Processing model: Fiat 500
+    ↪ Model already exists (ID: 29)
+    📋 Found 30 trims
+  🏷️  Processing model: Fiat Sedici
+    ✅ Model added (ID: 504)
+    📋 Found 8 trims
+  🏷️  Processing model: Fiat Grande Punto
+    ✅ Model added (ID: 505)
+    📋 Found 12 trims
+  🏷️  Processing model: Fiat 600
+    ✅ Model added (ID: 506)
+    📋 Found 2 trims
+  🏷️  Processing model: Fiat Stilo Multi Wagon
+    ✅ Model added (ID: 507)
+    📋 Found 10 trims
+  🏷️  Processing model: Fiat Idea
+    ✅ Model added (ID: 508)
+    📋 Found 6 trims
+  🏷️  Processing model: Fiat Doblo
+    ✅ Model added (ID: 509)
+    📋 Found 20 trims
+  🏷️  Processing model: Fiat Stilo
+    ✅ Model added (ID: 510)
+    📋 Found 14 trims
+  🏷️  Processing model: Fiat Multipla
+    ✅ Model added (ID: 511)
+    📋 Found 10 trims
+  🏷️  Processing model: Fiat Seicento
+    ✅ Model added (ID: 512)
+    📋 Found 16 trims
+  🏷️  Processing model: Fiat Palio Weekend
+    ✅ Model added (ID: 513)
+    📋 Found 4 trims
+  🏷️  Processing model: Fiat Marea
+    ✅ Model added (ID: 514)
+    📋 Found 8 trims
+  🏷️  Processing model: Fiat Marea Weekend
+    ✅ Model added (ID: 515)
+    📋 Found 10 trims
+  🏷️  Processing model: Fiat Coupe
+    ✅ Model added (ID: 516)
+    📋 Found 6 trims
+  🏷️  Processing model: Fiat Barchetta
+    ✅ Model added (ID: 517)
+    📋 Found 6 trims
+  🏷️  Processing model: Fiat Brava
+    ✅ Model added (ID: 518)
+    📋 Found 12 trims
+  🏷️  Processing model: Fiat Bravo
+    ✅ Model added (ID: 519)
+    📋 Found 24 trims
+  🏷️  Processing model: Fiat Ulysse
+    ✅ Model added (ID: 520)
+    📋 Found 20 trims
+  🏷️  Processing model: Fiat Punto
+    ✅ Model added (ID: 521)
+    📋 Found 50 trims
+  🏷️  Processing model: Fiat Punto Cabrio
+    ✅ Model added (ID: 522)
+    📋 Found 6 trims
+  🏷️  Processing model: Fiat Cinquecento
+    ✅ Model added (ID: 523)
+    📋 Found 10 trims
+  🏷️  Processing model: Fiat Tempra
+    ✅ Model added (ID: 524)
+    📋 Found 6 trims
+  🏷️  Processing model: Fiat Tipo
+    ✅ Model added (ID: 525)
+    📋 Found 18 trims
+  🏷️  Processing model: Fiat Croma
+    ✅ Model added (ID: 526)
+    📋 Found 20 trims
+  🏷️  Processing model: Fiat Regata Weekend
+    ✅ Model added (ID: 527)
+    📋 Found 4 trims
+  🏷️  Processing model: Fiat Regata
+    ✅ Model added (ID: 528)
+    📋 Found 8 trims
+  🏷️  Processing model: Fiat Uno
+    ✅ Model added (ID: 529)
+    📋 Found 22 trims
+  🏷️  Processing model: Fiat Panda
+    ✅ Model added (ID: 530)
+    📋 Found 62 trims
+  🏷️  Processing model: Fiat Argenta
+    ✅ Model added (ID: 531)
+    📋 Found 6 trims
+  🏷️  Processing model: Fiat Ritmo
+    ✅ Model added (ID: 532)
+    📋 Found 16 trims
+  🏷️  Processing model: Fiat X 1/9
+    ✅ Model added (ID: 533)
+    📋 Found 2 trims
+  🏷️  Processing model: Fiat 131
+    ✅ Model added (ID: 534)
+    📋 Found 8 trims
+  🏷️  Processing model: Fiat 131 Panorama
+    ✅ Model added (ID: 535)
+    📋 Found 8 trims
+  🏷️  Processing model: Fiat 127
+    ✅ Model added (ID: 536)
+    📋 Found 6 trims
+  🏷️  Processing model: Fiat 132
+    ✅ Model added (ID: 537)
+    📋 Found 6 trims
+  🏷️  Processing model: Fiat 126
+    ✅ Model added (ID: 538)
+    📋 Found 2 trims
+
+📦 Processing brand: Ford
+  ↪ Brand already exists (ID: 26)
+  🏷️  Processing model: Ford Mustang Mach-E
+    ✅ Model added (ID: 539)
+    📋 Found 2 trims
+  🏷️  Processing model: Ford Edge
+    ✅ Model added (ID: 540)
+    📋 Found 6 trims
+  🏷️  Processing model: Ford Mustang Fastback
+    ✅ Model added (ID: 541)
+    📋 Found 6 trims
+  🏷️  Processing model: Ford C-MAX Energi
+    ✅ Model added (ID: 542)
+    📋 Found 2 trims
+  🏷️  Processing model: Ford EcoSport
+    ✅ Model added (ID: 543)
+    📋 Found 10 trims
+  🏷️  Processing model: Ford Transit Courier
+    ✅ Model added (ID: 544)
+    📋 Found 10 trims
+  🏷️  Processing model: Ford Tourneo Courier
+    ✅ Model added (ID: 545)
+    📋 Found 2 trims
+  🏷️  Processing model: Ford Focus Electric
+    ✅ Model added (ID: 546)
+    📋 Found 2 trims
+  🏷️  Processing model: Ford Tourneo Custom
+    ✅ Model added (ID: 547)
+    📋 Found 8 trims
+  🏷️  Processing model: Ford Transit Dubbele Cabine
+    ✅ Model added (ID: 548)
+    📋 Found 2 trims
+  🏷️  Processing model: Ford Transit
+    ✅ Model added (ID: 549)
+    📋 Found 14 trims
+  🏷️  Processing model: Ford Transit Custom
+    ✅ Model added (ID: 550)
+    📋 Found 12 trims
+  🏷️  Processing model: Ford Transit Custom Dubbele Cabine
+    ✅ Model added (ID: 551)
+    📋 Found 2 trims
+  🏷️  Processing model: Ford Transit Custom Kombi
+    ✅ Model added (ID: 552)
+    📋 Found 6 trims
+  🏷️  Processing model: Ford B-MAX
+    ✅ Model added (ID: 553)
+    📋 Found 6 trims
+  🏷️  Processing model: Ford Transit Kombi
+    ✅ Model added (ID: 554)
+    📋 Found 10 trims
+  🏷️  Processing model: Ford Ranger Double Cab
+    ✅ Model added (ID: 555)
+    📋 Found 6 trims
+  🏷️  Processing model: Ford Ranger Super Cab
+    ✅ Model added (ID: 556)
+    📋 Found 10 trims
+  🏷️  Processing model: Ford Grand C-MAX
+    ✅ Model added (ID: 557)
+    📋 Found 14 trims
+  🏷️  Processing model: Ford Ka
+    ✅ Model added (ID: 558)
+    📋 Found 38 trims
+  🏷️  Processing model: Ford Transit Connect
+    ✅ Model added (ID: 559)
+    📋 Found 14 trims
+  🏷️  Processing model: Ford Kuga
+    ✅ Model added (ID: 560)
+    📋 Found 24 trims
+  🏷️  Processing model: Ford Focus Coupe-Cabriolet
+    ✅ Model added (ID: 561)
+    📋 Found 8 trims
+  🏷️  Processing model: Ford C-MAX
+    ✅ Model added (ID: 562)
+    📋 Found 20 trims
+  🏷️  Processing model: Ford S-MAX
+    ✅ Model added (ID: 563)
+    📋 Found 22 trims
+  🏷️  Processing model: Ford Streetka
+    ✅ Model added (ID: 564)
+    📋 Found 4 trims
+  🏷️  Processing model: Ford Sportka
+    ✅ Model added (ID: 565)
+    📋 Found 2 trims
+  🏷️  Processing model: Ford Focus C-MAX
+    ✅ Model added (ID: 566)
+    📋 Found 8 trims
+  🏷️  Processing model: Ford Tourneo Connect
+    ✅ Model added (ID: 567)
+    📋 Found 12 trims
+  🏷️  Processing model: Ford Fusion
+    ✅ Model added (ID: 568)
+    📋 Found 16 trims
+  🏷️  Processing model: Ford Focus Wagon
+    ✅ Model added (ID: 569)
+    📋 Found 46 trims
+  🏷️  Processing model: Ford Cougar
+    ✅ Model added (ID: 570)
+    📋 Found 2 trims
+  🏷️  Processing model: Ford Focus
+    ✅ Model added (ID: 571)
+    📋 Found 82 trims
+  🏷️  Processing model: Ford Puma
+    ✅ Model added (ID: 572)
+    📋 Found 12 trims
+  🏷️  Processing model: Ford Expedition
+    ✅ Model added (ID: 573)
+    📋 Found 2 trims
+  🏷️  Processing model: Ford Taurus Stationwagon
+    ✅ Model added (ID: 574)
+    📋 Found 2 trims
+  🏷️  Processing model: Ford Mondeo Wagon
+    ✅ Model added (ID: 575)
+    📋 Found 58 trims
+  🏷️  Processing model: Ford Explorer
+    ✅ Model added (ID: 576)
+    📋 Found 6 trims
+  🏷️  Processing model: Ford Fiesta Classic
+    ✅ Model added (ID: 577)
+    📋 Found 2 trims
+  🏷️  Processing model: Ford Escort Wagon
+    ✅ Model added (ID: 578)
+    📋 Found 10 trims
+  🏷️  Processing model: Ford Mustang
+    ✅ Model added (ID: 579)
+    📋 Found 4 trims
+  🏷️  Processing model: Ford Windstar
+    ✅ Model added (ID: 580)
+    📋 Found 8 trims
+  🏷️  Processing model: Ford Escort Cabriolet
+    ✅ Model added (ID: 581)
+    📋 Found 6 trims
+  🏷️  Processing model: Ford Galaxy
+    ✅ Model added (ID: 582)
+    📋 Found 42 trims
+  🏷️  Processing model: Ford Mustang Convertible
+    ✅ Model added (ID: 583)
+    📋 Found 8 trims
+  🏷️  Processing model: Ford Probe
+    ✅ Model added (ID: 584)
+    📋 Found 2 trims
+  🏷️  Processing model: Ford Taurus
+    ✅ Model added (ID: 585)
+    📋 Found 6 trims
+  🏷️  Processing model: Ford Thunderbird
+    ✅ Model added (ID: 586)
+    📋 Found 2 trims
+  🏷️  Processing model: Ford Maverick LWB
+    ✅ Model added (ID: 587)
+    📋 Found 6 trims
+  🏷️  Processing model: Ford Maverick SWB
+    ✅ Model added (ID: 588)
+    📋 Found 6 trims
+  🏷️  Processing model: Ford Mondeo
+    ✅ Model added (ID: 589)
+    📋 Found 108 trims
+  🏷️  Processing model: Ford Scorpio Wagon
+    ✅ Model added (ID: 590)
+    📋 Found 12 trims
+  🏷️  Processing model: Ford Escort Clipper
+    ✅ Model added (ID: 591)
+    📋 Found 10 trims
+  🏷️  Processing model: Ford Sierra
+    ✅ Model added (ID: 592)
+    📋 Found 30 trims
+  🏷️  Processing model: Ford Scorpio
+    ✅ Model added (ID: 593)
+    📋 Found 32 trims
+  🏷️  Processing model: Ford Escort Cabrio
+    ✅ Model added (ID: 594)
+    📋 Found 12 trims
+  🏷️  Processing model: Ford Orion
+    ✅ Model added (ID: 595)
+    📋 Found 22 trims
+  🏷️  Processing model: Ford Sierra Stationwagon
+    ✅ Model added (ID: 596)
+    📋 Found 16 trims
+  🏷️  Processing model: Ford Granada
+    ✅ Model added (ID: 597)
+    📋 Found 8 trims
+  🏷️  Processing model: Ford Escort
+    ✅ Model added (ID: 598)
+    📋 Found 54 trims
+  🏷️  Processing model: Ford Escort Stationwagon
+    ✅ Model added (ID: 599)
+    📋 Found 16 trims
+  🏷️  Processing model: Ford Taunus
+    ✅ Model added (ID: 600)
+    📋 Found 4 trims
+  🏷️  Processing model: Ford Taunus Stationwagon
+    ✅ Model added (ID: 601)
+    📋 Found 4 trims
+  🏷️  Processing model: Ford Capri
+    ✅ Model added (ID: 602)
+    📋 Found 8 trims
+  🏷️  Processing model: Ford Granada Stationwagon
+    ✅ Model added (ID: 603)
+    📋 Found 6 trims
+  🏷️  Processing model: Ford Fiesta
+    ✅ Model added (ID: 604)
+    📋 Found 104 trims
+
+📦 Processing brand: Honda
+  ↪ Brand already exists (ID: 28)
+  🏷️  Processing model: Honda e
+    ✅ Model added (ID: 605)
+    📋 Found 2 trims
+  🏷️  Processing model: Honda Civic Tourer
+    ✅ Model added (ID: 606)
+    📋 Found 6 trims
+  🏷️  Processing model: Honda CR-Z
+    ✅ Model added (ID: 607)
+    📋 Found 4 trims
+  🏷️  Processing model: Honda Insight
+    ✅ Model added (ID: 608)
+    📋 Found 8 trims
+  🏷️  Processing model: Honda Civic Type S
+    ✅ Model added (ID: 609)
+    📋 Found 6 trims
+  🏷️  Processing model: Honda FR-V
+    ✅ Model added (ID: 610)
+    📋 Found 6 trims
+  🏷️  Processing model: Honda Accord Tourer
+    ✅ Model added (ID: 611)
+    📋 Found 16 trims
+  🏷️  Processing model: Honda Stream
+    ✅ Model added (ID: 612)
+    📋 Found 6 trims
+  🏷️  Processing model: Honda Logo
+    ✅ Model added (ID: 613)
+    📋 Found 4 trims
+  🏷️  Processing model: Honda HR-V
+    ✅ Model added (ID: 614)
+    📋 Found 10 trims
+  🏷️  Processing model: Honda S2000
+    ✅ Model added (ID: 615)
+    📋 Found 4 trims
+  🏷️  Processing model: Honda Integra R
+    ✅ Model added (ID: 616)
+    📋 Found 2 trims
+  🏷️  Processing model: Honda Civic Aero Deck
+    ✅ Model added (ID: 617)
+    📋 Found 4 trims
+  🏷️  Processing model: Honda CR-V
+    ✅ Model added (ID: 618)
+    📋 Found 34 trims
+  🏷️  Processing model: Honda Aerodeck Estate
+    ✅ Model added (ID: 619)
+    📋 Found 2 trims
+  🏷️  Processing model: Honda Shuttle
+    ✅ Model added (ID: 620)
+    📋 Found 4 trims
+  🏷️  Processing model: Honda Accord Coupe
+    ✅ Model added (ID: 621)
+    📋 Found 8 trims
+  🏷️  Processing model: Honda Civic Coupe
+    ✅ Model added (ID: 622)
+    📋 Found 8 trims
+  🏷️  Processing model: Honda Accord Aerodeck
+    ✅ Model added (ID: 623)
+    📋 Found 4 trims
+  🏷️  Processing model: Honda CRX
+    ✅ Model added (ID: 624)
+    📋 Found 2 trims
+  🏷️  Processing model: Honda NSX
+    ✅ Model added (ID: 625)
+    📋 Found 8 trims
+  🏷️  Processing model: Honda Concerto
+    ✅ Model added (ID: 626)
+    📋 Found 2 trims
+  🏷️  Processing model: Honda Legend Coupe
+    ✅ Model added (ID: 627)
+    📋 Found 4 trims
+  🏷️  Processing model: Honda Legend
+    ✅ Model added (ID: 628)
+    📋 Found 14 trims
+  🏷️  Processing model: Honda Integra
+    ✅ Model added (ID: 629)
+    📋 Found 2 trims
+  🏷️  Processing model: Honda Accord Aero Deck
+    ✅ Model added (ID: 630)
+    📋 Found 6 trims
+  🏷️  Processing model: Honda Jazz
+    ✅ Model added (ID: 631)
+    📋 Found 26 trims
+  🏷️  Processing model: Honda Civic Shuttle
+    ✅ Model added (ID: 632)
+    📋 Found 10 trims
+  🏷️  Processing model: Honda Civic CRX Coupe
+    ✅ Model added (ID: 633)
+    📋 Found 10 trims
+  🏷️  Processing model: Honda Quintet
+    ✅ Model added (ID: 634)
+    📋 Found 2 trims
+  🏷️  Processing model: Honda Civic
+    ✅ Model added (ID: 635)
+    📋 Found 98 trims
+  🏷️  Processing model: Honda Civic Combi
+    ✅ Model added (ID: 636)
+    📋 Found 4 trims
+  🏷️  Processing model: Honda Prelude
+    ✅ Model added (ID: 637)
+    📋 Found 22 trims
+  🏷️  Processing model: Honda Accord
+    ✅ Model added (ID: 638)
+    📋 Found 58 trims
+
+📦 Processing brand: Hummer
+  ✅ Brand added (ID: 56)
+  🏷️  Processing model: Hummer H2 SUT
+    ✅ Model added (ID: 639)
+    📋 Found 2 trims
+  🏷️  Processing model: Hummer H3
+    ✅ Model added (ID: 640)
+    📋 Found 8 trims
+  🏷️  Processing model: Hummer H2
+    ✅ Model added (ID: 641)
+    📋 Found 4 trims
+
+📦 Processing brand: Hyundai
+  ↪ Brand already exists (ID: 24)
+  🏷️  Processing model: Hyundai Kona Electric
+    ✅ Model added (ID: 642)
+    📋 Found 4 trims
+  🏷️  Processing model: Hyundai i30 Fastback
+    ✅ Model added (ID: 643)
+    📋 Found 6 trims
+  🏷️  Processing model: Hyundai Nexo
+    ✅ Model added (ID: 644)
+    📋 Found 2 trims
+  🏷️  Processing model: Hyundai Kona
+    ✅ Model added (ID: 645)
+    📋 Found 8 trims
+  🏷️  Processing model: Hyundai Ioniq
+    ✅ Model added (ID: 646)
+    📋 Found 8 trims
+  🏷️  Processing model: Hyundai Ioniq Electric
+    ✅ Model added (ID: 647)
+    📋 Found 6 trims
+  🏷️  Processing model: Hyundai ix35 FCEV
+    ✅ Model added (ID: 648)
+    📋 Found 2 trims
+  🏷️  Processing model: Hyundai i20 Coupe
+    ✅ Model added (ID: 649)
+    📋 Found 4 trims
+  🏷️  Processing model: Hyundai i30 Wagon
+    ✅ Model added (ID: 650)
+    📋 Found 8 trims
+  🏷️  Processing model: Hyundai i40 Wagon
+    ✅ Model added (ID: 651)
+    📋 Found 8 trims
+  🏷️  Processing model: Hyundai i40
+    ✅ Model added (ID: 652)
+    📋 Found 8 trims
+  🏷️  Processing model: Hyundai H300
+    ✅ Model added (ID: 653)
+    📋 Found 2 trims
+  🏷️  Processing model: Hyundai H300 Dubbele Cabine
+    ✅ Model added (ID: 654)
+    📋 Found 2 trims
+  🏷️  Processing model: Hyundai Veloster
+    ✅ Model added (ID: 655)
+    📋 Found 4 trims
+  🏷️  Processing model: Hyundai Genesis Coupe
+    ✅ Model added (ID: 656)
+    📋 Found 2 trims
+  🏷️  Processing model: Hyundai ix20
+    ✅ Model added (ID: 657)
+    📋 Found 16 trims
+  🏷️  Processing model: Hyundai ix35
+    ✅ Model added (ID: 658)
+    📋 Found 8 trims
+  🏷️  Processing model: Hyundai Santa Fe Van
+    ✅ Model added (ID: 659)
+    📋 Found 4 trims
+  🏷️  Processing model: Hyundai i30 CW
+    ✅ Model added (ID: 660)
+    📋 Found 8 trims
+  🏷️  Processing model: Hyundai i10
+    ↪ Model already exists (ID: 21)
+    📋 Found 18 trims
+  🏷️  Processing model: Hyundai i20
+    ↪ Model already exists (ID: 20)
+    📋 Found 24 trims
+  🏷️  Processing model: Hyundai i30
+    ✅ Model added (ID: 661)
+    📋 Found 24 trims
+  🏷️  Processing model: Hyundai Grandeur
+    ✅ Model added (ID: 662)
+    📋 Found 4 trims
+  🏷️  Processing model: Hyundai Tucson
+    ✅ Model added (ID: 663)
+    📋 Found 16 trims
+  🏷️  Processing model: Hyundai Atos
+    ✅ Model added (ID: 664)
+    📋 Found 4 trims
+  🏷️  Processing model: Hyundai Getz
+    ✅ Model added (ID: 665)
+    📋 Found 10 trims
+  🏷️  Processing model: Hyundai Terracan
+    ✅ Model added (ID: 666)
+    📋 Found 6 trims
+  🏷️  Processing model: Hyundai Matrix
+    ✅ Model added (ID: 667)
+    📋 Found 6 trims
+  🏷️  Processing model: Hyundai Elantra
+    ✅ Model added (ID: 668)
+    📋 Found 12 trims
+  🏷️  Processing model: Hyundai Trajet
+    ✅ Model added (ID: 669)
+    📋 Found 6 trims
+  🏷️  Processing model: Hyundai Santa Fe
+    ✅ Model added (ID: 670)
+    📋 Found 20 trims
+  🏷️  Processing model: Hyundai Coupe
+    ✅ Model added (ID: 671)
+    📋 Found 14 trims
+  🏷️  Processing model: Hyundai Accent
+    ✅ Model added (ID: 672)
+    📋 Found 20 trims
+  🏷️  Processing model: Hyundai XG
+    ✅ Model added (ID: 673)
+    📋 Found 8 trims
+  🏷️  Processing model: Hyundai Atos Spirit
+    ✅ Model added (ID: 674)
+    📋 Found 8 trims
+  🏷️  Processing model: Hyundai Atos Multi
+    ✅ Model added (ID: 675)
+    📋 Found 8 trims
+  🏷️  Processing model: Hyundai Satellite
+    ✅ Model added (ID: 676)
+    📋 Found 4 trims
+  🏷️  Processing model: Hyundai Lantra Wagon
+    ✅ Model added (ID: 677)
+    📋 Found 10 trims
+  🏷️  Processing model: Hyundai Lantra
+    ✅ Model added (ID: 678)
+    📋 Found 20 trims
+  🏷️  Processing model: Hyundai Scoupe
+    ✅ Model added (ID: 679)
+    📋 Found 6 trims
+  🏷️  Processing model: Hyundai Excel
+    ✅ Model added (ID: 680)
+    📋 Found 22 trims
+  🏷️  Processing model: Hyundai Sonata
+    ✅ Model added (ID: 681)
+    📋 Found 28 trims
+  🏷️  Processing model: Hyundai Stellar
+    ✅ Model added (ID: 682)
+    📋 Found 4 trims
+  🏷️  Processing model: Hyundai Pony Combi
+    ✅ Model added (ID: 683)
+    📋 Found 2 trims
+  🏷️  Processing model: Hyundai Pony
+    ✅ Model added (ID: 684)
+    📋 Found 24 trims
+
+📦 Processing brand: Infiniti
+  ✅ Brand added (ID: 57)
+  🏷️  Processing model: Infiniti QX30
+    ✅ Model added (ID: 685)
+    📋 Found 6 trims
+  🏷️  Processing model: Infiniti Q30
+    ✅ Model added (ID: 686)
+    📋 Found 6 trims
+  🏷️  Processing model: Infiniti Q70
+    ✅ Model added (ID: 687)
+    📋 Found 8 trims
+  🏷️  Processing model: Infiniti QX50
+    ✅ Model added (ID: 688)
+    📋 Found 4 trims
+  🏷️  Processing model: Infiniti QX70
+    ✅ Model added (ID: 689)
+    📋 Found 4 trims
+  🏷️  Processing model: Infiniti Q50
+    ✅ Model added (ID: 690)
+    📋 Found 12 trims
+  🏷️  Processing model: Infiniti Q60 Cabrio
+    ✅ Model added (ID: 691)
+    📋 Found 2 trims
+  🏷️  Processing model: Infiniti Q60 Coupe
+    ✅ Model added (ID: 692)
+    📋 Found 4 trims
+  🏷️  Processing model: Infiniti M
+    ✅ Model added (ID: 693)
+    📋 Found 6 trims
+  🏷️  Processing model: Infiniti G Cabrio
+    ✅ Model added (ID: 694)
+    📋 Found 2 trims
+  🏷️  Processing model: Infiniti EX
+    ✅ Model added (ID: 695)
+    📋 Found 8 trims
+  🏷️  Processing model: Infiniti FX
+    ✅ Model added (ID: 696)
+    📋 Found 8 trims
+  🏷️  Processing model: Infiniti G
+    ✅ Model added (ID: 697)
+    📋 Found 6 trims
+  🏷️  Processing model: Infiniti G Coupe
+    ✅ Model added (ID: 698)
+    📋 Found 4 trims
+
+📦 Processing brand: Jaguar
+  ✅ Brand added (ID: 58)
+  🏷️  Processing model: Jaguar I-Pace
+    ✅ Model added (ID: 699)
+    📋 Found 6 trims
+  🏷️  Processing model: Jaguar E-Pace
+    ✅ Model added (ID: 700)
+    📋 Found 8 trims
+  🏷️  Processing model: Jaguar F-Pace
+    ✅ Model added (ID: 701)
+    📋 Found 12 trims
+  🏷️  Processing model: Jaguar F-type Coupe
+    ✅ Model added (ID: 702)
+    📋 Found 10 trims
+  🏷️  Processing model: Jaguar XE
+    ✅ Model added (ID: 703)
+    📋 Found 12 trims
+  🏷️  Processing model: Jaguar F-type Convertible
+    ✅ Model added (ID: 704)
+    📋 Found 10 trims
+  🏷️  Processing model: Jaguar XF Sportbrake
+    ✅ Model added (ID: 705)
+    📋 Found 12 trims
+  🏷️  Processing model: Jaguar XK Coupe
+    ✅ Model added (ID: 706)
+    📋 Found 2 trims
+  🏷️  Processing model: Jaguar XF
+    ✅ Model added (ID: 707)
+    📋 Found 26 trims
+  🏷️  Processing model: Jaguar X-Type Estate
+    ✅ Model added (ID: 708)
+    📋 Found 10 trims
+  🏷️  Processing model: Jaguar X-Type
+    ✅ Model added (ID: 709)
+    📋 Found 16 trims
+  🏷️  Processing model: Jaguar S-Type
+    ✅ Model added (ID: 710)
+    📋 Found 12 trims
+  🏷️  Processing model: Jaguar XK
+    ✅ Model added (ID: 711)
+    📋 Found 14 trims
+  🏷️  Processing model: Jaguar XK Convertible
+    ✅ Model added (ID: 712)
+    📋 Found 16 trims
+  🏷️  Processing model: Jaguar XJ
+    ✅ Model added (ID: 713)
+    📋 Found 50 trims
+  🏷️  Processing model: Jaguar XJS Convertible
+    ✅ Model added (ID: 714)
+    📋 Found 8 trims
+  🏷️  Processing model: Jaguar V12
+    ✅ Model added (ID: 715)
+    📋 Found 2 trims
+  🏷️  Processing model: Jaguar XJS Cabrio
+    ✅ Model added (ID: 716)
+    📋 Found 4 trims
+  🏷️  Processing model: Jaguar XJS
+    ✅ Model added (ID: 717)
+    📋 Found 14 trims
+
+📦 Processing brand: Jeep
+  ✅ Brand added (ID: 59)
+  🏷️  Processing model: Jeep Renegade Van
+    ✅ Model added (ID: 718)
+    📋 Found 4 trims
+  🏷️  Processing model: Jeep Cherokee Van
+    ✅ Model added (ID: 719)
+    📋 Found 4 trims
+  🏷️  Processing model: Jeep Renegade
+    ✅ Model added (ID: 720)
+    📋 Found 16 trims
+  🏷️  Processing model: Jeep Grand Cherokee Van
+    ✅ Model added (ID: 721)
+    📋 Found 10 trims
+  🏷️  Processing model: Jeep Wrangler Unlimited Van
+    ✅ Model added (ID: 722)
+    📋 Found 4 trims
+  🏷️  Processing model: Jeep Patriot
+    ✅ Model added (ID: 723)
+    📋 Found 6 trims
+  🏷️  Processing model: Jeep Wrangler Unlimited
+    ✅ Model added (ID: 724)
+    📋 Found 16 trims
+  🏷️  Processing model: Jeep Commander
+    ✅ Model added (ID: 725)
+    📋 Found 4 trims
+  🏷️  Processing model: Jeep Compass
+    ✅ Model added (ID: 726)
+    📋 Found 18 trims
+  🏷️  Processing model: Jeep Grand Cherokee
+    ✅ Model added (ID: 727)
+    📋 Found 36 trims
+  🏷️  Processing model: Jeep Wrangler
+    ✅ Model added (ID: 728)
+    📋 Found 34 trims
+  🏷️  Processing model: Jeep Cherokee
+    ✅ Model added (ID: 729)
+    📋 Found 34 trims
+
+📦 Processing brand: Kia
+  ↪ Brand already exists (ID: 32)
+  🏷️  Processing model: Kia ProCeed
+    ✅ Model added (ID: 730)
+    📋 Found 4 trims
+  🏷️  Processing model: Kia XCeed
+    ✅ Model added (ID: 731)
+    📋 Found 4 trims
+  🏷️  Processing model: Kia e-Niro
+    ✅ Model added (ID: 732)
+    📋 Found 2 trims
+  🏷️  Processing model: Kia e-Soul
+    ✅ Model added (ID: 733)
+    📋 Found 4 trims
+  🏷️  Processing model: Kia Ceed Sportswagon
+    ✅ Model added (ID: 734)
+    📋 Found 6 trims
+  🏷️  Processing model: Kia Stinger
+    ✅ Model added (ID: 735)
+    📋 Found 2 trims
+  🏷️  Processing model: Kia Stonic
+    ✅ Model added (ID: 736)
+    📋 Found 6 trims
+  🏷️  Processing model: Kia Niro
+    ✅ Model added (ID: 737)
+    📋 Found 10 trims
+  🏷️  Processing model: Kia Optima SW
+    ✅ Model added (ID: 738)
+    📋 Found 8 trims
+  🏷️  Processing model: Kia Ceed SW
+    ✅ Model added (ID: 739)
+    📋 Found 12 trims
+  🏷️  Processing model: Kia Optima
+    ✅ Model added (ID: 740)
+    📋 Found 14 trims
+  🏷️  Processing model: Kia Picanto
+    ✅ Model added (ID: 741)
+    📋 Found 30 trims
+  🏷️  Processing model: Kia Venga
+    ✅ Model added (ID: 742)
+    📋 Found 14 trims
+  🏷️  Processing model: Kia Sorento Van
+    ✅ Model added (ID: 743)
+    📋 Found 2 trims
+  🏷️  Processing model: Kia Soul
+    ✅ Model added (ID: 744)
+    📋 Found 10 trims
+  🏷️  Processing model: Kia Ceed
+    ✅ Model added (ID: 745)
+    📋 Found 28 trims
+  🏷️  Processing model: Kia Ceed Sporty Wagon
+    ✅ Model added (ID: 746)
+    📋 Found 10 trims
+  🏷️  Processing model: Kia Cerato
+    ✅ Model added (ID: 747)
+    📋 Found 14 trims
+  🏷️  Processing model: Kia Opirus
+    ✅ Model added (ID: 748)
+    📋 Found 2 trims
+  🏷️  Processing model: Kia Carens
+    ✅ Model added (ID: 749)
+    📋 Found 28 trims
+  🏷️  Processing model: Kia Sorento
+    ✅ Model added (ID: 750)
+    📋 Found 28 trims
+  🏷️  Processing model: Kia Mentor
+    ✅ Model added (ID: 751)
+    📋 Found 2 trims
+  🏷️  Processing model: Kia Magentis
+    ✅ Model added (ID: 752)
+    📋 Found 14 trims
+  🏷️  Processing model: Kia Rio
+    ✅ Model added (ID: 753)
+    📋 Found 38 trims
+  🏷️  Processing model: Kia Pride Wagon
+    ✅ Model added (ID: 754)
+    📋 Found 2 trims
+  🏷️  Processing model: Kia Carnival
+    ✅ Model added (ID: 755)
+    📋 Found 8 trims
+  🏷️  Processing model: Kia Clarus Wagon
+    ✅ Model added (ID: 756)
+    📋 Found 2 trims
+  🏷️  Processing model: Kia Joice
+    ✅ Model added (ID: 757)
+    📋 Found 4 trims
+  🏷️  Processing model: Kia Shuma
+    ✅ Model added (ID: 758)
+    📋 Found 6 trims
+  🏷️  Processing model: Kia Clarus
+    ✅ Model added (ID: 759)
+    📋 Found 6 trims
+  🏷️  Processing model: Kia Pride
+    ✅ Model added (ID: 760)
+    📋 Found 6 trims
+  🏷️  Processing model: Kia Sportage
+    ✅ Model added (ID: 761)
+    📋 Found 36 trims
+  🏷️  Processing model: Kia Sephia
+    ✅ Model added (ID: 762)
+    📋 Found 10 trims
+
+📦 Processing brand: Lada
+  ✅ Brand added (ID: 60)
+  🏷️  Processing model: Lada Priora 2170
+    ✅ Model added (ID: 763)
+    📋 Found 2 trims
+  🏷️  Processing model: Lada Priora 2171
+    ✅ Model added (ID: 764)
+    📋 Found 2 trims
+  🏷️  Processing model: Lada Priora 2172
+    ✅ Model added (ID: 765)
+    📋 Found 2 trims
+  🏷️  Processing model: Lada Kalina 1117
+    ✅ Model added (ID: 766)
+    📋 Found 2 trims
+  🏷️  Processing model: Lada Kalina 1119
+    ✅ Model added (ID: 767)
+    📋 Found 4 trims
+  🏷️  Processing model: Lada Kalina 1118
+    ✅ Model added (ID: 768)
+    📋 Found 4 trims
+  🏷️  Processing model: Lada 111
+    ✅ Model added (ID: 769)
+    📋 Found 4 trims
+  🏷️  Processing model: Lada 112
+    ✅ Model added (ID: 770)
+    📋 Found 4 trims
+  🏷️  Processing model: Lada 110
+    ✅ Model added (ID: 771)
+    📋 Found 6 trims
+  🏷️  Processing model: Lada Samara Cabriolet
+    ✅ Model added (ID: 772)
+    📋 Found 2 trims
+  🏷️  Processing model: Lada Samara Diva
+    ✅ Model added (ID: 773)
+    📋 Found 6 trims
+  🏷️  Processing model: Lada Samara
+    ✅ Model added (ID: 774)
+    📋 Found 22 trims
+  🏷️  Processing model: Lada 2104 Stationcar
+    ✅ Model added (ID: 775)
+    📋 Found 6 trims
+  🏷️  Processing model: Lada 2107
+    ✅ Model added (ID: 776)
+    📋 Found 8 trims
+  🏷️  Processing model: Lada 1200
+    ✅ Model added (ID: 777)
+    📋 Found 12 trims
+  🏷️  Processing model: Lada 2105
+    ✅ Model added (ID: 778)
+    📋 Found 6 trims
+  🏷️  Processing model: Lada Niva
+    ✅ Model added (ID: 779)
+    📋 Found 8 trims
+
+📦 Processing brand: Lamborghini
+  ✅ Brand added (ID: 61)
+  🏷️  Processing model: Lamborghini Urus
+    ✅ Model added (ID: 780)
+    📋 Found 2 trims
+  🏷️  Processing model: Lamborghini HuracÃ¡n Spyder
+    ✅ Model added (ID: 781)
+    📋 Found 4 trims
+  🏷️  Processing model: Lamborghini HuracÃ¡n
+    ✅ Model added (ID: 782)
+    📋 Found 6 trims
+  🏷️  Processing model: Lamborghini Aventador Roadster
+    ✅ Model added (ID: 783)
+    📋 Found 6 trims
+  🏷️  Processing model: Lamborghini Aventador
+    ✅ Model added (ID: 784)
+    📋 Found 6 trims
+  🏷️  Processing model: Lamborghini Gallardo Spyder
+    ✅ Model added (ID: 785)
+    📋 Found 6 trims
+  🏷️  Processing model: Lamborghini Murcielago Roadster
+    ✅ Model added (ID: 786)
+    📋 Found 4 trims
+  🏷️  Processing model: Lamborghini Gallardo
+    ✅ Model added (ID: 787)
+    📋 Found 16 trims
+  🏷️  Processing model: Lamborghini Murcielago
+    ✅ Model added (ID: 788)
+    📋 Found 6 trims
+  🏷️  Processing model: Lamborghini Diablo
+    ✅ Model added (ID: 789)
+    📋 Found 14 trims
+
+📦 Processing brand: Lancia
+  ✅ Brand added (ID: 62)
+  🏷️  Processing model: Lancia Flavia
+    ✅ Model added (ID: 790)
+    📋 Found 2 trims
+  🏷️  Processing model: Lancia Voyager Van
+    ✅ Model added (ID: 791)
+    📋 Found 4 trims
+  🏷️  Processing model: Lancia Voyager
+    ✅ Model added (ID: 792)
+    📋 Found 6 trims
+  🏷️  Processing model: Lancia Musa
+    ✅ Model added (ID: 793)
+    📋 Found 14 trims
+  🏷️  Processing model: Lancia Phedra
+    ✅ Model added (ID: 794)
+    📋 Found 14 trims
+  🏷️  Processing model: Lancia Thesis
+    ✅ Model added (ID: 795)
+    📋 Found 8 trims
+  🏷️  Processing model: Lancia Lybra
+    ✅ Model added (ID: 796)
+    📋 Found 10 trims
+  🏷️  Processing model: Lancia Lybra SW
+    ✅ Model added (ID: 797)
+    📋 Found 10 trims
+  🏷️  Processing model: Lancia Dedra SW
+    ✅ Model added (ID: 798)
+    📋 Found 2 trims
+  🏷️  Processing model: Lancia Kappa Coupe
+    ✅ Model added (ID: 799)
+    📋 Found 2 trims
+  🏷️  Processing model: Lancia Kappa SW
+    ✅ Model added (ID: 800)
+    📋 Found 4 trims
+  🏷️  Processing model: Lancia Zeta
+    ✅ Model added (ID: 801)
+    📋 Found 10 trims
+  🏷️  Processing model: Lancia Kappa
+    ✅ Model added (ID: 802)
+    📋 Found 8 trims
+  🏷️  Processing model: Lancia Delta HPE
+    ✅ Model added (ID: 803)
+    📋 Found 6 trims
+  🏷️  Processing model: Lancia Dedra Station Wagon
+    ✅ Model added (ID: 804)
+    📋 Found 4 trims
+  🏷️  Processing model: Lancia Thema Station Wagon
+    ✅ Model added (ID: 805)
+    📋 Found 2 trims
+  🏷️  Processing model: Lancia Dedra
+    ✅ Model added (ID: 806)
+    📋 Found 14 trims
+  🏷️  Processing model: Lancia Thema Pininfarina
+    ✅ Model added (ID: 807)
+    📋 Found 4 trims
+  🏷️  Processing model: Lancia Thema
+    ✅ Model added (ID: 808)
+    📋 Found 16 trims
+  🏷️  Processing model: Lancia Ypsilon
+    ✅ Model added (ID: 809)
+    📋 Found 46 trims
+  🏷️  Processing model: Lancia Prisma
+    ✅ Model added (ID: 810)
+    📋 Found 8 trims
+  🏷️  Processing model: Lancia A112
+    ✅ Model added (ID: 811)
+    📋 Found 2 trims
+  🏷️  Processing model: Lancia Gamma
+    ✅ Model added (ID: 812)
+    📋 Found 2 trims
+  🏷️  Processing model: Lancia Gamma Coupe
+    ✅ Model added (ID: 813)
+    📋 Found 2 trims
+  🏷️  Processing model: Lancia Trevi
+    ✅ Model added (ID: 814)
+    📋 Found 2 trims
+  🏷️  Processing model: Lancia Delta
+    ✅ Model added (ID: 815)
+    📋 Found 32 trims
+  🏷️  Processing model: Lancia Monte Carlo
+    ✅ Model added (ID: 816)
+    📋 Found 2 trims
+  🏷️  Processing model: Lancia HPE
+    ✅ Model added (ID: 817)
+    📋 Found 4 trims
+  🏷️  Processing model: Lancia Beta Coupe
+    ✅ Model added (ID: 818)
+    📋 Found 4 trims
+  🏷️  Processing model: Lancia Beta
+    ✅ Model added (ID: 819)
+    📋 Found 2 trims
+  🏷️  Processing model: Lancia Beta Spider
+    ✅ Model added (ID: 820)
+    📋 Found 6 trims
+
+📦 Processing brand: Land Rover
+  ✅ Brand added (ID: 63)
+  🏷️  Processing model: Land Rover Range Rover Velar
+    ✅ Model added (ID: 821)
+    📋 Found 6 trims
+  🏷️  Processing model: Land Rover Range Rover Evoque Convertible
+    ✅ Model added (ID: 822)
+    📋 Found 4 trims
+  🏷️  Processing model: Land Rover Discovery Sport
+    ✅ Model added (ID: 823)
+    📋 Found 16 trims
+  🏷️  Processing model: Land Rover Range Rover Evoque
+    ✅ Model added (ID: 824)
+    📋 Found 18 trims
+  🏷️  Processing model: Land Rover Range Rover Evoque Coupe
+    ✅ Model added (ID: 825)
+    📋 Found 12 trims
+  🏷️  Processing model: Land Rover Defender Pick Up
+    ✅ Model added (ID: 826)
+    📋 Found 2 trims
+  🏷️  Processing model: Land Rover Discovery Commercial
+    ✅ Model added (ID: 827)
+    📋 Found 6 trims
+  🏷️  Processing model: Land Rover Freelander
+    ✅ Model added (ID: 828)
+    📋 Found 22 trims
+  🏷️  Processing model: Land Rover Defender 90
+    ✅ Model added (ID: 829)
+    📋 Found 26 trims
+  🏷️  Processing model: Land Rover Range Rover Sport
+    ✅ Model added (ID: 830)
+    📋 Found 28 trims
+  🏷️  Processing model: Land Rover Freelander Softback
+    ✅ Model added (ID: 831)
+    📋 Found 2 trims
+  🏷️  Processing model: Land Rover Freelander Hardback
+    ✅ Model added (ID: 832)
+    📋 Found 12 trims
+  🏷️  Processing model: Land Rover Freelander Station Wagon
+    ✅ Model added (ID: 833)
+    📋 Found 12 trims
+  🏷️  Processing model: Land Rover Defender 110
+    ✅ Model added (ID: 834)
+    📋 Found 32 trims
+  🏷️  Processing model: Land Rover Discovery
+    ✅ Model added (ID: 835)
+    📋 Found 46 trims
+  🏷️  Processing model: Land Rover Range Rover
+    ✅ Model added (ID: 836)
+    📋 Found 44 trims
+
+📦 Processing brand: Lexus
+  ✅ Brand added (ID: 64)
+  🏷️  Processing model: Lexus UX Electric
+    ✅ Model added (ID: 837)
+    📋 Found 2 trims
+  🏷️  Processing model: Lexus LC Convertible
+    ✅ Model added (ID: 838)
+    📋 Found 2 trims
+  🏷️  Processing model: Lexus UX
+    ✅ Model added (ID: 839)
+    📋 Found 4 trims
+  🏷️  Processing model: Lexus ES
+    ✅ Model added (ID: 840)
+    📋 Found 4 trims
+  🏷️  Processing model: Lexus LC
+    ✅ Model added (ID: 841)
+    📋 Found 2 trims
+  🏷️  Processing model: Lexus RC
+    ✅ Model added (ID: 842)
+    📋 Found 8 trims
+  🏷️  Processing model: Lexus NX
+    ✅ Model added (ID: 843)
+    📋 Found 14 trims
+  🏷️  Processing model: Lexus CT
+    ✅ Model added (ID: 844)
+    📋 Found 18 trims
+  🏷️  Processing model: Lexus IS C
+    ✅ Model added (ID: 845)
+    📋 Found 2 trims
+  🏷️  Processing model: Lexus SC
+    ✅ Model added (ID: 846)
+    📋 Found 4 trims
+  🏷️  Processing model: Lexus IS SportCross
+    ✅ Model added (ID: 847)
+    📋 Found 4 trims
+  🏷️  Processing model: Lexus RX
+    ✅ Model added (ID: 848)
+    📋 Found 30 trims
+  🏷️  Processing model: Lexus IS
+    ✅ Model added (ID: 849)
+    📋 Found 32 trims
+  🏷️  Processing model: Lexus GS
+    ✅ Model added (ID: 850)
+    📋 Found 28 trims
+  🏷️  Processing model: Lexus LS
+    ✅ Model added (ID: 851)
+    📋 Found 24 trims
+
+📦 Processing brand: Lincoln
+  ✅ Brand added (ID: 65)
+  🏷️  Processing model: Lincoln Navigator
+    ✅ Model added (ID: 852)
+    📋 Found 4 trims
+  🏷️  Processing model: Lincoln Continental
+    ✅ Model added (ID: 853)
+    📋 Found 2 trims
+  🏷️  Processing model: Lincoln Town Car
+    ✅ Model added (ID: 854)
+    📋 Found 4 trims
+  🏷️  Processing model: Lincoln Mark VIII
+    ✅ Model added (ID: 855)
+    📋 Found 2 trims
+  🏷️  Processing model: Lincoln Continental Signature Series
+    ✅ Model added (ID: 856)
+    📋 Found 2 trims
+
+📦 Processing brand: Lotus
+  ✅ Brand added (ID: 66)
+  🏷️  Processing model: Lotus Evora
+    ✅ Model added (ID: 857)
+    📋 Found 6 trims
+  🏷️  Processing model: Lotus Europa
+    ✅ Model added (ID: 858)
+    📋 Found 2 trims
+  🏷️  Processing model: Lotus Exige
+    ✅ Model added (ID: 859)
+    📋 Found 10 trims
+  🏷️  Processing model: Lotus Elise
+    ✅ Model added (ID: 860)
+    📋 Found 22 trims
+  🏷️  Processing model: Lotus Esprit
+    ✅ Model added (ID: 861)
+    📋 Found 4 trims
+
+📦 Processing brand: MG
+  ✅ Brand added (ID: 67)
+  🏷️  Processing model: MG TF
+    ✅ Model added (ID: 862)
+    📋 Found 4 trims
+  🏷️  Processing model: MG ZR
+    ✅ Model added (ID: 863)
+    📋 Found 8 trims
+  🏷️  Processing model: MG ZS
+    ✅ Model added (ID: 864)
+    📋 Found 16 trims
+  🏷️  Processing model: MG ZT
+    ✅ Model added (ID: 865)
+    📋 Found 8 trims
+  🏷️  Processing model: MG ZT-T
+    ✅ Model added (ID: 866)
+    📋 Found 8 trims
+  🏷️  Processing model: MG F
+    ✅ Model added (ID: 867)
+    📋 Found 6 trims
+  🏷️  Processing model: MG RV8
+    ✅ Model added (ID: 868)
+    📋 Found 2 trims
+
+📦 Processing brand: Marcos
+  ✅ Brand added (ID: 68)
+  🏷️  Processing model: Marcos Mantara
+    ✅ Model added (ID: 869)
+    📋 Found 4 trims
+  🏷️  Processing model: Marcos LM 500
+    ✅ Model added (ID: 870)
+    📋 Found 4 trims
+
+📦 Processing brand: Maserati
+  ✅ Brand added (ID: 69)
+  🏷️  Processing model: Maserati Levante
+    ✅ Model added (ID: 871)
+    📋 Found 6 trims
+  🏷️  Processing model: Maserati GranCabrio
+    ✅ Model added (ID: 872)
+    📋 Found 6 trims
+  🏷️  Processing model: Maserati GranTurismo
+    ✅ Model added (ID: 873)
+    📋 Found 10 trims
+  🏷️  Processing model: Maserati Coupe
+    ✅ Model added (ID: 874)
+    📋 Found 6 trims
+  🏷️  Processing model: Maserati Spyder
+    ✅ Model added (ID: 875)
+    📋 Found 8 trims
+  🏷️  Processing model: Maserati 3200 GT
+    ✅ Model added (ID: 876)
+    📋 Found 6 trims
+  🏷️  Processing model: Maserati Quattroporte
+    ✅ Model added (ID: 877)
+    📋 Found 28 trims
+  🏷️  Processing model: Maserati Ghibli
+    ✅ Model added (ID: 878)
+    📋 Found 6 trims
+
+📦 Processing brand: Mazda
+  ↪ Brand already exists (ID: 31)
+  🏷️  Processing model: Mazda MX-30
+    ✅ Model added (ID: 879)
+    📋 Found 2 trims
+  🏷️  Processing model: Mazda CX-30
+    ✅ Model added (ID: 880)
+    📋 Found 4 trims
+  🏷️  Processing model: Mazda MX-5 RF
+    ✅ Model added (ID: 881)
+    📋 Found 4 trims
+  🏷️  Processing model: Mazda CX-3
+    ✅ Model added (ID: 882)
+    📋 Found 10 trims
+  🏷️  Processing model: Mazda CX-5
+    ✅ Model added (ID: 883)
+    📋 Found 16 trims
+  🏷️  Processing model: Mazda CX-9
+    ✅ Model added (ID: 884)
+    📋 Found 2 trims
+  🏷️  Processing model: Mazda CX-7
+    ✅ Model added (ID: 885)
+    📋 Found 6 trims
+  🏷️  Processing model: Mazda 3 Sedan
+    ✅ Model added (ID: 886)
+    📋 Found 28 trims
+  🏷️  Processing model: Mazda MX-5 Roadster Coupe
+    ✅ Model added (ID: 887)
+    📋 Found 12 trims
+  🏷️  Processing model: Mazda 3
+    ✅ Model added (ID: 888)
+    📋 Found 28 trims
+  🏷️  Processing model: Mazda 5
+    ✅ Model added (ID: 889)
+    📋 Found 16 trims
+  🏷️  Processing model: Mazda 3 Sport
+    ✅ Model added (ID: 890)
+    📋 Found 4 trims
+  🏷️  Processing model: Mazda RX-8
+    ✅ Model added (ID: 891)
+    📋 Found 2 trims
+  🏷️  Processing model: Mazda 2
+    ✅ Model added (ID: 892)
+    📋 Found 32 trims
+  🏷️  Processing model: Mazda 6 Sport
+    ✅ Model added (ID: 893)
+    📋 Found 4 trims
+  🏷️  Processing model: Mazda 6
+    ✅ Model added (ID: 894)
+    📋 Found 32 trims
+  🏷️  Processing model: Mazda 6 SportBreak
+    ✅ Model added (ID: 895)
+    📋 Found 26 trims
+  🏷️  Processing model: Mazda Tribute
+    ✅ Model added (ID: 896)
+    📋 Found 4 trims
+  🏷️  Processing model: Mazda Premacy
+    ✅ Model added (ID: 897)
+    📋 Found 6 trims
+  🏷️  Processing model: Mazda Demio
+    ✅ Model added (ID: 898)
+    📋 Found 6 trims
+  🏷️  Processing model: Mazda 323 FastBreak
+    ✅ Model added (ID: 899)
+    📋 Found 6 trims
+  🏷️  Processing model: Mazda 323 Coupe
+    ✅ Model added (ID: 900)
+    📋 Found 2 trims
+  🏷️  Processing model: Mazda 323 P
+    ✅ Model added (ID: 901)
+    📋 Found 4 trims
+  🏷️  Processing model: Mazda 323 Sedan
+    ✅ Model added (ID: 902)
+    📋 Found 8 trims
+  🏷️  Processing model: Mazda MPV
+    ✅ Model added (ID: 903)
+    📋 Found 8 trims
+  🏷️  Processing model: Mazda Xedos 9
+    ✅ Model added (ID: 904)
+    📋 Found 8 trims
+  🏷️  Processing model: Mazda Xedos 6
+    ✅ Model added (ID: 905)
+    📋 Found 4 trims
+  🏷️  Processing model: Mazda MX-6
+    ✅ Model added (ID: 906)
+    📋 Found 2 trims
+  🏷️  Processing model: Mazda MX-3
+    ✅ Model added (ID: 907)
+    📋 Found 4 trims
+  🏷️  Processing model: Mazda RX-7 Cabriolet
+    ✅ Model added (ID: 908)
+    📋 Found 2 trims
+  🏷️  Processing model: Mazda MX-5
+    ✅ Model added (ID: 909)
+    📋 Found 34 trims
+  🏷️  Processing model: Mazda 323 F
+    ✅ Model added (ID: 910)
+    📋 Found 8 trims
+  🏷️  Processing model: Mazda 626 Wagon
+    ✅ Model added (ID: 911)
+    📋 Found 14 trims
+  🏷️  Processing model: Mazda 626 Coupe
+    ✅ Model added (ID: 912)
+    📋 Found 10 trims
+  🏷️  Processing model: Mazda 929 Estate
+    ✅ Model added (ID: 913)
+    📋 Found 4 trims
+  🏷️  Processing model: Mazda 929
+    ✅ Model added (ID: 914)
+    📋 Found 8 trims
+  🏷️  Processing model: Mazda 929 Coupe
+    ✅ Model added (ID: 915)
+    📋 Found 4 trims
+  🏷️  Processing model: Mazda RX-7
+    ✅ Model added (ID: 916)
+    📋 Found 10 trims
+  🏷️  Processing model: Mazda 626
+    ✅ Model added (ID: 917)
+    📋 Found 56 trims
+  🏷️  Processing model: Mazda 626 Hardtop
+    ✅ Model added (ID: 918)
+    📋 Found 2 trims
+  🏷️  Processing model: Mazda 929 Legato Combi
+    ✅ Model added (ID: 919)
+    📋 Found 2 trims
+  🏷️  Processing model: Mazda 929 Legato
+    ✅ Model added (ID: 920)
+    📋 Found 2 trims
+  🏷️  Processing model: Mazda 323
+    ✅ Model added (ID: 921)
+    📋 Found 52 trims
+  🏷️  Processing model: Mazda 323 Estate
+    ✅ Model added (ID: 922)
+    📋 Found 14 trims
+  🏷️  Processing model: Mazda 121
+    ✅ Model added (ID: 923)
+    📋 Found 14 trims
+
+📦 Processing brand: McLaren
+  ✅ Brand added (ID: 70)
+  🏷️  Processing model: Mclaren 600LT
+    ✅ Model added (ID: 924)
+    📋 Found 2 trims
+  🏷️  Processing model: Mclaren 570S Spider
+    ✅ Model added (ID: 925)
+    📋 Found 2 trims
+  🏷️  Processing model: Mclaren 720S
+    ✅ Model added (ID: 926)
+    📋 Found 2 trims
+  🏷️  Processing model: Mclaren 570S
+    ✅ Model added (ID: 927)
+    📋 Found 2 trims
+  🏷️  Processing model: Mclaren 675LT
+    ✅ Model added (ID: 928)
+    📋 Found 2 trims
+  🏷️  Processing model: Mclaren 540C
+    ✅ Model added (ID: 929)
+    📋 Found 2 trims
+  🏷️  Processing model: Mclaren 570GT
+    ✅ Model added (ID: 930)
+    📋 Found 2 trims
+  🏷️  Processing model: Mclaren 650S
+    ✅ Model added (ID: 931)
+    📋 Found 2 trims
+  🏷️  Processing model: Mclaren 650S Spider
+    ✅ Model added (ID: 932)
+    📋 Found 2 trims
+  🏷️  Processing model: McLaren 12C Spider
+    ✅ Model added (ID: 933)
+    📋 Found 2 trims
+  🏷️  Processing model: McLaren 12C
+    ✅ Model added (ID: 934)
+    📋 Found 4 trims
+
+📦 Processing brand: Mercedes-Benz
+  ↪ Brand already exists (ID: 33)
+  🏷️  Processing model: Mercedes-Benz eSprinter
+    ✅ Model added (ID: 935)
+    📋 Found 2 trims
+  🏷️  Processing model: Mercedes-Benz GLB
+    ✅ Model added (ID: 936)
+    📋 Found 2 trims
+  🏷️  Processing model: Mercedes-Benz EQV
+    ✅ Model added (ID: 937)
+    📋 Found 2 trims
+  🏷️  Processing model: Mercedes-Benz eVito Bestelwagen
+    ✅ Model added (ID: 938)
+    📋 Found 2 trims
+  🏷️  Processing model: Mercedes-Benz EQC
+    ✅ Model added (ID: 939)
+    📋 Found 4 trims
+  🏷️  Processing model: Mercedes-Benz Sprinter Tourer
+    ✅ Model added (ID: 940)
+    📋 Found 2 trims
+  🏷️  Processing model: Mercedes-Benz AMG GT 4-Door Coupe
+    ✅ Model added (ID: 941)
+    📋 Found 4 trims
+  🏷️  Processing model: Mercedes-Benz X-class
+    ✅ Model added (ID: 942)
+    📋 Found 2 trims
+  🏷️  Processing model: Mercedes-Benz A-class Limousine
+    ✅ Model added (ID: 943)
+    📋 Found 6 trims
+  🏷️  Processing model: Mercedes-Benz E-class All-Terrain
+    ✅ Model added (ID: 944)
+    📋 Found 6 trims
+  🏷️  Processing model: Mercedes-Benz AMG GT Roadster
+    ✅ Model added (ID: 945)
+    📋 Found 6 trims
+  🏷️  Processing model: Mercedes-Benz S-class Cabriolet
+    ✅ Model added (ID: 946)
+    📋 Found 4 trims
+  🏷️  Processing model: Mercedes-Benz C-class Cabriolet
+    ✅ Model added (ID: 947)
+    📋 Found 6 trims
+  🏷️  Processing model: Mercedes-Benz GLC Coupe
+    ✅ Model added (ID: 948)
+    📋 Found 12 trims
+  🏷️  Processing model: Mercedes-Benz SLC
+    ✅ Model added (ID: 949)
+    📋 Found 2 trims
+  🏷️  Processing model: Mercedes-Benz GLS
+    ✅ Model added (ID: 950)
+    📋 Found 6 trims
+  🏷️  Processing model: Mercedes-Benz B-class Electric Drive
+    ✅ Model added (ID: 951)
+    📋 Found 4 trims
+  🏷️  Processing model: Mercedes-Benz CLA Shooting Brake
+    ✅ Model added (ID: 952)
+    📋 Found 10 trims
+  🏷️  Processing model: Mercedes-Benz GLC
+    ✅ Model added (ID: 953)
+    📋 Found 12 trims
+  🏷️  Processing model: Mercedes-Benz GLE
+    ✅ Model added (ID: 954)
+    📋 Found 12 trims
+  🏷️  Processing model: Mercedes-Benz GLE Coupe
+    ✅ Model added (ID: 955)
+    📋 Found 8 trims
+  🏷️  Processing model: Mercedes-Benz GLA
+    ✅ Model added (ID: 956)
+    📋 Found 12 trims
+  🏷️  Processing model: Mercedes-Benz Vito Tourer
+    ✅ Model added (ID: 957)
+    📋 Found 8 trims
+  🏷️  Processing model: Mercedes-Benz AMG GT
+    ✅ Model added (ID: 958)
+    📋 Found 10 trims
+  🏷️  Processing model: Mercedes-Benz Citan Tourer
+    ✅ Model added (ID: 959)
+    📋 Found 12 trims
+  🏷️  Processing model: Mercedes-Benz CLA Coupe
+    ✅ Model added (ID: 960)
+    📋 Found 14 trims
+  🏷️  Processing model: Mercedes-Benz Citan
+    ✅ Model added (ID: 961)
+    📋 Found 10 trims
+  🏷️  Processing model: Mercedes-Benz Sprinter Combi
+    ✅ Model added (ID: 962)
+    📋 Found 8 trims
+  🏷️  Processing model: Mercedes-Benz Sprinter Dubbele Cabine
+    ✅ Model added (ID: 963)
+    📋 Found 2 trims
+  🏷️  Processing model: Mercedes-Benz Sprinter
+    ✅ Model added (ID: 964)
+    📋 Found 10 trims
+  🏷️  Processing model: Mercedes-Benz CLS Shooting Brake
+    ✅ Model added (ID: 965)
+    📋 Found 10 trims
+  🏷️  Processing model: Mercedes-Benz G-class
+    ✅ Model added (ID: 966)
+    📋 Found 12 trims
+  🏷️  Processing model: Mercedes-Benz SLS AMG Roadster
+    ✅ Model added (ID: 967)
+    📋 Found 4 trims
+  🏷️  Processing model: Mercedes-Benz C-class Coupe
+    ✅ Model added (ID: 968)
+    📋 Found 14 trims
+  🏷️  Processing model: Mercedes-Benz Viano Dubbelcabine
+    ✅ Model added (ID: 969)
+    📋 Found 4 trims
+  🏷️  Processing model: Mercedes-Benz SLS AMG
+    ✅ Model added (ID: 970)
+    📋 Found 4 trims
+  🏷️  Processing model: Mercedes-Benz Viano Van
+    ✅ Model added (ID: 971)
+    📋 Found 4 trims
+  🏷️  Processing model: Mercedes-Benz Vito Dubbele Cabine
+    ✅ Model added (ID: 972)
+    📋 Found 2 trims
+  🏷️  Processing model: Mercedes-Benz Vito Bestelwagen
+    ✅ Model added (ID: 973)
+    📋 Found 10 trims
+  🏷️  Processing model: Mercedes-Benz Vito Combi
+    ✅ Model added (ID: 974)
+    📋 Found 2 trims
+  🏷️  Processing model: Mercedes-Benz Viano Combi
+    ✅ Model added (ID: 975)
+    📋 Found 4 trims
+  🏷️  Processing model: Mercedes-Benz E-class Estate
+    ✅ Model added (ID: 976)
+    📋 Found 24 trims
+  🏷️  Processing model: Mercedes-Benz B-class
+    ✅ Model added (ID: 977)
+    📋 Found 28 trims
+  🏷️  Processing model: Mercedes-Benz CLC
+    ✅ Model added (ID: 978)
+    📋 Found 6 trims
+  🏷️  Processing model: Mercedes-Benz GLK
+    ✅ Model added (ID: 979)
+    📋 Found 12 trims
+  🏷️  Processing model: Mercedes-Benz SLR McLaren Roadster
+    ✅ Model added (ID: 980)
+    📋 Found 2 trims
+  🏷️  Processing model: Mercedes-Benz C-class Estate
+    ✅ Model added (ID: 981)
+    📋 Found 26 trims
+  🏷️  Processing model: Mercedes-Benz R-class
+    ✅ Model added (ID: 982)
+    📋 Found 8 trims
+  🏷️  Processing model: Mercedes-Benz GL
+    ✅ Model added (ID: 983)
+    📋 Found 10 trims
+  🏷️  Processing model: Mercedes-Benz A-class Coupe
+    ✅ Model added (ID: 984)
+    📋 Found 8 trims
+  🏷️  Processing model: Mercedes-Benz CLS
+    ✅ Model added (ID: 985)
+    📋 Found 28 trims
+  🏷️  Processing model: Mercedes-Benz C-class Sportcoupe
+    ✅ Model added (ID: 986)
+    📋 Found 4 trims
+  🏷️  Processing model: Mercedes-Benz Viano
+    ✅ Model added (ID: 987)
+    📋 Found 8 trims
+  🏷️  Processing model: Mercedes-Benz SLR McLaren
+    ✅ Model added (ID: 988)
+    📋 Found 4 trims
+  🏷️  Processing model: Mercedes-Benz Vaneo
+    ✅ Model added (ID: 989)
+    📋 Found 2 trims
+  🏷️  Processing model: Mercedes-Benz A-class Lang
+    ✅ Model added (ID: 990)
+    📋 Found 4 trims
+  🏷️  Processing model: Mercedes-Benz C-class Sports Coupe
+    ✅ Model added (ID: 991)
+    📋 Found 4 trims
+  🏷️  Processing model: Mercedes-Benz M-class
+    ✅ Model added (ID: 992)
+    📋 Found 30 trims
+  🏷️  Processing model: Mercedes-Benz CLK Cabriolet
+    ✅ Model added (ID: 993)
+    📋 Found 12 trims
+  🏷️  Processing model: Mercedes-Benz A-class
+    ✅ Model added (ID: 994)
+    📋 Found 40 trims
+  🏷️  Processing model: Mercedes-Benz CLK
+    ✅ Model added (ID: 995)
+    📋 Found 14 trims
+  🏷️  Processing model: Mercedes-Benz CL
+    ✅ Model added (ID: 996)
+    📋 Found 18 trims
+  🏷️  Processing model: Mercedes-Benz C-class Combi
+    ✅ Model added (ID: 997)
+    📋 Found 18 trims
+  🏷️  Processing model: Mercedes-Benz V-class
+    ✅ Model added (ID: 998)
+    📋 Found 14 trims
+  🏷️  Processing model: Mercedes-Benz SLK
+    ✅ Model added (ID: 999)
+    📋 Found 22 trims
+  🏷️  Processing model: Mercedes-Benz E-class
+    ✅ Model added (ID: 1000)
+    📋 Found 52 trims
+  🏷️  Processing model: Mercedes-Benz E-class Cabriolet
+    ✅ Model added (ID: 1001)
+    📋 Found 22 trims
+  🏷️  Processing model: Mercedes-Benz E-class Coupe
+    ✅ Model added (ID: 1002)
+    📋 Found 24 trims
+  🏷️  Processing model: Mercedes-Benz E-class Combi
+    ✅ Model added (ID: 1003)
+    📋 Found 28 trims
+  🏷️  Processing model: Mercedes-Benz C-class
+    ✅ Model added (ID: 1004)
+    📋 Found 52 trims
+  🏷️  Processing model: Mercedes-Benz 200-series Cabrio
+    ✅ Model added (ID: 1005)
+    📋 Found 2 trims
+  🏷️  Processing model: Mercedes-Benz 190-series
+    ✅ Model added (ID: 1006)
+    📋 Found 16 trims
+  🏷️  Processing model: Mercedes-Benz G-class Stationwagon Lang
+    ✅ Model added (ID: 1007)
+    📋 Found 30 trims
+  🏷️  Processing model: Mercedes-Benz S-class Coupe
+    ✅ Model added (ID: 1008)
+    📋 Found 18 trims
+  🏷️  Processing model: Mercedes-Benz G-class Stationwagon Kort
+    ✅ Model added (ID: 1009)
+    📋 Found 28 trims
+  🏷️  Processing model: Mercedes-Benz G-class Cabriolet
+    ✅ Model added (ID: 1010)
+    📋 Found 28 trims
+  🏷️  Processing model: Mercedes-Benz 200-series Combi
+    ✅ Model added (ID: 1011)
+    📋 Found 12 trims
+  🏷️  Processing model: Mercedes-Benz S-class
+    ✅ Model added (ID: 1012)
+    📋 Found 58 trims
+  🏷️  Processing model: Mercedes-Benz SL
+    ✅ Model added (ID: 1013)
+    📋 Found 40 trims
+  🏷️  Processing model: Mercedes-Benz 200-series Coupe
+    ✅ Model added (ID: 1014)
+    📋 Found 10 trims
+  🏷️  Processing model: Mercedes-Benz 200-series
+    ✅ Model added (ID: 1015)
+    📋 Found 18 trims
+
+📦 Processing brand: Mercury
+  ✅ Brand added (ID: 71)
+  🏷️  Processing model: Mercury Sable Wagon
+    ✅ Model added (ID: 1016)
+    📋 Found 4 trims
+  🏷️  Processing model: Mercury Villager
+    ✅ Model added (ID: 1017)
+    📋 Found 2 trims
+  🏷️  Processing model: Mercury Sable
+    ✅ Model added (ID: 1018)
+    📋 Found 2 trims
+  🏷️  Processing model: Mercury Sable Stationwagon
+    ✅ Model added (ID: 1019)
+    📋 Found 2 trims
+  🏷️  Processing model: Mercury Grand Marquis
+    ✅ Model added (ID: 1020)
+    📋 Found 4 trims
+
+📦 Processing brand: Mini
+  ✅ Brand added (ID: 72)
+  🏷️  Processing model: Mini Electric
+    ✅ Model added (ID: 1021)
+    📋 Found 2 trims
+  🏷️  Processing model: Mini Paceman
+    ✅ Model added (ID: 1022)
+    📋 Found 4 trims
+  🏷️  Processing model: Mini Roadster
+    ✅ Model added (ID: 1023)
+    📋 Found 2 trims
+  🏷️  Processing model: Mini Coupe
+    ✅ Model added (ID: 1024)
+    📋 Found 4 trims
+  🏷️  Processing model: Mini Countryman
+    ✅ Model added (ID: 1025)
+    📋 Found 20 trims
+  🏷️  Processing model: Mini Clubman
+    ✅ Model added (ID: 1026)
+    📋 Found 24 trims
+  🏷️  Processing model: Mini Cabrio
+    ✅ Model added (ID: 1027)
+    📋 Found 24 trims
+  🏷️  Processing model: Mini Mini
+    ✅ Model added (ID: 1028)
+    📋 Found 46 trims
+
+📦 Processing brand: Mitsubishi
+  ✅ Brand added (ID: 73)
+  🏷️  Processing model: Mitsubishi Eclipse Cross
+    ✅ Model added (ID: 1029)
+    📋 Found 6 trims
+  🏷️  Processing model: Mitsubishi L200 Club Cab
+    ✅ Model added (ID: 1030)
+    📋 Found 4 trims
+  🏷️  Processing model: Mitsubishi L200 Double Cab
+    ✅ Model added (ID: 1031)
+    📋 Found 4 trims
+  🏷️  Processing model: Mitsubishi L200
+    ✅ Model added (ID: 1032)
+    📋 Found 4 trims
+  🏷️  Processing model: Mitsubishi Outlander Van
+    ✅ Model added (ID: 1033)
+    📋 Found 4 trims
+  🏷️  Processing model: Mitsubishi i-MiEV
+    ✅ Model added (ID: 1034)
+    📋 Found 4 trims
+  🏷️  Processing model: Mitsubishi ASX
+    ✅ Model added (ID: 1035)
+    📋 Found 20 trims
+  🏷️  Processing model: Mitsubishi Lancer Sportback
+    ✅ Model added (ID: 1036)
+    📋 Found 12 trims
+  🏷️  Processing model: Mitsubishi Colt CZ5
+    ✅ Model added (ID: 1037)
+    📋 Found 8 trims
+  🏷️  Processing model: Mitsubishi Outlander Sport
+    ✅ Model added (ID: 1038)
+    📋 Found 6 trims
+  🏷️  Processing model: Mitsubishi Colt CZC
+    ✅ Model added (ID: 1039)
+    📋 Found 4 trims
+  🏷️  Processing model: Mitsubishi Pajero LWB
+    ✅ Model added (ID: 1040)
+    📋 Found 6 trims
+  🏷️  Processing model: Mitsubishi Pajero SWB
+    ✅ Model added (ID: 1041)
+    📋 Found 8 trims
+  🏷️  Processing model: Mitsubishi Colt CZ3
+    ✅ Model added (ID: 1042)
+    📋 Found 8 trims
+  🏷️  Processing model: Mitsubishi Grandis
+    ✅ Model added (ID: 1043)
+    📋 Found 8 trims
+  🏷️  Processing model: Mitsubishi Pajero Kort
+    ✅ Model added (ID: 1044)
+    📋 Found 12 trims
+  🏷️  Processing model: Mitsubishi Outlander
+    ✅ Model added (ID: 1045)
+    📋 Found 16 trims
+  🏷️  Processing model: Mitsubishi Pajero Sport
+    ✅ Model added (ID: 1046)
+    📋 Found 6 trims
+  🏷️  Processing model: Mitsubishi Pajero Pinin Long Body
+    ✅ Model added (ID: 1047)
+    📋 Found 4 trims
+  🏷️  Processing model: Mitsubishi Lancer Evolution
+    ✅ Model added (ID: 1048)
+    📋 Found 6 trims
+  🏷️  Processing model: Mitsubishi Pajero Pinin
+    ✅ Model added (ID: 1049)
+    📋 Found 6 trims
+  🏷️  Processing model: Mitsubishi Pajero Lang
+    ✅ Model added (ID: 1050)
+    📋 Found 6 trims
+  🏷️  Processing model: Mitsubishi Space Star
+    ✅ Model added (ID: 1051)
+    📋 Found 32 trims
+  🏷️  Processing model: Mitsubishi Galant Station Wagon
+    ✅ Model added (ID: 1052)
+    📋 Found 4 trims
+  🏷️  Processing model: Mitsubishi Space Gear
+    ✅ Model added (ID: 1053)
+    📋 Found 2 trims
+  🏷️  Processing model: Mitsubishi Carisma
+    ✅ Model added (ID: 1054)
+    📋 Found 32 trims
+  🏷️  Processing model: Mitsubishi Sigma Station Wagon
+    ✅ Model added (ID: 1055)
+    📋 Found 2 trims
+  🏷️  Processing model: Mitsubishi Eclipse
+    ✅ Model added (ID: 1056)
+    📋 Found 4 trims
+  🏷️  Processing model: Mitsubishi 3000 GT
+    ✅ Model added (ID: 1057)
+    📋 Found 4 trims
+  🏷️  Processing model: Mitsubishi Pajero
+    ✅ Model added (ID: 1058)
+    📋 Found 8 trims
+  🏷️  Processing model: Mitsubishi Sigma
+    ✅ Model added (ID: 1059)
+    📋 Found 4 trims
+  🏷️  Processing model: Mitsubishi Space Runner
+    ✅ Model added (ID: 1060)
+    📋 Found 6 trims
+  🏷️  Processing model: Mitsubishi Pajero Canvas Top
+    ✅ Model added (ID: 1061)
+    📋 Found 2 trims
+  🏷️  Processing model: Mitsubishi Pajero Wagon
+    ✅ Model added (ID: 1062)
+    📋 Found 2 trims
+  🏷️  Processing model: Mitsubishi Pajero Long Body
+    ✅ Model added (ID: 1063)
+    📋 Found 12 trims
+  🏷️  Processing model: Mitsubishi Pajero Metal Top
+    ✅ Model added (ID: 1064)
+    📋 Found 4 trims
+  🏷️  Processing model: Mitsubishi Lancer Wagon
+    ✅ Model added (ID: 1065)
+    📋 Found 14 trims
+  🏷️  Processing model: Mitsubishi Colt
+    ✅ Model added (ID: 1066)
+    📋 Found 28 trims
+  🏷️  Processing model: Mitsubishi Space Wagon
+    ✅ Model added (ID: 1067)
+    📋 Found 18 trims
+  🏷️  Processing model: Mitsubishi Lancer F
+    ✅ Model added (ID: 1068)
+    📋 Found 2 trims
+  🏷️  Processing model: Mitsubishi Tredia
+    ✅ Model added (ID: 1069)
+    📋 Found 2 trims
+  🏷️  Processing model: Mitsubishi Cordia
+    ✅ Model added (ID: 1070)
+    📋 Found 2 trims
+  🏷️  Processing model: Mitsubishi Starion
+    ✅ Model added (ID: 1071)
+    📋 Found 6 trims
+  🏷️  Processing model: Mitsubishi Sapporo
+    ✅ Model added (ID: 1072)
+    📋 Found 8 trims
+  🏷️  Processing model: Mitsubishi Galant
+    ✅ Model added (ID: 1073)
+    📋 Found 34 trims
+  🏷️  Processing model: Mitsubishi Galant Stationwagon
+    ✅ Model added (ID: 1074)
+    📋 Found 2 trims
+  🏷️  Processing model: Mitsubishi Lancer
+    ✅ Model added (ID: 1075)
+    📋 Found 30 trims
+  🏷️  Processing model: Mitsubishi Celeste
+    ✅ Model added (ID: 1076)
+    📋 Found 2 trims
+
+📦 Processing brand: Morgan
+  ✅ Brand added (ID: 74)
+  🏷️  Processing model: Morgan Plus Six
+    ✅ Model added (ID: 1077)
+    📋 Found 2 trims
+  🏷️  Processing model: Morgan Aero Coupe
+    ✅ Model added (ID: 1078)
+    📋 Found 2 trims
+  🏷️  Processing model: Morgan 3 Wheeler
+    ✅ Model added (ID: 1079)
+    📋 Found 2 trims
+  🏷️  Processing model: Morgan Aero Supersports
+    ✅ Model added (ID: 1080)
+    📋 Found 2 trims
+  🏷️  Processing model: Morgan Roadster
+    ✅ Model added (ID: 1081)
+    📋 Found 8 trims
+  🏷️  Processing model: Morgan Aero 8
+    ✅ Model added (ID: 1082)
+    📋 Found 8 trims
+  🏷️  Processing model: Morgan 4/4
+    ✅ Model added (ID: 1083)
+    📋 Found 6 trims
+  🏷️  Processing model: Morgan Plus 8
+    ✅ Model added (ID: 1084)
+    📋 Found 8 trims
+  🏷️  Processing model: Morgan Plus 4
+    ✅ Model added (ID: 1085)
+    📋 Found 6 trims
+
+📦 Processing brand: Nissan
+  ↪ Brand already exists (ID: 30)
+  🏷️  Processing model: Nissan NV300
+    ✅ Model added (ID: 1086)
+    📋 Found 4 trims
+  🏷️  Processing model: Nissan NP300 Navara King Cab
+    ✅ Model added (ID: 1087)
+    📋 Found 4 trims
+  🏷️  Processing model: Nissan NP300 Navara Double Cab
+    ✅ Model added (ID: 1088)
+    📋 Found 6 trims
+  🏷️  Processing model: Nissan Pulsar
+    ✅ Model added (ID: 1089)
+    📋 Found 8 trims
+  🏷️  Processing model: Nissan e-Evalia
+    ✅ Model added (ID: 1090)
+    📋 Found 4 trims
+  🏷️  Processing model: Nissan NV400 Combi
+    ✅ Model added (ID: 1091)
+    📋 Found 2 trims
+  🏷️  Processing model: Nissan NV400
+    ✅ Model added (ID: 1092)
+    📋 Found 6 trims
+  🏷️  Processing model: Nissan X-Trail Van
+    ✅ Model added (ID: 1093)
+    📋 Found 2 trims
+  🏷️  Processing model: Nissan Pathfinder Van
+    ✅ Model added (ID: 1094)
+    📋 Found 2 trims
+  🏷️  Processing model: Nissan NV200
+    ✅ Model added (ID: 1095)
+    📋 Found 8 trims
+  🏷️  Processing model: Nissan Primastar
+    ✅ Model added (ID: 1096)
+    📋 Found 6 trims
+  🏷️  Processing model: Nissan Evalia
+    ✅ Model added (ID: 1097)
+    📋 Found 4 trims
+  🏷️  Processing model: Nissan Primastar Combi
+    ✅ Model added (ID: 1098)
+    📋 Found 4 trims
+  🏷️  Processing model: Nissan Juke
+    ✅ Model added (ID: 1099)
+    📋 Found 20 trims
+  🏷️  Processing model: Nissan Leaf
+    ✅ Model added (ID: 1100)
+    📋 Found 16 trims
+  🏷️  Processing model: Nissan Qashqai+2 Van
+    ✅ Model added (ID: 1101)
+    📋 Found 4 trims
+  🏷️  Processing model: Nissan Cube
+    ✅ Model added (ID: 1102)
+    📋 Found 2 trims
+  🏷️  Processing model: Nissan Navara Double Cab
+    ✅ Model added (ID: 1103)
+    📋 Found 6 trims
+  🏷️  Processing model: Nissan Navara King Cab
+    ✅ Model added (ID: 1104)
+    📋 Found 4 trims
+  🏷️  Processing model: Nissan 370Z Roadster
+    ✅ Model added (ID: 1105)
+    📋 Found 2 trims
+  🏷️  Processing model: Nissan Pixo
+    ✅ Model added (ID: 1106)
+    📋 Found 10 trims
+  🏷️  Processing model: Nissan 370Z
+    ✅ Model added (ID: 1107)
+    📋 Found 8 trims
+  🏷️  Processing model: Nissan GT-R
+    ✅ Model added (ID: 1108)
+    📋 Found 16 trims
+  🏷️  Processing model: Nissan Qashqai+2
+    ✅ Model added (ID: 1109)
+    📋 Found 10 trims
+  🏷️  Processing model: Nissan Qashqai
+    ✅ Model added (ID: 1110)
+    📋 Found 30 trims
+  🏷️  Processing model: Nissan Note
+    ✅ Model added (ID: 1111)
+    📋 Found 22 trims
+  🏷️  Processing model: Nissan Micra C+C
+    ✅ Model added (ID: 1112)
+    📋 Found 8 trims
+  🏷️  Processing model: Nissan Murano
+    ✅ Model added (ID: 1113)
+    📋 Found 8 trims
+  🏷️  Processing model: Nissan 350Z Roadster
+    ✅ Model added (ID: 1114)
+    📋 Found 6 trims
+  🏷️  Processing model: Nissan 350Z Coupe
+    ✅ Model added (ID: 1115)
+    📋 Found 8 trims
+  🏷️  Processing model: Nissan Primera Estate
+    ✅ Model added (ID: 1116)
+    📋 Found 8 trims
+  🏷️  Processing model: Nissan X-Trail
+    ✅ Model added (ID: 1117)
+    📋 Found 30 trims
+  🏷️  Processing model: Nissan Almera Tino
+    ✅ Model added (ID: 1118)
+    📋 Found 6 trims
+  🏷️  Processing model: Nissan Pathfinder
+    ✅ Model added (ID: 1119)
+    📋 Found 8 trims
+  🏷️  Processing model: Nissan Patrol GR
+    ✅ Model added (ID: 1120)
+    📋 Found 10 trims
+  🏷️  Processing model: Nissan Almera
+    ✅ Model added (ID: 1121)
+    📋 Found 34 trims
+  🏷️  Processing model: Nissan Maxima QX
+    ✅ Model added (ID: 1122)
+    📋 Found 4 trims
+  🏷️  Processing model: Nissan Primera Wagon
+    ✅ Model added (ID: 1123)
+    📋 Found 12 trims
+  🏷️  Processing model: Nissan Terrano II
+    ✅ Model added (ID: 1124)
+    📋 Found 12 trims
+  🏷️  Processing model: Nissan Serena
+    ✅ Model added (ID: 1125)
+    📋 Found 16 trims
+  🏷️  Processing model: Nissan 100 NX
+    ✅ Model added (ID: 1126)
+    📋 Found 4 trims
+  🏷️  Processing model: Nissan Primera
+    ✅ Model added (ID: 1127)
+    📋 Found 42 trims
+  🏷️  Processing model: Nissan Patrol Wagon GR
+    ✅ Model added (ID: 1128)
+    📋 Found 4 trims
+  🏷️  Processing model: Nissan Patrol Hardtop R
+    ✅ Model added (ID: 1129)
+    📋 Found 2 trims
+  🏷️  Processing model: Nissan Patrol Hardtop GR
+    ✅ Model added (ID: 1130)
+    📋 Found 4 trims
+  🏷️  Processing model: Nissan Maxima
+    ✅ Model added (ID: 1131)
+    📋 Found 4 trims
+  🏷️  Processing model: Nissan 200 SX
+    ✅ Model added (ID: 1132)
+    📋 Found 6 trims
+  🏷️  Processing model: Nissan Patrol Wagon R
+    ✅ Model added (ID: 1133)
+    📋 Found 2 trims
+  🏷️  Processing model: Nissan Terrano
+    ✅ Model added (ID: 1134)
+    📋 Found 12 trims
+  🏷️  Processing model: Nissan Sunny Wagon
+    ✅ Model added (ID: 1135)
+    📋 Found 8 trims
+  🏷️  Processing model: Nissan Sunny Florida
+    ✅ Model added (ID: 1136)
+    📋 Found 4 trims
+  🏷️  Processing model: Nissan Bluebird Wagon
+    ✅ Model added (ID: 1137)
+    📋 Found 6 trims
+  🏷️  Processing model: Nissan Bluebird
+    ✅ Model added (ID: 1138)
+    📋 Found 16 trims
+  🏷️  Processing model: Nissan Bluebird Combi
+    ✅ Model added (ID: 1139)
+    📋 Found 4 trims
+  🏷️  Processing model: Nissan Silvia
+    ✅ Model added (ID: 1140)
+    📋 Found 4 trims
+  🏷️  Processing model: Nissan 300 ZX
+    ✅ Model added (ID: 1141)
+    📋 Found 6 trims
+  🏷️  Processing model: Nissan Patrol Hardtop
+    ✅ Model added (ID: 1142)
+    📋 Found 2 trims
+  🏷️  Processing model: Nissan Patrol Wagon
+    ✅ Model added (ID: 1143)
+    📋 Found 2 trims
+  🏷️  Processing model: Nissan Laurel
+    ✅ Model added (ID: 1144)
+    📋 Found 6 trims
+  🏷️  Processing model: Nissan Micra
+    ✅ Model added (ID: 1145)
+    📋 Found 48 trims
+  🏷️  Processing model: Nissan Prairie
+    ✅ Model added (ID: 1146)
+    📋 Found 10 trims
+  🏷️  Processing model: Nissan Stanza
+    ✅ Model added (ID: 1147)
+    📋 Found 6 trims
+  🏷️  Processing model: Nissan Sunny Combi
+    ✅ Model added (ID: 1148)
+    📋 Found 4 trims
+  🏷️  Processing model: Nissan Cherry
+    ✅ Model added (ID: 1149)
+    📋 Found 8 trims
+  🏷️  Processing model: Nissan Sunny
+    ✅ Model added (ID: 1150)
+    📋 Found 26 trims
+  🏷️  Processing model: Nissan Sunny Coupe
+    ✅ Model added (ID: 1151)
+    📋 Found 8 trims
+
+📦 Processing brand: Opel
+  ↪ Brand already exists (ID: 27)
+  🏷️  Processing model: Opel Mokka-e
+    ✅ Model added (ID: 1152)
+    📋 Found 2 trims
+  🏷️  Processing model: Opel Crossland
+    ✅ Model added (ID: 1153)
+    📋 Found 2 trims
+  🏷️  Processing model: Opel Corsa-e
+    ✅ Model added (ID: 1154)
+    📋 Found 4 trims
+  🏷️  Processing model: Opel Zafira Life
+    ✅ Model added (ID: 1155)
+    📋 Found 2 trims
+  🏷️  Processing model: Opel Insignia Grand Sport
+    ✅ Model added (ID: 1156)
+    📋 Found 8 trims
+  🏷️  Processing model: Opel Crossland X
+    ✅ Model added (ID: 1157)
+    📋 Found 8 trims
+  🏷️  Processing model: Opel Ampera-e
+    ✅ Model added (ID: 1158)
+    📋 Found 2 trims
+  🏷️  Processing model: Opel Grandland X
+    ✅ Model added (ID: 1159)
+    📋 Found 8 trims
+  🏷️  Processing model: Opel Karl Rocks
+    ✅ Model added (ID: 1160)
+    📋 Found 2 trims
+  🏷️  Processing model: Opel Mokka X
+    ✅ Model added (ID: 1161)
+    📋 Found 8 trims
+  🏷️  Processing model: Opel Karl
+    ✅ Model added (ID: 1162)
+    📋 Found 6 trims
+  🏷️  Processing model: Opel Adam
+    ✅ Model added (ID: 1163)
+    📋 Found 12 trims
+  🏷️  Processing model: Opel Cascada
+    ✅ Model added (ID: 1164)
+    📋 Found 10 trims
+  🏷️  Processing model: Opel Insignia Country Tourer
+    ✅ Model added (ID: 1165)
+    📋 Found 12 trims
+  🏷️  Processing model: Opel Insignia Sports Tourer
+    ✅ Model added (ID: 1166)
+    📋 Found 24 trims
+  🏷️  Processing model: Opel Astra Sports Tourer Van
+    ✅ Model added (ID: 1167)
+    📋 Found 4 trims
+  🏷️  Processing model: Opel Combo Tour
+    ✅ Model added (ID: 1168)
+    📋 Found 10 trims
+  🏷️  Processing model: Opel Combo
+    ✅ Model added (ID: 1169)
+    📋 Found 10 trims
+  🏷️  Processing model: Opel Mokka
+    ✅ Model added (ID: 1170)
+    📋 Found 12 trims
+  🏷️  Processing model: Opel Ampera
+    ✅ Model added (ID: 1171)
+    📋 Found 2 trims
+  🏷️  Processing model: Opel Vivaro
+    ✅ Model added (ID: 1172)
+    📋 Found 8 trims
+  🏷️  Processing model: Opel Vivaro Combi
+    ✅ Model added (ID: 1173)
+    📋 Found 10 trims
+  🏷️  Processing model: Opel Vivaro Dubbele Cabine
+    ✅ Model added (ID: 1174)
+    📋 Found 2 trims
+  🏷️  Processing model: Opel Movano Combi
+    ✅ Model added (ID: 1175)
+    📋 Found 8 trims
+  🏷️  Processing model: Opel Movano Dubbele Cabine
+    ✅ Model added (ID: 1176)
+    📋 Found 2 trims
+  🏷️  Processing model: Opel Movano
+    ✅ Model added (ID: 1177)
+    📋 Found 10 trims
+  🏷️  Processing model: Opel Astra Sports Tourer
+    ✅ Model added (ID: 1178)
+    📋 Found 24 trims
+  🏷️  Processing model: Opel Insignia
+    ✅ Model added (ID: 1179)
+    📋 Found 36 trims
+  🏷️  Processing model: Opel Antara
+    ✅ Model added (ID: 1180)
+    📋 Found 10 trims
+  🏷️  Processing model: Opel GT
+    ✅ Model added (ID: 1181)
+    📋 Found 2 trims
+  🏷️  Processing model: Opel Astra TwinTop
+    ✅ Model added (ID: 1182)
+    📋 Found 6 trims
+  🏷️  Processing model: Opel Astra GTC
+    ✅ Model added (ID: 1183)
+    📋 Found 18 trims
+  🏷️  Processing model: Opel Tigra TwinTop
+    ✅ Model added (ID: 1184)
+    📋 Found 12 trims
+  🏷️  Processing model: Opel Signum
+    ✅ Model added (ID: 1185)
+    📋 Found 10 trims
+  🏷️  Processing model: Opel Meriva
+    ✅ Model added (ID: 1186)
+    📋 Found 24 trims
+  🏷️  Processing model: Opel Vectra GTS
+    ✅ Model added (ID: 1187)
+    📋 Found 14 trims
+  🏷️  Processing model: Opel Tour
+    ✅ Model added (ID: 1188)
+    📋 Found 12 trims
+  🏷️  Processing model: Opel Speedster
+    ✅ Model added (ID: 1189)
+    📋 Found 4 trims
+  🏷️  Processing model: Opel Agila
+    ✅ Model added (ID: 1190)
+    📋 Found 30 trims
+  🏷️  Processing model: Opel Astra Coupe
+    ✅ Model added (ID: 1191)
+    📋 Found 4 trims
+  🏷️  Processing model: Opel Zafira
+    ✅ Model added (ID: 1192)
+    📋 Found 38 trims
+  🏷️  Processing model: Opel Sintra
+    ✅ Model added (ID: 1193)
+    📋 Found 4 trims
+  🏷️  Processing model: Opel Vectra Stationwagon
+    ✅ Model added (ID: 1194)
+    📋 Found 24 trims
+  🏷️  Processing model: Opel Tigra
+    ✅ Model added (ID: 1195)
+    📋 Found 6 trims
+  🏷️  Processing model: Opel Omega Stationwagon
+    ✅ Model added (ID: 1196)
+    📋 Found 18 trims
+  🏷️  Processing model: Opel Frontera Sport
+    ✅ Model added (ID: 1197)
+    📋 Found 14 trims
+  🏷️  Processing model: Opel Astra Cabrio
+    ✅ Model added (ID: 1198)
+    📋 Found 14 trims
+  🏷️  Processing model: Opel Monterey LTD
+    ✅ Model added (ID: 1199)
+    📋 Found 2 trims
+  🏷️  Processing model: Opel Monterey RS
+    ✅ Model added (ID: 1200)
+    📋 Found 2 trims
+  🏷️  Processing model: Opel Frontera Wagon
+    ✅ Model added (ID: 1201)
+    📋 Found 16 trims
+  🏷️  Processing model: Opel Astra
+    ✅ Model added (ID: 1202)
+    📋 Found 100 trims
+  🏷️  Processing model: Opel Astra Stationwagon
+    ✅ Model added (ID: 1203)
+    📋 Found 40 trims
+  🏷️  Processing model: Opel Calibra
+    ✅ Model added (ID: 1204)
+    📋 Found 12 trims
+  🏷️  Processing model: Opel Kadett Cabrio
+    ✅ Model added (ID: 1205)
+    📋 Found 8 trims
+  🏷️  Processing model: Opel Vectra
+    ✅ Model added (ID: 1206)
+    📋 Found 70 trims
+  🏷️  Processing model: Opel Omega
+    ✅ Model added (ID: 1207)
+    📋 Found 34 trims
+  🏷️  Processing model: Opel Omega Caravan
+    ✅ Model added (ID: 1208)
+    📋 Found 16 trims
+  🏷️  Processing model: Opel Corsa
+    ✅ Model added (ID: 1209)
+    📋 Found 96 trims
+  🏷️  Processing model: Opel Kadett Caravan
+    ✅ Model added (ID: 1210)
+    📋 Found 24 trims
+  🏷️  Processing model: Opel Corsa TR
+    ✅ Model added (ID: 1211)
+    📋 Found 2 trims
+  🏷️  Processing model: Opel Kadett
+    ✅ Model added (ID: 1212)
+    📋 Found 42 trims
+  🏷️  Processing model: Opel Kadett Combi
+    ✅ Model added (ID: 1213)
+    📋 Found 6 trims
+  🏷️  Processing model: Opel Commodore
+    ✅ Model added (ID: 1214)
+    📋 Found 4 trims
+  🏷️  Processing model: Opel Commodore Voyage
+    ✅ Model added (ID: 1215)
+    📋 Found 4 trims
+  🏷️  Processing model: Opel Senator
+    ✅ Model added (ID: 1216)
+    📋 Found 16 trims
+  🏷️  Processing model: Opel Monza
+    ✅ Model added (ID: 1217)
+    📋 Found 8 trims
+  🏷️  Processing model: Opel Manta CC
+    ✅ Model added (ID: 1218)
+    📋 Found 14 trims
+  🏷️  Processing model: Opel Rekord
+    ✅ Model added (ID: 1219)
+    📋 Found 12 trims
+  🏷️  Processing model: Opel Rekord Caravan
+    ✅ Model added (ID: 1220)
+    📋 Found 10 trims
+  🏷️  Processing model: Opel Ascona
+    ✅ Model added (ID: 1221)
+    📋 Found 34 trims
+  🏷️  Processing model: Opel Manta
+    ✅ Model added (ID: 1222)
+    📋 Found 18 trims
+
+📦 Processing brand: Peugeot
+  ↪ Brand already exists (ID: 29)
+  🏷️  Processing model: Peugeot e-Expert
+    ✅ Model added (ID: 1223)
+    📋 Found 2 trims
+  🏷️  Processing model: Peugeot e-Expert Combi
+    ✅ Model added (ID: 1224)
+    📋 Found 2 trims
+  🏷️  Processing model: Peugeot e-Traveller
+    ✅ Model added (ID: 1225)
+    📋 Found 2 trims
+  🏷️  Processing model: Peugeot e-2008
+    ✅ Model added (ID: 1226)
+    📋 Found 2 trims
+  🏷️  Processing model: Peugeot e-208
+    ✅ Model added (ID: 1227)
+    📋 Found 4 trims
+  🏷️  Processing model: Peugeot Rifter
+    ✅ Model added (ID: 1228)
+    📋 Found 4 trims
+  🏷️  Processing model: Peugeot Traveller
+    ✅ Model added (ID: 1229)
+    📋 Found 8 trims
+  🏷️  Processing model: Peugeot Expert Combi
+    ✅ Model added (ID: 1230)
+    📋 Found 8 trims
+  🏷️  Processing model: Peugeot 108
+    ✅ Model added (ID: 1231)
+    📋 Found 14 trims
+  🏷️  Processing model: Peugeot Boxer Combi
+    ✅ Model added (ID: 1232)
+    📋 Found 6 trims
+  🏷️  Processing model: Peugeot 2008
+    ✅ Model added (ID: 1233)
+    📋 Found 16 trims
+  🏷️  Processing model: Peugeot Boxer
+    ✅ Model added (ID: 1234)
+    📋 Found 10 trims
+  🏷️  Processing model: Peugeot 208
+    ✅ Model added (ID: 1235)
+    📋 Found 16 trims
+  🏷️  Processing model: Peugeot Boxer Dubbele Cabine
+    ✅ Model added (ID: 1236)
+    📋 Found 4 trims
+  🏷️  Processing model: Peugeot Expert
+    ✅ Model added (ID: 1237)
+    📋 Found 6 trims
+  🏷️  Processing model: Peugeot Expert dubbele cabine
+    ✅ Model added (ID: 1238)
+    📋 Found 2 trims
+  🏷️  Processing model: Peugeot Ion
+    ✅ Model added (ID: 1239)
+    📋 Found 4 trims
+  🏷️  Processing model: Peugeot 508
+    ✅ Model added (ID: 1240)
+    📋 Found 22 trims
+  🏷️  Processing model: Peugeot 508 SW
+    ✅ Model added (ID: 1241)
+    📋 Found 22 trims
+  🏷️  Processing model: Peugeot RCZ
+    ✅ Model added (ID: 1242)
+    📋 Found 12 trims
+  🏷️  Processing model: Peugeot Bipper Tepee
+    ✅ Model added (ID: 1243)
+    📋 Found 4 trims
+  🏷️  Processing model: Peugeot 3008
+    ✅ Model added (ID: 1244)
+    📋 Found 30 trims
+  🏷️  Processing model: Peugeot 308 CC
+    ✅ Model added (ID: 1245)
+    📋 Found 8 trims
+  🏷️  Processing model: Peugeot 5008
+    ✅ Model added (ID: 1246)
+    📋 Found 24 trims
+  🏷️  Processing model: Peugeot Bipper
+    ✅ Model added (ID: 1247)
+    📋 Found 4 trims
+  🏷️  Processing model: Peugeot Partner Tepee
+    ✅ Model added (ID: 1248)
+    📋 Found 20 trims
+  🏷️  Processing model: Peugeot 308 SW
+    ✅ Model added (ID: 1249)
+    📋 Found 24 trims
+  🏷️  Processing model: Peugeot 207 SW
+    ✅ Model added (ID: 1250)
+    📋 Found 10 trims
+  🏷️  Processing model: Peugeot 308
+    ✅ Model added (ID: 1251)
+    📋 Found 32 trims
+  🏷️  Processing model: Peugeot 4007
+    ✅ Model added (ID: 1252)
+    📋 Found 4 trims
+  🏷️  Processing model: Peugeot 207 CC
+    ✅ Model added (ID: 1253)
+    📋 Found 12 trims
+  🏷️  Processing model: Peugeot 207
+    ✅ Model added (ID: 1254)
+    📋 Found 14 trims
+  🏷️  Processing model: Peugeot 107
+    ✅ Model added (ID: 1255)
+    📋 Found 14 trims
+  🏷️  Processing model: Peugeot 407 Coupe
+    ✅ Model added (ID: 1256)
+    📋 Found 6 trims
+  🏷️  Processing model: Peugeot 1007
+    ✅ Model added (ID: 1257)
+    📋 Found 8 trims
+  🏷️  Processing model: Peugeot 307 Break
+    ✅ Model added (ID: 1258)
+    📋 Found 12 trims
+  🏷️  Processing model: Peugeot 407
+    ✅ Model added (ID: 1259)
+    📋 Found 14 trims
+  🏷️  Processing model: Peugeot 407 SW
+    ✅ Model added (ID: 1260)
+    📋 Found 14 trims
+  🏷️  Processing model: Peugeot 307 CC
+    ✅ Model added (ID: 1261)
+    📋 Found 8 trims
+  🏷️  Processing model: Peugeot 307 SW
+    ✅ Model added (ID: 1262)
+    📋 Found 10 trims
+  🏷️  Processing model: Peugeot 206 SW
+    ✅ Model added (ID: 1263)
+    📋 Found 8 trims
+  🏷️  Processing model: Peugeot 807
+    ✅ Model added (ID: 1264)
+    📋 Found 16 trims
+  🏷️  Processing model: Peugeot 206 CC
+    ✅ Model added (ID: 1265)
+    📋 Found 10 trims
+  🏷️  Processing model: Peugeot 307
+    ✅ Model added (ID: 1266)
+    📋 Found 14 trims
+  🏷️  Processing model: Peugeot 607
+    ✅ Model added (ID: 1267)
+    📋 Found 14 trims
+  🏷️  Processing model: Peugeot 206
+    ✅ Model added (ID: 1268)
+    📋 Found 32 trims
+  🏷️  Processing model: Peugeot 406 Coupe
+    ✅ Model added (ID: 1269)
+    📋 Found 16 trims
+  🏷️  Processing model: Peugeot Partner
+    ✅ Model added (ID: 1270)
+    📋 Found 30 trims
+  🏷️  Processing model: Peugeot 306 Break
+    ✅ Model added (ID: 1271)
+    📋 Found 6 trims
+  🏷️  Processing model: Peugeot 406 Break
+    ✅ Model added (ID: 1272)
+    📋 Found 16 trims
+  🏷️  Processing model: Peugeot 406
+    ✅ Model added (ID: 1273)
+    📋 Found 18 trims
+  🏷️  Processing model: Peugeot 306 Cabriolet
+    ✅ Model added (ID: 1274)
+    📋 Found 12 trims
+  🏷️  Processing model: Peugeot 806
+    ✅ Model added (ID: 1275)
+    📋 Found 16 trims
+  🏷️  Processing model: Peugeot 306
+    ✅ Model added (ID: 1276)
+    📋 Found 28 trims
+  🏷️  Processing model: Peugeot 106
+    ✅ Model added (ID: 1277)
+    📋 Found 26 trims
+  🏷️  Processing model: Peugeot 605
+    ✅ Model added (ID: 1278)
+    📋 Found 16 trims
+  🏷️  Processing model: Peugeot 405 Break
+    ✅ Model added (ID: 1279)
+    📋 Found 16 trims
+  🏷️  Processing model: Peugeot 405
+    ✅ Model added (ID: 1280)
+    📋 Found 18 trims
+  🏷️  Processing model: Peugeot 309
+    ✅ Model added (ID: 1281)
+    📋 Found 14 trims
+  🏷️  Processing model: Peugeot 205 Cabriolet
+    ✅ Model added (ID: 1282)
+    📋 Found 12 trims
+  🏷️  Processing model: Peugeot 205
+    ✅ Model added (ID: 1283)
+    📋 Found 30 trims
+  🏷️  Processing model: Peugeot 305 Break
+    ✅ Model added (ID: 1284)
+    📋 Found 10 trims
+  🏷️  Processing model: Peugeot 505 Break
+    ✅ Model added (ID: 1285)
+    📋 Found 12 trims
+  🏷️  Processing model: Peugeot 505
+    ✅ Model added (ID: 1286)
+    📋 Found 20 trims
+  🏷️  Processing model: Peugeot 104
+    ✅ Model added (ID: 1287)
+    📋 Found 6 trims
+  🏷️  Processing model: Peugeot 305
+    ✅ Model added (ID: 1288)
+    📋 Found 12 trims
+  🏷️  Processing model: Peugeot 504
+    ✅ Model added (ID: 1289)
+    📋 Found 4 trims
+  🏷️  Processing model: Peugeot 504 Break
+    ✅ Model added (ID: 1290)
+    📋 Found 4 trims
+  🏷️  Processing model: Peugeot 504 Cabriolet
+    ✅ Model added (ID: 1291)
+    📋 Found 2 trims
+  🏷️  Processing model: Peugeot 504 Coupe
+    ✅ Model added (ID: 1292)
+    📋 Found 2 trims
+  🏷️  Processing model: Peugeot 604
+    ✅ Model added (ID: 1293)
+    📋 Found 8 trims
+
+📦 Processing brand: Polestar
+  ✅ Brand added (ID: 75)
+  🏷️  Processing model: Polestar 1
+    ✅ Model added (ID: 1294)
+    📋 Found 2 trims
+  🏷️  Processing model: Polestar 2
+    ✅ Model added (ID: 1295)
+    📋 Found 2 trims
+
+📦 Processing brand: Pontiac
+  ✅ Brand added (ID: 76)
+  🏷️  Processing model: Pontiac Firebird Convertible
+    ✅ Model added (ID: 1296)
+    📋 Found 4 trims
+  🏷️  Processing model: Pontiac Bonneville
+    ✅ Model added (ID: 1297)
+    📋 Found 2 trims
+  🏷️  Processing model: Pontiac Firebird Coupe
+    ✅ Model added (ID: 1298)
+    📋 Found 6 trims
+  🏷️  Processing model: Pontiac Grand Prix
+    ✅ Model added (ID: 1299)
+    📋 Found 2 trims
+  🏷️  Processing model: Pontiac Grand Prix Coupe
+    ✅ Model added (ID: 1300)
+    📋 Found 2 trims
+  🏷️  Processing model: Pontiac Trans Sport
+    ✅ Model added (ID: 1301)
+    📋 Found 6 trims
+
+📦 Processing brand: Porsche
+  ✅ Brand added (ID: 77)
+  🏷️  Processing model: Porsche Cayenne Coupe
+    ✅ Model added (ID: 1302)
+    📋 Found 4 trims
+  🏷️  Processing model: Porsche Taycan
+    ✅ Model added (ID: 1303)
+    📋 Found 2 trims
+  🏷️  Processing model: Porsche Panamera Sport Turismo
+    ✅ Model added (ID: 1304)
+    📋 Found 8 trims
+  🏷️  Processing model: Porsche 718 Boxster
+    ✅ Model added (ID: 1305)
+    📋 Found 8 trims
+  🏷️  Processing model: Porsche 718 Cayman
+    ✅ Model added (ID: 1306)
+    📋 Found 8 trims
+  🏷️  Processing model: Porsche 918 Spyder
+    ✅ Model added (ID: 1307)
+    📋 Found 2 trims
+  🏷️  Processing model: Porsche Macan
+    ✅ Model added (ID: 1308)
+    📋 Found 12 trims
+  🏷️  Processing model: Porsche Panamera
+    ✅ Model added (ID: 1309)
+    📋 Found 20 trims
+  🏷️  Processing model: Porsche Cayman
+    ✅ Model added (ID: 1310)
+    📋 Found 16 trims
+  🏷️  Processing model: Porsche Carrera GT
+    ✅ Model added (ID: 1311)
+    📋 Found 2 trims
+  🏷️  Processing model: Porsche Cayenne
+    ✅ Model added (ID: 1312)
+    📋 Found 36 trims
+  🏷️  Processing model: Porsche Boxster
+    ✅ Model added (ID: 1313)
+    📋 Found 24 trims
+  🏷️  Processing model: Porsche 968 Cabriolet
+    ✅ Model added (ID: 1314)
+    📋 Found 2 trims
+  🏷️  Processing model: Porsche 968 Coupe
+    ✅ Model added (ID: 1315)
+    📋 Found 4 trims
+  🏷️  Processing model: Porsche 944 Cabriolet
+    ✅ Model added (ID: 1316)
+    📋 Found 2 trims
+  🏷️  Processing model: Porsche 911 Targa
+    ✅ Model added (ID: 1317)
+    📋 Found 22 trims
+  🏷️  Processing model: Porsche 911 Coupe
+    ✅ Model added (ID: 1318)
+    📋 Found 70 trims
+  🏷️  Processing model: Porsche 911 Cabriolet
+    ✅ Model added (ID: 1319)
+    📋 Found 50 trims
+  🏷️  Processing model: Porsche 944
+    ✅ Model added (ID: 1320)
+    📋 Found 8 trims
+  🏷️  Processing model: Porsche 928
+    ✅ Model added (ID: 1321)
+    📋 Found 12 trims
+  🏷️  Processing model: Porsche 911
+    ✅ Model added (ID: 1322)
+    📋 Found 4 trims
+  🏷️  Processing model: Porsche 924
+    ✅ Model added (ID: 1323)
+    📋 Found 8 trims
+
+📦 Processing brand: Renault
+  ↪ Brand already exists (ID: 21)
+  🏷️  Processing model: Renault Twingo Electric
+    ✅ Model added (ID: 1324)
+    📋 Found 2 trims
+  🏷️  Processing model: Renault Koleos
+    ✅ Model added (ID: 1325)
+    📋 Found 4 trims
+  🏷️  Processing model: Renault Talisman
+    ✅ Model added (ID: 1326)
+    📋 Found 10 trims
+  🏷️  Processing model: Renault Talisman Estate
+    ✅ Model added (ID: 1327)
+    📋 Found 10 trims
+  🏷️  Processing model: Renault Kadjar
+    ✅ Model added (ID: 1328)
+    📋 Found 10 trims
+  🏷️  Processing model: Renault Master
+    ✅ Model added (ID: 1329)
+    📋 Found 12 trims
+  🏷️  Processing model: Renault Scenic XMod
+    ✅ Model added (ID: 1330)
+    📋 Found 2 trims
+  🏷️  Processing model: Renault Zoe
+    ✅ Model added (ID: 1331)
+    📋 Found 10 trims
+  🏷️  Processing model: Renault Captur
+    ✅ Model added (ID: 1332)
+    📋 Found 18 trims
+  🏷️  Processing model: Renault Twizy
+    ✅ Model added (ID: 1333)
+    📋 Found 4 trims
+  🏷️  Processing model: Renault Grand Scenic
+    ✅ Model added (ID: 1334)
+    📋 Found 28 trims
+  🏷️  Processing model: Renault Megane Van
+    ✅ Model added (ID: 1335)
+    📋 Found 4 trims
+  🏷️  Processing model: Renault Kangoo Express
+    ✅ Model added (ID: 1336)
+    📋 Found 14 trims
+  🏷️  Processing model: Renault Fluence
+    ✅ Model added (ID: 1337)
+    📋 Found 2 trims
+  🏷️  Processing model: Renault Trafic
+    ✅ Model added (ID: 1338)
+    📋 Found 12 trims
+  🏷️  Processing model: Renault Master Combi
+    ✅ Model added (ID: 1339)
+    📋 Found 8 trims
+  🏷️  Processing model: Renault Trafic Dubbele Cabine
+    ✅ Model added (ID: 1340)
+    📋 Found 2 trims
+  🏷️  Processing model: Renault Master Dubbele Cabine
+    ✅ Model added (ID: 1341)
+    📋 Found 2 trims
+  🏷️  Processing model: Renault Trafic Passenger
+    ✅ Model added (ID: 1342)
+    📋 Found 6 trims
+  🏷️  Processing model: Renault Wind
+    ✅ Model added (ID: 1343)
+    📋 Found 4 trims
+  🏷️  Processing model: Renault Megane Estate
+    ✅ Model added (ID: 1344)
+    📋 Found 26 trims
+  🏷️  Processing model: Renault Kangoo Be Bop
+    ✅ Model added (ID: 1345)
+    📋 Found 2 trims
+  🏷️  Processing model: Renault Grand Modus
+    ✅ Model added (ID: 1346)
+    📋 Found 10 trims
+  🏷️  Processing model: Renault Laguna Coupe
+    ✅ Model added (ID: 1347)
+    📋 Found 10 trims
+  🏷️  Processing model: Renault Kangoo Family
+    ✅ Model added (ID: 1348)
+    📋 Found 12 trims
+  🏷️  Processing model: Renault Clio Estate
+    ✅ Model added (ID: 1349)
+    📋 Found 18 trims
+  🏷️  Processing model: Renault Laguna Estate
+    ✅ Model added (ID: 1350)
+    📋 Found 16 trims
+  🏷️  Processing model: Renault Modus
+    ✅ Model added (ID: 1351)
+    📋 Found 16 trims
+  🏷️  Processing model: Renault Megane Coupe-Cabriolet
+    ✅ Model added (ID: 1352)
+    📋 Found 20 trims
+  🏷️  Processing model: Renault Megane Grand Tour
+    ✅ Model added (ID: 1353)
+    📋 Found 8 trims
+  🏷️  Processing model: Renault Vel Satis
+    ✅ Model added (ID: 1354)
+    📋 Found 12 trims
+  🏷️  Processing model: Renault Scenic
+    ✅ Model added (ID: 1355)
+    📋 Found 40 trims
+  🏷️  Processing model: Renault Laguna Grand Tour
+    ✅ Model added (ID: 1356)
+    📋 Found 12 trims
+  🏷️  Processing model: Renault Avantime
+    ✅ Model added (ID: 1357)
+    📋 Found 4 trims
+  🏷️  Processing model: Renault Scenic RX4
+    ✅ Model added (ID: 1358)
+    📋 Found 6 trims
+  🏷️  Processing model: Renault Megane Break
+    ✅ Model added (ID: 1359)
+    📋 Found 4 trims
+  🏷️  Processing model: Renault Megane Cabriolet
+    ✅ Model added (ID: 1360)
+    📋 Found 12 trims
+  🏷️  Processing model: Renault Grand Espace
+    ✅ Model added (ID: 1361)
+    📋 Found 24 trims
+  🏷️  Processing model: Renault Twingo
+    ✅ Model added (ID: 1362)
+    📋 Found 50 trims
+  🏷️  Processing model: Renault Kangoo
+    ✅ Model added (ID: 1363)
+    📋 Found 30 trims
+  🏷️  Processing model: Renault Megane Coupe
+    ✅ Model added (ID: 1364)
+    📋 Found 26 trims
+  🏷️  Processing model: Renault Sport Spider
+    ✅ Model added (ID: 1365)
+    📋 Found 2 trims
+  🏷️  Processing model: Renault Megane Scenic
+    ✅ Model added (ID: 1366)
+    📋 Found 8 trims
+  🏷️  Processing model: Renault Megane Sedan
+    ✅ Model added (ID: 1367)
+    📋 Found 18 trims
+  🏷️  Processing model: Renault Megane
+    ✅ Model added (ID: 1368)
+    📋 Found 50 trims
+  🏷️  Processing model: Renault Laguna Break
+    ✅ Model added (ID: 1369)
+    📋 Found 12 trims
+  🏷️  Processing model: Renault Espace
+    ✅ Model added (ID: 1370)
+    📋 Found 46 trims
+  🏷️  Processing model: Renault Laguna
+    ✅ Model added (ID: 1371)
+    📋 Found 42 trims
+  🏷️  Processing model: Renault Nevada
+    ✅ Model added (ID: 1372)
+    📋 Found 4 trims
+  🏷️  Processing model: Renault 19 Cabriolet
+    ✅ Model added (ID: 1373)
+    📋 Found 4 trims
+  🏷️  Processing model: Renault Safrane
+    ✅ Model added (ID: 1374)
+    📋 Found 10 trims
+  🏷️  Processing model: Renault Alpine A610
+    ✅ Model added (ID: 1375)
+    📋 Found 2 trims
+  🏷️  Processing model: Renault Clio
+    ✅ Model added (ID: 1376)
+    📋 Found 74 trims
+  🏷️  Processing model: Renault 19 Chamade
+    ✅ Model added (ID: 1377)
+    📋 Found 6 trims
+  🏷️  Processing model: Renault 19
+    ✅ Model added (ID: 1378)
+    📋 Found 22 trims
+  🏷️  Processing model: Renault 21
+    ✅ Model added (ID: 1379)
+    📋 Found 18 trims
+  🏷️  Processing model: Renault 21 Nevada
+    ✅ Model added (ID: 1380)
+    📋 Found 12 trims
+  🏷️  Processing model: Renault Alpine
+    ✅ Model added (ID: 1381)
+    📋 Found 4 trims
+  🏷️  Processing model: Renault 25
+    ✅ Model added (ID: 1382)
+    📋 Found 12 trims
+  🏷️  Processing model: Renault 11
+    ✅ Model added (ID: 1383)
+    📋 Found 14 trims
+  🏷️  Processing model: Renault 9
+    ✅ Model added (ID: 1384)
+    📋 Found 10 trims
+  🏷️  Processing model: Renault Fuego
+    ✅ Model added (ID: 1385)
+    📋 Found 4 trims
+  🏷️  Processing model: Renault 30
+    ✅ Model added (ID: 1386)
+    📋 Found 4 trims
+  🏷️  Processing model: Renault 14
+    ✅ Model added (ID: 1387)
+    📋 Found 2 trims
+  🏷️  Processing model: Renault 18
+    ✅ Model added (ID: 1388)
+    📋 Found 12 trims
+  🏷️  Processing model: Renault 18 Combi
+    ✅ Model added (ID: 1389)
+    📋 Found 12 trims
+  🏷️  Processing model: Renault Alpine A310
+    ✅ Model added (ID: 1390)
+    📋 Found 2 trims
+  🏷️  Processing model: Renault 20
+    ✅ Model added (ID: 1391)
+    📋 Found 4 trims
+  🏷️  Processing model: Renault 4
+    ✅ Model added (ID: 1392)
+    📋 Found 2 trims
+  🏷️  Processing model: Renault 5
+    ✅ Model added (ID: 1393)
+    📋 Found 28 trims
+
+📦 Processing brand: Rolls-Royce
+  ✅ Brand added (ID: 78)
+  🏷️  Processing model: Rolls-Royce Cullinan
+    ✅ Model added (ID: 1394)
+    📋 Found 2 trims
+  🏷️  Processing model: Rolls-Royce Dawn
+    ✅ Model added (ID: 1395)
+    📋 Found 2 trims
+  🏷️  Processing model: Rolls-Royce Wraith
+    ✅ Model added (ID: 1396)
+    📋 Found 2 trims
+  🏷️  Processing model: Rolls-Royce Ghost
+    ✅ Model added (ID: 1397)
+    📋 Found 6 trims
+  🏷️  Processing model: Rolls-Royce Phantom Coupe
+    ✅ Model added (ID: 1398)
+    📋 Found 4 trims
+  🏷️  Processing model: Rolls-Royce Phantom Drophead Coupe
+    ✅ Model added (ID: 1399)
+    📋 Found 4 trims
+  🏷️  Processing model: Rolls-Royce Phantom
+    ✅ Model added (ID: 1400)
+    📋 Found 8 trims
+  🏷️  Processing model: Rolls-Royce Corniche
+    ✅ Model added (ID: 1401)
+    📋 Found 2 trims
+  🏷️  Processing model: Rolls-Royce Park Ward
+    ✅ Model added (ID: 1402)
+    📋 Found 2 trims
+  🏷️  Processing model: Rolls-Royce Silver Seraph
+    ✅ Model added (ID: 1403)
+    📋 Found 2 trims
+  🏷️  Processing model: Rolls-Royce Silver Dawn
+    ✅ Model added (ID: 1404)
+    📋 Found 2 trims
+  🏷️  Processing model: Rolls-Royce Silver Spur III
+    ✅ Model added (ID: 1405)
+    📋 Found 2 trims
+  🏷️  Processing model: Rolls-Royce Silver Spirit
+    ✅ Model added (ID: 1406)
+    📋 Found 2 trims
+
+📦 Processing brand: Rover
+  ✅ Brand added (ID: 79)
+  🏷️  Processing model: Rover CityRover
+    ✅ Model added (ID: 1407)
+    📋 Found 2 trims
+  🏷️  Processing model: Rover Streetwise
+    ✅ Model added (ID: 1408)
+    📋 Found 4 trims
+  🏷️  Processing model: Rover 75 Tourer
+    ✅ Model added (ID: 1409)
+    📋 Found 10 trims
+  🏷️  Processing model: Rover 45
+    ✅ Model added (ID: 1410)
+    📋 Found 18 trims
+  🏷️  Processing model: Rover 75
+    ✅ Model added (ID: 1411)
+    📋 Found 14 trims
+  🏷️  Processing model: Rover 25
+    ✅ Model added (ID: 1412)
+    📋 Found 18 trims
+  🏷️  Processing model: Rover Tourer
+    ✅ Model added (ID: 1413)
+    📋 Found 4 trims
+  🏷️  Processing model: Rover 100-series Cabriolet
+    ✅ Model added (ID: 1414)
+    📋 Found 2 trims
+  🏷️  Processing model: Rover 600-series
+    ✅ Model added (ID: 1415)
+    📋 Found 12 trims
+  🏷️  Processing model: Rover 800-series Coupe
+    ✅ Model added (ID: 1416)
+    📋 Found 2 trims
+  🏷️  Processing model: Rover 200-series Coupe
+    ✅ Model added (ID: 1417)
+    📋 Found 4 trims
+  🏷️  Processing model: Rover 200-series Cabriolet
+    ✅ Model added (ID: 1418)
+    📋 Found 6 trims
+  🏷️  Processing model: Rover Estate
+    ✅ Model added (ID: 1419)
+    📋 Found 6 trims
+  🏷️  Processing model: Rover Mini
+    ✅ Model added (ID: 1420)
+    📋 Found 4 trims
+  🏷️  Processing model: Rover 400-series
+    ✅ Model added (ID: 1421)
+    📋 Found 24 trims
+  🏷️  Processing model: Rover 100-series
+    ✅ Model added (ID: 1422)
+    📋 Found 14 trims
+  🏷️  Processing model: Rover 800-series
+    ✅ Model added (ID: 1423)
+    📋 Found 22 trims
+  🏷️  Processing model: Rover 200-series
+    ✅ Model added (ID: 1424)
+    📋 Found 30 trims
+  🏷️  Processing model: Rover SD1
+    ✅ Model added (ID: 1425)
+    📋 Found 6 trims
+
+📦 Processing brand: Saab
+  ✅ Brand added (ID: 80)
+  🏷️  Processing model: Saab 9-4X
+    ✅ Model added (ID: 1426)
+    📋 Found 2 trims
+  🏷️  Processing model: Saab 9-3X
+    ✅ Model added (ID: 1427)
+    📋 Found 8 trims
+  🏷️  Processing model: Saab 9-3 Sport Estate
+    ✅ Model added (ID: 1428)
+    📋 Found 14 trims
+  🏷️  Processing model: Saab 9-5 Sport Estate
+    ✅ Model added (ID: 1429)
+    📋 Found 8 trims
+  🏷️  Processing model: Saab 9-5 Sport Sedan
+    ✅ Model added (ID: 1430)
+    📋 Found 8 trims
+  🏷️  Processing model: Saab 9-7X
+    ✅ Model added (ID: 1431)
+    📋 Found 2 trims
+  🏷️  Processing model: Saab 9-3 Sport Sedan
+    ✅ Model added (ID: 1432)
+    📋 Found 20 trims
+  🏷️  Processing model: Saab 9-5 Estate
+    ✅ Model added (ID: 1433)
+    📋 Found 14 trims
+  🏷️  Processing model: Saab 9-3 Cabriolet
+    ✅ Model added (ID: 1434)
+    📋 Found 28 trims
+  🏷️  Processing model: Saab 9-3 Coupe
+    ✅ Model added (ID: 1435)
+    📋 Found 10 trims
+  🏷️  Processing model: Saab 9-3
+    ✅ Model added (ID: 1436)
+    📋 Found 10 trims
+  🏷️  Processing model: Saab 9-5
+    ✅ Model added (ID: 1437)
+    📋 Found 16 trims
+  🏷️  Processing model: Saab 900 Cabriolet
+    ✅ Model added (ID: 1438)
+    📋 Found 8 trims
+  🏷️  Processing model: Saab 900 Coupe
+    ✅ Model added (ID: 1439)
+    📋 Found 8 trims
+  🏷️  Processing model: Saab 9000 CS
+    ✅ Model added (ID: 1440)
+    📋 Found 14 trims
+  🏷️  Processing model: Saab 9000 CD
+    ✅ Model added (ID: 1441)
+    📋 Found 16 trims
+  🏷️  Processing model: Saab 900 Cabrio
+    ✅ Model added (ID: 1442)
+    📋 Found 10 trims
+  🏷️  Processing model: Saab 9000
+    ✅ Model added (ID: 1443)
+    📋 Found 12 trims
+  🏷️  Processing model: Saab 90
+    ✅ Model added (ID: 1444)
+    📋 Found 2 trims
+  🏷️  Processing model: Saab 900
+    ✅ Model added (ID: 1445)
+    📋 Found 54 trims
+  🏷️  Processing model: Saab 99
+    ✅ Model added (ID: 1446)
+    📋 Found 8 trims
+
+📦 Processing brand: Seat
+  ↪ Brand already exists (ID: 39)
+  🏷️  Processing model: Seat Leon Sportstourer
+    ✅ Model added (ID: 1447)
+    📋 Found 2 trims
+  🏷️  Processing model: Seat Mii electric
+    ✅ Model added (ID: 1448)
+    📋 Found 2 trims
+  🏷️  Processing model: Seat Tarraco
+    ✅ Model added (ID: 1449)
+    📋 Found 4 trims
+  🏷️  Processing model: Seat Cupra Ateca
+    ✅ Model added (ID: 1450)
+    📋 Found 4 trims
+  🏷️  Processing model: Seat Arona
+    ✅ Model added (ID: 1451)
+    📋 Found 8 trims
+  🏷️  Processing model: Seat Ateca
+    ✅ Model added (ID: 1452)
+    📋 Found 12 trims
+  🏷️  Processing model: Seat Leon ST
+    ✅ Model added (ID: 1453)
+    📋 Found 12 trims
+  🏷️  Processing model: Seat Leon SC
+    ✅ Model added (ID: 1454)
+    📋 Found 8 trims
+  🏷️  Processing model: Seat Mii
+    ✅ Model added (ID: 1455)
+    📋 Found 16 trims
+  🏷️  Processing model: Seat Ibiza ST
+    ✅ Model added (ID: 1456)
+    📋 Found 12 trims
+  🏷️  Processing model: Seat Exeo ST
+    ✅ Model added (ID: 1457)
+    📋 Found 10 trims
+  🏷️  Processing model: Seat Exeo
+    ✅ Model added (ID: 1458)
+    📋 Found 10 trims
+  🏷️  Processing model: Seat Ibiza SC
+    ✅ Model added (ID: 1459)
+    📋 Found 16 trims
+  🏷️  Processing model: Seat Altea FreeTrack
+    ✅ Model added (ID: 1460)
+    📋 Found 10 trims
+  🏷️  Processing model: Seat Altea XL Stationwagon
+    ✅ Model added (ID: 1461)
+    📋 Found 18 trims
+  🏷️  Processing model: Seat Altea
+    ✅ Model added (ID: 1462)
+    📋 Found 22 trims
+  🏷️  Processing model: Seat Leon
+    ✅ Model added (ID: 1463)
+    📋 Found 40 trims
+  🏷️  Processing model: Seat Cordoba 2-drs
+    ✅ Model added (ID: 1464)
+    📋 Found 4 trims
+  🏷️  Processing model: Seat Cordoba Vario
+    ✅ Model added (ID: 1465)
+    📋 Found 8 trims
+  🏷️  Processing model: Seat Arosa
+    ✅ Model added (ID: 1466)
+    📋 Found 12 trims
+  🏷️  Processing model: Seat Alhambra
+    ✅ Model added (ID: 1467)
+    📋 Found 38 trims
+  🏷️  Processing model: Seat Cordoba SX
+    ✅ Model added (ID: 1468)
+    📋 Found 6 trims
+  🏷️  Processing model: Seat Cordoba
+    ✅ Model added (ID: 1469)
+    📋 Found 28 trims
+  🏷️  Processing model: Seat Toledo
+    ✅ Model added (ID: 1470)
+    📋 Found 38 trims
+  🏷️  Processing model: Seat Marbella
+    ✅ Model added (ID: 1471)
+    📋 Found 10 trims
+  🏷️  Processing model: Seat Malaga
+    ✅ Model added (ID: 1472)
+    📋 Found 12 trims
+  🏷️  Processing model: Seat Ibiza
+    ✅ Model added (ID: 1473)
+    📋 Found 90 trims
+  🏷️  Processing model: Seat Fura
+    ✅ Model added (ID: 1474)
+    📋 Found 2 trims
+  🏷️  Processing model: Seat Ronda
+    ✅ Model added (ID: 1475)
+    📋 Found 6 trims
+
+📦 Processing brand: Skoda
+  ✅ Brand added (ID: 81)
+  🏷️  Processing model: Skoda Enyaq iV
+    ✅ Model added (ID: 1476)
+    📋 Found 2 trims
+  🏷️  Processing model: Skoda Kamiq
+    ✅ Model added (ID: 1477)
+    📋 Found 4 trims
+  🏷️  Processing model: Skoda Citigo E iV
+    ✅ Model added (ID: 1478)
+    📋 Found 2 trims
+  🏷️  Processing model: Skoda Scala
+    ✅ Model added (ID: 1479)
+    📋 Found 4 trims
+  🏷️  Processing model: Skoda Karoq
+    ✅ Model added (ID: 1480)
+    📋 Found 4 trims
+  🏷️  Processing model: Skoda Kodiaq
+    ✅ Model added (ID: 1481)
+    📋 Found 6 trims
+  🏷️  Processing model: Skoda Yeti Outdoor
+    ✅ Model added (ID: 1482)
+    📋 Found 8 trims
+  🏷️  Processing model: Skoda Rapid
+    ✅ Model added (ID: 1483)
+    📋 Found 8 trims
+  🏷️  Processing model: Skoda Rapid Spaceback
+    ✅ Model added (ID: 1484)
+    📋 Found 14 trims
+  🏷️  Processing model: Skoda Citigo
+    ✅ Model added (ID: 1485)
+    📋 Found 14 trims
+  🏷️  Processing model: Skoda Superb Combi
+    ✅ Model added (ID: 1486)
+    📋 Found 22 trims
+  🏷️  Processing model: Skoda Yeti
+    ✅ Model added (ID: 1487)
+    📋 Found 16 trims
+  🏷️  Processing model: Skoda Roomster
+    ✅ Model added (ID: 1488)
+    📋 Found 18 trims
+  🏷️  Processing model: Skoda Superb
+    ✅ Model added (ID: 1489)
+    📋 Found 38 trims
+  🏷️  Processing model: Skoda Fabia Combi
+    ✅ Model added (ID: 1490)
+    📋 Found 44 trims
+  🏷️  Processing model: Skoda Fabia Sedan
+    ✅ Model added (ID: 1491)
+    📋 Found 10 trims
+  🏷️  Processing model: Skoda Fabia
+    ✅ Model added (ID: 1492)
+    📋 Found 48 trims
+  🏷️  Processing model: Skoda Octavia Combi
+    ✅ Model added (ID: 1493)
+    📋 Found 52 trims
+  🏷️  Processing model: Skoda Octavia
+    ✅ Model added (ID: 1494)
+    📋 Found 54 trims
+  🏷️  Processing model: Skoda Felicia
+    ✅ Model added (ID: 1495)
+    📋 Found 8 trims
+  🏷️  Processing model: Skoda Felicia Combi
+    ✅ Model added (ID: 1496)
+    📋 Found 8 trims
+  🏷️  Processing model: Skoda Forman
+    ✅ Model added (ID: 1497)
+    📋 Found 4 trims
+  🏷️  Processing model: Skoda Favorit Estate
+    ✅ Model added (ID: 1498)
+    📋 Found 4 trims
+  🏷️  Processing model: Skoda Favorit
+    ✅ Model added (ID: 1499)
+    📋 Found 10 trims
+  🏷️  Processing model: Skoda 136 R Coupe
+    ✅ Model added (ID: 1500)
+    📋 Found 4 trims
+  🏷️  Processing model: Skoda 120/130
+    ✅ Model added (ID: 1501)
+    📋 Found 8 trims
+  🏷️  Processing model: Skoda 110 R Coupe
+    ✅ Model added (ID: 1502)
+    📋 Found 2 trims
+  🏷️  Processing model: Skoda 120
+    ✅ Model added (ID: 1503)
+    📋 Found 2 trims
+  🏷️  Processing model: Skoda 105
+    ✅ Model added (ID: 1504)
+    📋 Found 6 trims
+
+📦 Processing brand: Smart
+  ✅ Brand added (ID: 82)
+  🏷️  Processing model: Smart fortwo
+    ✅ Model added (ID: 1505)
+    📋 Found 12 trims
+  🏷️  Processing model: Smart fortwo coupe
+    ✅ Model added (ID: 1506)
+    📋 Found 16 trims
+  🏷️  Processing model: Smart forfour
+    ✅ Model added (ID: 1507)
+    📋 Found 16 trims
+  🏷️  Processing model: Smart fortwo cabrio
+    ✅ Model added (ID: 1508)
+    📋 Found 22 trims
+  🏷️  Processing model: Smart roadster
+    ✅ Model added (ID: 1509)
+    📋 Found 4 trims
+  🏷️  Processing model: Smart roadster-coupe
+    ✅ Model added (ID: 1510)
+    📋 Found 4 trims
+  🏷️  Processing model: Smart crossblade
+    ✅ Model added (ID: 1511)
+    📋 Found 2 trims
+  🏷️  Processing model: Smart city-coupe cabrio
+    ✅ Model added (ID: 1512)
+    📋 Found 8 trims
+  🏷️  Processing model: Smart city-coupe
+    ✅ Model added (ID: 1513)
+    📋 Found 10 trims
+
+📦 Processing brand: Ssangyong
+  ✅ Brand added (ID: 83)
+  🏷️  Processing model: Ssangyong XLV
+    ✅ Model added (ID: 1514)
+    📋 Found 2 trims
+  🏷️  Processing model: Ssangyong Actyon Sports
+    ✅ Model added (ID: 1515)
+    📋 Found 2 trims
+  🏷️  Processing model: Ssangyong Tivoli
+    ✅ Model added (ID: 1516)
+    📋 Found 4 trims
+  🏷️  Processing model: Ssangyong Rexton
+    ✅ Model added (ID: 1517)
+    📋 Found 20 trims
+  🏷️  Processing model: Ssangyong Korando
+    ✅ Model added (ID: 1518)
+    📋 Found 10 trims
+  🏷️  Processing model: Ssangyong Rexton
+    ✅ Model added (ID: 1519)
+    📋 Found 6 trims
+  🏷️  Processing model: Ssangyong Actyon Sports
+    ✅ Model added (ID: 1520)
+    📋 Found 4 trims
+  🏷️  Processing model: Ssangyong Actyon
+    ✅ Model added (ID: 1521)
+    📋 Found 4 trims
+  🏷️  Processing model: Ssangyong Kyron
+    ✅ Model added (ID: 1522)
+    📋 Found 6 trims
+  🏷️  Processing model: Ssangyong Rodius
+    ✅ Model added (ID: 1523)
+    📋 Found 6 trims
+  🏷️  Processing model: Ssangyong Korando
+    ✅ Model added (ID: 1524)
+    📋 Found 28 trims
+  🏷️  Processing model: Ssangyong Musso
+    ✅ Model added (ID: 1525)
+    📋 Found 14 trims
+
+📦 Processing brand: Subaru
+  ✅ Brand added (ID: 84)
+  🏷️  Processing model: Subaru Levorg
+    ✅ Model added (ID: 1526)
+    📋 Found 2 trims
+  🏷️  Processing model: Subaru XV
+    ✅ Model added (ID: 1527)
+    📋 Found 14 trims
+  🏷️  Processing model: Subaru BRZ
+    ✅ Model added (ID: 1528)
+    📋 Found 6 trims
+  🏷️  Processing model: Subaru Trezia
+    ✅ Model added (ID: 1529)
+    📋 Found 4 trims
+  🏷️  Processing model: Subaru WRX
+    ✅ Model added (ID: 1530)
+    📋 Found 8 trims
+  🏷️  Processing model: Subaru Tribeca
+    ✅ Model added (ID: 1531)
+    📋 Found 2 trims
+  🏷️  Processing model: Subaru B9 Tribeca
+    ✅ Model added (ID: 1532)
+    📋 Found 2 trims
+  🏷️  Processing model: Subaru G3X Justy
+    ✅ Model added (ID: 1533)
+    📋 Found 2 trims
+  🏷️  Processing model: Subaru Outback
+    ✅ Model added (ID: 1534)
+    📋 Found 24 trims
+  🏷️  Processing model: Subaru Forester
+    ✅ Model added (ID: 1535)
+    📋 Found 34 trims
+  🏷️  Processing model: Subaru Legacy Outback
+    ✅ Model added (ID: 1536)
+    📋 Found 8 trims
+  🏷️  Processing model: Subaru Legacy Touring Wagon
+    ✅ Model added (ID: 1537)
+    📋 Found 28 trims
+  🏷️  Processing model: Subaru Impreza Plus
+    ✅ Model added (ID: 1538)
+    📋 Found 22 trims
+  🏷️  Processing model: Subaru Impreza
+    ✅ Model added (ID: 1539)
+    📋 Found 38 trims
+  🏷️  Processing model: Subaru E-Wagon
+    ✅ Model added (ID: 1540)
+    📋 Found 2 trims
+  🏷️  Processing model: Subaru Vivio
+    ✅ Model added (ID: 1541)
+    📋 Found 4 trims
+  🏷️  Processing model: Subaru SVX
+    ✅ Model added (ID: 1542)
+    📋 Found 2 trims
+  🏷️  Processing model: Subaru Legacy
+    ✅ Model added (ID: 1543)
+    📋 Found 34 trims
+  🏷️  Processing model: Subaru Legacy Stationwagon
+    ✅ Model added (ID: 1544)
+    📋 Found 4 trims
+  🏷️  Processing model: Subaru XT
+    ✅ Model added (ID: 1545)
+    📋 Found 2 trims
+  🏷️  Processing model: Subaru L-series Coupe
+    ✅ Model added (ID: 1546)
+    📋 Found 4 trims
+  🏷️  Processing model: Subaru L-series Stationwagon
+    ✅ Model added (ID: 1547)
+    📋 Found 4 trims
+  🏷️  Processing model: Subaru Justy
+    ✅ Model added (ID: 1548)
+    📋 Found 20 trims
+  🏷️  Processing model: Subaru Mini Jumbo
+    ✅ Model added (ID: 1549)
+    📋 Found 6 trims
+  🏷️  Processing model: Subaru L-series
+    ✅ Model added (ID: 1550)
+    📋 Found 12 trims
+  🏷️  Processing model: Subaru L-series Combi
+    ✅ Model added (ID: 1551)
+    📋 Found 8 trims
+  🏷️  Processing model: Subaru L-series Hardtop
+    ✅ Model added (ID: 1552)
+    📋 Found 4 trims
+
+📦 Processing brand: Suzuki
+  ✅ Brand added (ID: 85)
+  🏷️  Processing model: Suzuki Across
+    ✅ Model added (ID: 1553)
+    📋 Found 2 trims
+  🏷️  Processing model: Suzuki Celerio
+    ✅ Model added (ID: 1554)
+    📋 Found 4 trims
+  🏷️  Processing model: Suzuki Vitara
+    ✅ Model added (ID: 1555)
+    📋 Found 10 trims
+  🏷️  Processing model: Suzuki S-Cross
+    ✅ Model added (ID: 1556)
+    📋 Found 14 trims
+  🏷️  Processing model: Suzuki Jimny Metal Top
+    ✅ Model added (ID: 1557)
+    📋 Found 6 trims
+  🏷️  Processing model: Suzuki Kizashi
+    ✅ Model added (ID: 1558)
+    📋 Found 2 trims
+  🏷️  Processing model: Suzuki Splash
+    ✅ Model added (ID: 1559)
+    📋 Found 10 trims
+  🏷️  Processing model: Suzuki SX4
+    ✅ Model added (ID: 1560)
+    📋 Found 10 trims
+  🏷️  Processing model: Suzuki Grand Vitara
+    ✅ Model added (ID: 1561)
+    📋 Found 26 trims
+  🏷️  Processing model: Suzuki Grand Vitara XL-7
+    ✅ Model added (ID: 1562)
+    📋 Found 4 trims
+  🏷️  Processing model: Suzuki Ignis
+    ✅ Model added (ID: 1563)
+    📋 Found 18 trims
+  🏷️  Processing model: Suzuki Liana
+    ✅ Model added (ID: 1564)
+    📋 Found 8 trims
+  🏷️  Processing model: Suzuki Jimny Cabrio
+    ✅ Model added (ID: 1565)
+    📋 Found 6 trims
+  🏷️  Processing model: Suzuki Grand Vitara Cabrio
+    ✅ Model added (ID: 1566)
+    📋 Found 4 trims
+  🏷️  Processing model: Suzuki Grand Vitara Metal Top
+    ✅ Model added (ID: 1567)
+    📋 Found 8 trims
+  🏷️  Processing model: Suzuki Jimny
+    ✅ Model added (ID: 1568)
+    📋 Found 12 trims
+  🏷️  Processing model: Suzuki Wagon R+
+    ✅ Model added (ID: 1569)
+    📋 Found 14 trims
+  🏷️  Processing model: Suzuki X-90
+    ✅ Model added (ID: 1570)
+    📋 Found 2 trims
+  🏷️  Processing model: Suzuki Baleno Wagon
+    ✅ Model added (ID: 1571)
+    📋 Found 12 trims
+  🏷️  Processing model: Suzuki Baleno
+    ✅ Model added (ID: 1572)
+    📋 Found 22 trims
+  🏷️  Processing model: Suzuki Cappuccino
+    ✅ Model added (ID: 1573)
+    📋 Found 2 trims
+  🏷️  Processing model: Suzuki Vitara Villager
+    ✅ Model added (ID: 1574)
+    📋 Found 8 trims
+  🏷️  Processing model: Suzuki Swift Cabrio
+    ✅ Model added (ID: 1575)
+    📋 Found 2 trims
+  🏷️  Processing model: Suzuki Vitara Wagon
+    ✅ Model added (ID: 1576)
+    📋 Found 2 trims
+  🏷️  Processing model: Suzuki Vitara Cabrio
+    ✅ Model added (ID: 1577)
+    📋 Found 8 trims
+  🏷️  Processing model: Suzuki Vitara Metal Top
+    ✅ Model added (ID: 1578)
+    📋 Found 8 trims
+  🏷️  Processing model: Suzuki Samurai Metal Top
+    ✅ Model added (ID: 1579)
+    📋 Found 6 trims
+  🏷️  Processing model: Suzuki Samurai Cabrio
+    ✅ Model added (ID: 1580)
+    📋 Found 6 trims
+  🏷️  Processing model: Suzuki Swift
+    ✅ Model added (ID: 1581)
+    📋 Found 74 trims
+  🏷️  Processing model: Suzuki SA 310
+    ✅ Model added (ID: 1582)
+    📋 Found 2 trims
+  🏷️  Processing model: Suzuki SJ
+    ✅ Model added (ID: 1583)
+    📋 Found 4 trims
+  🏷️  Processing model: Suzuki Alto
+    ✅ Model added (ID: 1584)
+    📋 Found 46 trims
+  🏷️  Processing model: Suzuki SC
+    ✅ Model added (ID: 1585)
+    📋 Found 2 trims
+
+📦 Processing brand: Tesla
+  ↪ Brand already exists (ID: 40)
+  🏷️  Processing model: Tesla Model Y
+    ✅ Model added (ID: 1586)
+    📋 Found 2 trims
+  🏷️  Processing model: Tesla Model 3
+    ✅ Model added (ID: 1587)
+    📋 Found 4 trims
+  🏷️  Processing model: Tesla Model X
+    ✅ Model added (ID: 1588)
+    📋 Found 6 trims
+  🏷️  Processing model: Tesla Model S
+    ✅ Model added (ID: 1589)
+    📋 Found 12 trims
+  🏷️  Processing model: Tesla Roadster
+    ✅ Model added (ID: 1590)
+    📋 Found 2 trims
+
+📦 Processing brand: Toyota
+  ↪ Brand already exists (ID: 22)
+  🏷️  Processing model: Toyota Proace City Verso
+    ✅ Model added (ID: 1591)
+    📋 Found 2 trims
+  🏷️  Processing model: Toyota Proace City
+    ✅ Model added (ID: 1592)
+    📋 Found 4 trims
+  🏷️  Processing model: Toyota Corolla Sedan
+    ✅ Model added (ID: 1593)
+    📋 Found 4 trims
+  🏷️  Processing model: Toyota Corolla Touring Sports
+    ✅ Model added (ID: 1594)
+    📋 Found 2 trims
+  🏷️  Processing model: Toyota Mirai
+    ✅ Model added (ID: 1595)
+    📋 Found 2 trims
+  🏷️  Processing model: Toyota Prius Plug-in Hybrid
+    ✅ Model added (ID: 1596)
+    📋 Found 6 trims
+  🏷️  Processing model: Toyota Proace Verso
+    ✅ Model added (ID: 1597)
+    📋 Found 8 trims
+  🏷️  Processing model: Toyota C-HR
+    ✅ Model added (ID: 1598)
+    📋 Found 10 trims
+  🏷️  Processing model: Toyota Proace Shuttle
+    ✅ Model added (ID: 1599)
+    📋 Found 8 trims
+  🏷️  Processing model: Toyota Auris Touring Sports
+    ✅ Model added (ID: 1600)
+    📋 Found 12 trims
+  🏷️  Processing model: Toyota Avensis Touring Sports
+    ✅ Model added (ID: 1601)
+    📋 Found 6 trims
+  🏷️  Processing model: Toyota Land Cruiser High Roof Blind V
+    ✅ Model added (ID: 1602)
+    📋 Found 6 trims
+  🏷️  Processing model: Toyota Land Cruiser Standard Roof Bli
+    ✅ Model added (ID: 1603)
+    📋 Found 6 trims
+  🏷️  Processing model: Toyota Proace
+    ✅ Model added (ID: 1604)
+    📋 Found 10 trims
+  🏷️  Processing model: Toyota Land Cruiser V8 Van
+    ✅ Model added (ID: 1605)
+    📋 Found 2 trims
+  🏷️  Processing model: Toyota Hilux
+    ✅ Model added (ID: 1606)
+    📋 Found 8 trims
+  🏷️  Processing model: Toyota GT86
+    ✅ Model added (ID: 1607)
+    📋 Found 8 trims
+  🏷️  Processing model: Toyota Hilux Dubbele Cabine
+    ✅ Model added (ID: 1608)
+    📋 Found 6 trims
+  🏷️  Processing model: Toyota Verso-S
+    ✅ Model added (ID: 1609)
+    📋 Found 6 trims
+  🏷️  Processing model: Toyota Prius Wagon
+    ✅ Model added (ID: 1610)
+    📋 Found 4 trims
+  🏷️  Processing model: Toyota iQ
+    ✅ Model added (ID: 1611)
+    📋 Found 4 trims
+  🏷️  Processing model: Toyota Verso Van
+    ✅ Model added (ID: 1612)
+    📋 Found 8 trims
+  🏷️  Processing model: Toyota Urban Cruiser
+    ✅ Model added (ID: 1613)
+    📋 Found 4 trims
+  🏷️  Processing model: Toyota Land Cruiser V8
+    ✅ Model added (ID: 1614)
+    📋 Found 4 trims
+  🏷️  Processing model: Toyota Verso
+    ✅ Model added (ID: 1615)
+    📋 Found 22 trims
+  🏷️  Processing model: Toyota Auris
+    ✅ Model added (ID: 1616)
+    📋 Found 28 trims
+  🏷️  Processing model: Toyota Aygo
+    ✅ Model added (ID: 1617)
+    📋 Found 28 trims
+  🏷️  Processing model: Toyota Corolla Verso
+    ✅ Model added (ID: 1618)
+    📋 Found 8 trims
+  🏷️  Processing model: Toyota Avensis Verso
+    ✅ Model added (ID: 1619)
+    📋 Found 4 trims
+  🏷️  Processing model: Toyota RAV4
+    ✅ Model added (ID: 1620)
+    📋 Found 38 trims
+  🏷️  Processing model: Toyota Prius
+    ✅ Model added (ID: 1621)
+    📋 Found 24 trims
+  🏷️  Processing model: Toyota Yaris
+    ✅ Model added (ID: 1622)
+    📋 Found 46 trims
+  🏷️  Processing model: Toyota Yaris Verso
+    ✅ Model added (ID: 1623)
+    📋 Found 8 trims
+  🏷️  Processing model: Toyota Land Cruiser 100
+    ✅ Model added (ID: 1624)
+    📋 Found 4 trims
+  🏷️  Processing model: Toyota Funcruiser Hardtop
+    ✅ Model added (ID: 1625)
+    📋 Found 2 trims
+  🏷️  Processing model: Toyota Funcruiser Softtop
+    ✅ Model added (ID: 1626)
+    📋 Found 2 trims
+  🏷️  Processing model: Toyota Avensis
+    ✅ Model added (ID: 1627)
+    📋 Found 44 trims
+  🏷️  Processing model: Toyota Avensis Wagon
+    ✅ Model added (ID: 1628)
+    📋 Found 26 trims
+  🏷️  Processing model: Toyota Corolla Wagon
+    ✅ Model added (ID: 1629)
+    📋 Found 14 trims
+  🏷️  Processing model: Toyota Paseo
+    ✅ Model added (ID: 1630)
+    📋 Found 2 trims
+  🏷️  Processing model: Toyota Picnic
+    ✅ Model added (ID: 1631)
+    📋 Found 6 trims
+  🏷️  Processing model: Toyota Land Cruiser 90
+    ✅ Model added (ID: 1632)
+    📋 Found 6 trims
+  🏷️  Processing model: Toyota Land Cruiser 90 Wagon
+    ✅ Model added (ID: 1633)
+    📋 Found 6 trims
+  🏷️  Processing model: Toyota Funcruiser Wagon
+    ✅ Model added (ID: 1634)
+    📋 Found 4 trims
+  🏷️  Processing model: Toyota Funcruiser
+    ✅ Model added (ID: 1635)
+    📋 Found 2 trims
+  🏷️  Processing model: Toyota Carina E Stationwagon
+    ✅ Model added (ID: 1636)
+    📋 Found 6 trims
+  🏷️  Processing model: Toyota Camry Customwagon
+    ✅ Model added (ID: 1637)
+    📋 Found 2 trims
+  🏷️  Processing model: Toyota Carina E
+    ✅ Model added (ID: 1638)
+    📋 Found 16 trims
+  🏷️  Processing model: Toyota Celica Convertible
+    ✅ Model added (ID: 1639)
+    📋 Found 4 trims
+  🏷️  Processing model: Toyota 4Runner
+    ✅ Model added (ID: 1640)
+    📋 Found 4 trims
+  🏷️  Processing model: Toyota Previa
+    ✅ Model added (ID: 1641)
+    📋 Found 12 trims
+  🏷️  Processing model: Toyota Celica
+    ✅ Model added (ID: 1642)
+    📋 Found 12 trims
+  🏷️  Processing model: Toyota Corolla Stationwagon
+    ✅ Model added (ID: 1643)
+    📋 Found 8 trims
+  🏷️  Processing model: Toyota Carina II Stationwagon
+    ✅ Model added (ID: 1644)
+    📋 Found 4 trims
+  🏷️  Processing model: Toyota Camry Stationwagon
+    ✅ Model added (ID: 1645)
+    📋 Found 4 trims
+  🏷️  Processing model: Toyota Carina II
+    ✅ Model added (ID: 1646)
+    📋 Found 16 trims
+  🏷️  Processing model: Toyota MR2
+    ✅ Model added (ID: 1647)
+    📋 Found 14 trims
+  🏷️  Processing model: Toyota Land Cruiser Customwagon
+    ✅ Model added (ID: 1648)
+    📋 Found 6 trims
+  🏷️  Processing model: Toyota Camry
+    ✅ Model added (ID: 1649)
+    📋 Found 32 trims
+  🏷️  Processing model: Toyota Tercel Wagon
+    ✅ Model added (ID: 1650)
+    📋 Found 2 trims
+  🏷️  Processing model: Toyota Supra
+    ✅ Model added (ID: 1651)
+    📋 Found 12 trims
+  🏷️  Processing model: Toyota Corolla
+    ✅ Model added (ID: 1652)
+    📋 Found 88 trims
+  🏷️  Processing model: Toyota Carina
+    ✅ Model added (ID: 1653)
+    📋 Found 10 trims
+  🏷️  Processing model: Toyota Corolla Coupe
+    ✅ Model added (ID: 1654)
+    📋 Found 6 trims
+  🏷️  Processing model: Toyota Carina Combi
+    ✅ Model added (ID: 1655)
+    📋 Found 4 trims
+  🏷️  Processing model: Toyota Land Cruiser
+    ✅ Model added (ID: 1656)
+    📋 Found 38 trims
+  🏷️  Processing model: Toyota Corolla Combi
+    ✅ Model added (ID: 1657)
+    📋 Found 8 trims
+  🏷️  Processing model: Toyota Crown
+    ✅ Model added (ID: 1658)
+    📋 Found 4 trims
+  🏷️  Processing model: Toyota Corolla Liftback
+    ✅ Model added (ID: 1659)
+    📋 Found 18 trims
+  🏷️  Processing model: Toyota Crown Combi
+    ✅ Model added (ID: 1660)
+    📋 Found 2 trims
+  🏷️  Processing model: Toyota Starlet
+    ✅ Model added (ID: 1661)
+    📋 Found 32 trims
+  🏷️  Processing model: Toyota Starlet Combi
+    ✅ Model added (ID: 1662)
+    📋 Found 2 trims
+  🏷️  Processing model: Toyota Celica Coupe
+    ✅ Model added (ID: 1663)
+    📋 Found 10 trims
+  🏷️  Processing model: Toyota Celica Liftback
+    ✅ Model added (ID: 1664)
+    📋 Found 14 trims
+  🏷️  Processing model: Toyota Tercel
+    ✅ Model added (ID: 1665)
+    📋 Found 8 trims
+  🏷️  Processing model: Toyota Tercel Coupe
+    ✅ Model added (ID: 1666)
+    📋 Found 4 trims
+  🏷️  Processing model: Toyota Corona
+    ✅ Model added (ID: 1667)
+    📋 Found 4 trims
+  🏷️  Processing model: Toyota Cressida Combi
+    ✅ Model added (ID: 1668)
+    📋 Found 6 trims
+  🏷️  Processing model: Toyota Cressida Hardtop
+    ✅ Model added (ID: 1669)
+    📋 Found 2 trims
+  🏷️  Processing model: Toyota Cressida
+    ✅ Model added (ID: 1670)
+    📋 Found 10 trims
+
+📦 Processing brand: Volkswagen
+  ↪ Brand already exists (ID: 23)
+  🏷️  Processing model: Volkswagen ID4
+    ✅ Model added (ID: 1671)
+    📋 Found 2 trims
+  🏷️  Processing model: Volkswagen Caddy Cargo
+    ✅ Model added (ID: 1672)
+    📋 Found 2 trims
+  🏷️  Processing model: Volkswagen T-Roc Cabrio
+    ✅ Model added (ID: 1673)
+    📋 Found 2 trims
+  🏷️  Processing model: Volkswagen Arteon Shooting Brake
+    ✅ Model added (ID: 1674)
+    📋 Found 2 trims
+  🏷️  Processing model: Volkswagen ID3
+    ✅ Model added (ID: 1675)
+    📋 Found 2 trims
+  🏷️  Processing model: Volkswagen T-Cross
+    ✅ Model added (ID: 1676)
+    📋 Found 6 trims
+  🏷️  Processing model: Volkswagen T-Roc
+    ✅ Model added (ID: 1677)
+    📋 Found 6 trims
+  🏷️  Processing model: Volkswagen Arteon
+    ✅ Model added (ID: 1678)
+    📋 Found 8 trims
+  🏷️  Processing model: Volkswagen Tiguan Allspace
+    ✅ Model added (ID: 1679)
+    📋 Found 4 trims
+  🏷️  Processing model: Volkswagen Amarok Dubbele Cabine Lange Wi
+    ✅ Model added (ID: 1680)
+    📋 Found 6 trims
+  🏷️  Processing model: Volkswagen Beetle Coupe
+    ✅ Model added (ID: 1681)
+    📋 Found 2 trims
+  🏷️  Processing model: Volkswagen e-Golf
+    ✅ Model added (ID: 1682)
+    📋 Found 6 trims
+  🏷️  Processing model: Volkswagen XL1
+    ✅ Model added (ID: 1683)
+    📋 Found 2 trims
+  🏷️  Processing model: Volkswagen e-Up!
+    ✅ Model added (ID: 1684)
+    📋 Found 6 trims
+  🏷️  Processing model: Volkswagen Golf Sportsvan
+    ✅ Model added (ID: 1685)
+    📋 Found 10 trims
+  🏷️  Processing model: Volkswagen Amarok Enkele Cabine
+    ✅ Model added (ID: 1686)
+    📋 Found 4 trims
+  🏷️  Processing model: Volkswagen Beetle Cabrio
+    ✅ Model added (ID: 1687)
+    📋 Found 6 trims
+  🏷️  Processing model: Volkswagen Passat Alltrack
+    ✅ Model added (ID: 1688)
+    📋 Found 2 trims
+  🏷️  Processing model: Volkswagen CC
+    ✅ Model added (ID: 1689)
+    📋 Found 2 trims
+  🏷️  Processing model: Volkswagen Up
+    ✅ Model added (ID: 1690)
+    📋 Found 18 trims
+  🏷️  Processing model: Volkswagen Crafter Bestelwagen
+    ✅ Model added (ID: 1691)
+    📋 Found 12 trims
+  🏷️  Processing model: Volkswagen Beetle
+    ✅ Model added (ID: 1692)
+    📋 Found 10 trims
+  🏷️  Processing model: Volkswagen Crafter Dubbele Cabine
+    ✅ Model added (ID: 1693)
+    📋 Found 2 trims
+  🏷️  Processing model: Volkswagen Crafter Kombi
+    ✅ Model added (ID: 1694)
+    📋 Found 6 trims
+  🏷️  Processing model: Volkswagen Amarok Dubbele Cabine
+    ✅ Model added (ID: 1695)
+    📋 Found 10 trims
+  🏷️  Processing model: Volkswagen Amarok Plus Cabine
+    ✅ Model added (ID: 1696)
+    📋 Found 14 trims
+  🏷️  Processing model: Volkswagen Sharan Van
+    ✅ Model added (ID: 1697)
+    📋 Found 2 trims
+  🏷️  Processing model: Volkswagen Transporter Kombi
+    ✅ Model added (ID: 1698)
+    📋 Found 10 trims
+  🏷️  Processing model: Volkswagen Multivan dubbele cabine
+    ✅ Model added (ID: 1699)
+    📋 Found 6 trims
+  🏷️  Processing model: Volkswagen Touran Van
+    ✅ Model added (ID: 1700)
+    📋 Found 4 trims
+  🏷️  Processing model: Volkswagen Transporter Bestelwagen
+    ✅ Model added (ID: 1701)
+    📋 Found 12 trims
+  🏷️  Processing model: Volkswagen Transporter Dubbele Cabine
+    ✅ Model added (ID: 1702)
+    📋 Found 2 trims
+  🏷️  Processing model: Volkswagen Caddy
+    ✅ Model added (ID: 1703)
+    📋 Found 12 trims
+  🏷️  Processing model: Volkswagen Golf Variant Van
+    ✅ Model added (ID: 1704)
+    📋 Found 4 trims
+  🏷️  Processing model: Volkswagen Passat CC
+    ✅ Model added (ID: 1705)
+    📋 Found 8 trims
+  🏷️  Processing model: Volkswagen CrossTouran
+    ✅ Model added (ID: 1706)
+    📋 Found 8 trims
+  🏷️  Processing model: Volkswagen Tiguan
+    ✅ Model added (ID: 1707)
+    📋 Found 26 trims
+  🏷️  Processing model: Volkswagen CrossGolf
+    ✅ Model added (ID: 1708)
+    📋 Found 6 trims
+  🏷️  Processing model: Volkswagen CrossPolo
+    ✅ Model added (ID: 1709)
+    📋 Found 10 trims
+  🏷️  Processing model: Volkswagen Eos
+    ✅ Model added (ID: 1710)
+    📋 Found 8 trims
+  🏷️  Processing model: Volkswagen New Beetle Coupe
+    ✅ Model added (ID: 1711)
+    📋 Found 2 trims
+  🏷️  Processing model: Volkswagen Golf Plus
+    ✅ Model added (ID: 1712)
+    📋 Found 14 trims
+  🏷️  Processing model: Volkswagen Fox
+    ✅ Model added (ID: 1713)
+    📋 Found 6 trims
+  🏷️  Processing model: Volkswagen Polo Fun
+    ✅ Model added (ID: 1714)
+    📋 Found 2 trims
+  🏷️  Processing model: Volkswagen Caddy Combi
+    ✅ Model added (ID: 1715)
+    📋 Found 22 trims
+  🏷️  Processing model: Volkswagen Multivan
+    ✅ Model added (ID: 1716)
+    📋 Found 16 trims
+  🏷️  Processing model: Volkswagen New Beetle Cabrio
+    ✅ Model added (ID: 1717)
+    📋 Found 6 trims
+  🏷️  Processing model: Volkswagen Touran
+    ✅ Model added (ID: 1718)
+    📋 Found 32 trims
+  🏷️  Processing model: Volkswagen Phaeton
+    ✅ Model added (ID: 1719)
+    📋 Found 16 trims
+  🏷️  Processing model: Volkswagen Touareg
+    ✅ Model added (ID: 1720)
+    📋 Found 34 trims
+  🏷️  Processing model: Volkswagen Bora Variant
+    ✅ Model added (ID: 1721)
+    📋 Found 6 trims
+  🏷️  Processing model: Volkswagen Lupo
+    ✅ Model added (ID: 1722)
+    📋 Found 14 trims
+  🏷️  Processing model: Volkswagen New Beetle
+    ✅ Model added (ID: 1723)
+    📋 Found 14 trims
+  🏷️  Processing model: Volkswagen Bora
+    ✅ Model added (ID: 1724)
+    📋 Found 16 trims
+  🏷️  Processing model: Volkswagen Polo Variant
+    ✅ Model added (ID: 1725)
+    📋 Found 6 trims
+  🏷️  Processing model: Volkswagen Polo Sedan
+    ✅ Model added (ID: 1726)
+    📋 Found 6 trims
+  🏷️  Processing model: Volkswagen Sharan
+    ✅ Model added (ID: 1727)
+    📋 Found 30 trims
+  🏷️  Processing model: Volkswagen Golf Variant
+    ✅ Model added (ID: 1728)
+    📋 Found 52 trims
+  🏷️  Processing model: Volkswagen Vento
+    ✅ Model added (ID: 1729)
+    📋 Found 12 trims
+  🏷️  Processing model: Volkswagen Corrado
+    ✅ Model added (ID: 1730)
+    📋 Found 8 trims
+  🏷️  Processing model: Volkswagen Polo Coupe
+    ✅ Model added (ID: 1731)
+    📋 Found 14 trims
+  🏷️  Processing model: Volkswagen Santana
+    ✅ Model added (ID: 1732)
+    📋 Found 6 trims
+  🏷️  Processing model: Volkswagen Golf
+    ✅ Model added (ID: 1733)
+    📋 Found 100 trims
+  🏷️  Processing model: Volkswagen Golf Cabriolet
+    ✅ Model added (ID: 1734)
+    📋 Found 38 trims
+  🏷️  Processing model: Volkswagen Passat
+    ✅ Model added (ID: 1735)
+    📋 Found 90 trims
+  🏷️  Processing model: Volkswagen Jetta
+    ✅ Model added (ID: 1736)
+    📋 Found 38 trims
+  🏷️  Processing model: Volkswagen Passat Variant
+    ✅ Model added (ID: 1737)
+    📋 Found 88 trims
+  🏷️  Processing model: Volkswagen Derby
+    ✅ Model added (ID: 1738)
+    📋 Found 2 trims
+  🏷️  Processing model: Volkswagen Scirocco
+    ✅ Model added (ID: 1739)
+    📋 Found 22 trims
+  🏷️  Processing model: Volkswagen Polo
+    ✅ Model added (ID: 1740)
+    📋 Found 90 trims
+
+📦 Processing brand: Volvo
+  ✅ Brand added (ID: 86)
+  🏷️  Processing model: Volvo XC40 Recharge
+    ✅ Model added (ID: 1741)
+    📋 Found 2 trims
+  🏷️  Processing model: Volvo XC40
+    ✅ Model added (ID: 1742)
+    📋 Found 6 trims
+  🏷️  Processing model: Volvo XC60
+    ✅ Model added (ID: 1743)
+    📋 Found 28 trims
+  🏷️  Processing model: Volvo V90 Cross Country
+    ✅ Model added (ID: 1744)
+    📋 Found 4 trims
+  🏷️  Processing model: Volvo V60 Cross Country
+    ✅ Model added (ID: 1745)
+    📋 Found 12 trims
+  🏷️  Processing model: Volvo S60 Cross Country
+    ✅ Model added (ID: 1746)
+    📋 Found 4 trims
+  🏷️  Processing model: Volvo V40 Cross Country
+    ✅ Model added (ID: 1747)
+    📋 Found 12 trims
+  🏷️  Processing model: Volvo V60
+    ✅ Model added (ID: 1748)
+    📋 Found 24 trims
+  🏷️  Processing model: Volvo C30
+    ✅ Model added (ID: 1749)
+    📋 Found 14 trims
+  🏷️  Processing model: Volvo V50
+    ✅ Model added (ID: 1750)
+    📋 Found 16 trims
+  🏷️  Processing model: Volvo XC70
+    ✅ Model added (ID: 1751)
+    📋 Found 30 trims
+  🏷️  Processing model: Volvo XC90
+    ✅ Model added (ID: 1752)
+    📋 Found 30 trims
+  🏷️  Processing model: Volvo S60
+    ✅ Model added (ID: 1753)
+    📋 Found 40 trims
+  🏷️  Processing model: Volvo V70 Cross Country
+    ✅ Model added (ID: 1754)
+    📋 Found 2 trims
+  🏷️  Processing model: Volvo C70 Convertible
+    ✅ Model added (ID: 1755)
+    📋 Found 6 trims
+  🏷️  Processing model: Volvo C70
+    ✅ Model added (ID: 1756)
+    📋 Found 20 trims
+  🏷️  Processing model: Volvo S80
+    ✅ Model added (ID: 1757)
+    📋 Found 36 trims
+  🏷️  Processing model: Volvo S90
+    ✅ Model added (ID: 1758)
+    📋 Found 12 trims
+  🏷️  Processing model: Volvo V70
+    ✅ Model added (ID: 1759)
+    📋 Found 40 trims
+  🏷️  Processing model: Volvo V90
+    ✅ Model added (ID: 1760)
+    📋 Found 12 trims
+  🏷️  Processing model: Volvo S70
+    ✅ Model added (ID: 1761)
+    📋 Found 4 trims
+  🏷️  Processing model: Volvo V40
+    ✅ Model added (ID: 1762)
+    📋 Found 30 trims
+  🏷️  Processing model: Volvo S40
+    ✅ Model added (ID: 1763)
+    📋 Found 32 trims
+  🏷️  Processing model: Volvo 850 Estate
+    ✅ Model added (ID: 1764)
+    📋 Found 8 trims
+  🏷️  Processing model: Volvo 850
+    ✅ Model added (ID: 1765)
+    📋 Found 10 trims
+  🏷️  Processing model: Volvo 460
+    ✅ Model added (ID: 1766)
+    📋 Found 16 trims
+  🏷️  Processing model: Volvo 940 Estate
+    ✅ Model added (ID: 1767)
+    📋 Found 16 trims
+  🏷️  Processing model: Volvo 960
+    ✅ Model added (ID: 1768)
+    📋 Found 8 trims
+  🏷️  Processing model: Volvo 960 Estate
+    ✅ Model added (ID: 1769)
+    📋 Found 8 trims
+  🏷️  Processing model: Volvo 940
+    ✅ Model added (ID: 1770)
+    📋 Found 14 trims
+  🏷️  Processing model: Volvo 440
+    ✅ Model added (ID: 1771)
+    📋 Found 20 trims
+  🏷️  Processing model: Volvo 480
+    ✅ Model added (ID: 1772)
+    📋 Found 14 trims
+  🏷️  Processing model: Volvo 780
+    ✅ Model added (ID: 1773)
+    📋 Found 4 trims
+  🏷️  Processing model: Volvo 740 Estate
+    ✅ Model added (ID: 1774)
+    📋 Found 12 trims
+  🏷️  Processing model: Volvo 760 Estate
+    ✅ Model added (ID: 1775)
+    📋 Found 8 trims
+  🏷️  Processing model: Volvo 740
+    ✅ Model added (ID: 1776)
+    📋 Found 12 trims
+  🏷️  Processing model: Volvo 360
+    ✅ Model added (ID: 1777)
+    📋 Found 14 trims
+  🏷️  Processing model: Volvo 240 Estate
+    ✅ Model added (ID: 1778)
+    📋 Found 20 trims
+  🏷️  Processing model: Volvo 760
+    ✅ Model added (ID: 1779)
+    📋 Found 12 trims
+  🏷️  Processing model: Volvo 340
+    ✅ Model added (ID: 1780)
+    📋 Found 24 trims
+  🏷️  Processing model: Volvo 240
+    ✅ Model added (ID: 1781)
+    📋 Found 18 trims
+  🏷️  Processing model: Volvo 244
+    ✅ Model added (ID: 1782)
+    📋 Found 4 trims
+  🏷️  Processing model: Volvo 245
+    ✅ Model added (ID: 1783)
+    📋 Found 4 trims
+  🏷️  Processing model: Volvo 264
+    ✅ Model added (ID: 1784)
+    📋 Found 2 trims
+  🏷️  Processing model: Volvo 265
+    ✅ Model added (ID: 1785)
+    📋 Found 2 trims
+  🏷️  Processing model: Volvo 345
+    ✅ Model added (ID: 1786)
+    📋 Found 6 trims
+  🏷️  Processing model: Volvo 343
+    ✅ Model added (ID: 1787)
+    📋 Found 6 trims
+  🏷️  Processing model: Volvo 66
+    ✅ Model added (ID: 1788)
+    📋 Found 4 trims
+
+
+============================================================
+📊 IMPORT COMPLETE!
+============================================================
+
+✅ Successfully added:
+   - Brands: 44
+   - Models: 1719
+   - Trims: 19107
+
+↪ Skipped (already exist):
+   - Brands: 20
+   - Models: 18
+   - Trims: 606
+
+============================================================
+

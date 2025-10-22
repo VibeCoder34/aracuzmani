@@ -13,7 +13,49 @@ SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
 
 ## Scripts
 
-### 1. Make Admin (`make-admin.js`)
+### 1. Import Cars from JSON (`import-cars-from-json.js`) 🚗
+
+Imports car data from `cars_data_complete_final.json` to Supabase database.
+
+**Usage:**
+```bash
+node scripts/import-cars-from-json.js
+```
+
+**What it does:**
+- Reads 64 brands, 1,737 models from JSON
+- Inserts brands into `car_brands` table
+- Inserts models into `car_models` table
+- Creates trims (year/engine/transmission variants) in `car_trims` table
+- Extracts and saves detailed specs (horsepower, dimensions, fuel consumption, etc.)
+
+**Features:**
+- ✅ Skips duplicates automatically
+- ✅ Handles N/A values gracefully
+- ✅ Normalizes fuel types, transmissions, body types
+- ✅ Creates unique trims based on year + specs
+- ✅ Progress tracking with detailed logs
+
+**Expected output:**
+```
+📦 Processing brand: Toyota
+  ✅ Brand added (ID: 15)
+  🏷️  Processing model: Corolla
+    ✅ Model added (ID: 142)
+    📋 Found 8 trims
+    
+📊 IMPORT COMPLETE!
+✅ Successfully added:
+   - Brands: 64
+   - Models: 1737
+   - Trims: 8432
+```
+
+**Note:** Import may take 10-30 minutes depending on data size. See `CAR_DATA_IMPORT_GUIDE.md` for detailed documentation.
+
+---
+
+### 2. Make Admin (`make-admin.js`)
 
 Promotes a user to admin role.
 
@@ -32,7 +74,7 @@ node scripts/make-admin.js john@example.com
 - Updates their role to 'admin' in the profiles table
 - Shows confirmation message
 
-### 2. List Users (`list-users.js`)
+### 3. List Users (`list-users.js`)
 
 Lists all users and their roles in a formatted table.
 

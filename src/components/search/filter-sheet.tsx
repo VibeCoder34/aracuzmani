@@ -38,9 +38,9 @@ const brandOptions = [
   "Nissan",
 ];
 
-const bodyOptions = ["Sedan", "SUV", "Truck", "Coupe", "Wagon"];
-const fuelOptions = ["Gasoline", "Hybrid", "Electric"];
-const transmissionOptions = ["Automatic", "Manual", "CVT", "PDK", "Single-Speed"];
+const bodyOptions = ["Sedan", "SUV", "Pikap", "Coupe", "Station Wagon", "Hatchback"];
+const fuelOptions = ["Benzin", "Hibrit", "Elektrik", "Dizel"];
+const transmissionOptions = ["Otomatik", "Manuel", "CVT", "PDK", "Tek Vitesli"];
 
 export function FilterSheet({
   filters,

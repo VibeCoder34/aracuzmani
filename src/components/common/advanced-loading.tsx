@@ -102,13 +102,16 @@ interface BrandSkeletonProps {
 }
 
 export function BrandSkeleton({ count = 10 }: BrandSkeletonProps) {
+  // Predefined widths to avoid hydration mismatch
+  const predefinedWidths = [70, 85, 75, 90, 80, 95, 65, 88, 72, 82, 78, 92, 68, 86, 74];
+  
   return (
     <div className="flex flex-wrap gap-2">
       {Array.from({ length: count }).map((_, i) => (
         <div
           key={i}
           className="h-8 bg-gradient-to-r from-muted via-muted/50 to-muted rounded-full px-4 py-2 animate-pulse"
-          style={{ width: `${60 + Math.random() * 40}px` }}
+          style={{ width: `${predefinedWidths[i % predefinedWidths.length]}px` }}
         >
           <div className="h-full w-full bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer rounded-full"></div>
         </div>

@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CarCard } from "@/components/car/card-car";
 import { TrendingUp, Star, MessageSquare } from "lucide-react";
 import type { Car } from "@/types/car";
+import { CarGridSkeleton } from "@/components/common/advanced-loading";
 
 interface CarStats {
   carId: string;
@@ -143,26 +144,20 @@ export default function HighlightsPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {loading ? (
-                    Array.from({ length: 6 }).map((_, i) => (
-                      <div key={i} className="border border-border rounded-lg p-4 animate-pulse">
-                        <div className="aspect-video bg-muted rounded mb-4"></div>
-                        <div className="h-4 bg-muted rounded mb-2"></div>
-                        <div className="h-3 bg-muted rounded w-2/3"></div>
-                      </div>
-                    ))
-                  ) : (
-                    (mostReviewed.length > 0 ? mostReviewed : fallbackCars.map(car => ({ car, reviewCount: 0, avgRating: 0 }))).map(({ car, reviewCount, avgRating }) => (
+                {loading ? (
+                  <CarGridSkeleton count={6} className="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" />
+                ) : (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {(mostReviewed.length > 0 ? mostReviewed : fallbackCars.map(car => ({ car, reviewCount: 0, avgRating: 0 }))).map(({ car, reviewCount, avgRating }) => (
                       <CarCard
                         key={car.id}
                         car={car}
                         averageRating={avgRating}
                         reviewCount={reviewCount}
                       />
-                    ))
-                  )}
-                </div>
+                    ))}
+                  </div>
+                )}
               </CardContent>
             </Card>
           </section>
@@ -177,26 +172,20 @@ export default function HighlightsPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {loading ? (
-                    Array.from({ length: 6 }).map((_, i) => (
-                      <div key={i} className="border border-border rounded-lg p-4 animate-pulse">
-                        <div className="aspect-video bg-muted rounded mb-4"></div>
-                        <div className="h-4 bg-muted rounded mb-2"></div>
-                        <div className="h-3 bg-muted rounded w-2/3"></div>
-                      </div>
-                    ))
-                  ) : (
-                    (topRated.length > 0 ? topRated : fallbackTopRated.map(car => ({ car, reviewCount: 0, avgRating: 0 }))).map(({ car, reviewCount, avgRating }) => (
+                {loading ? (
+                  <CarGridSkeleton count={6} className="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" />
+                ) : (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {(topRated.length > 0 ? topRated : fallbackTopRated.map(car => ({ car, reviewCount: 0, avgRating: 0 }))).map(({ car, reviewCount, avgRating }) => (
                       <CarCard
                         key={car.id}
                         car={car}
                         averageRating={avgRating}
                         reviewCount={reviewCount}
                       />
-                    ))
-                  )}
-                </div>
+                    ))}
+                  </div>
+                )}
               </CardContent>
             </Card>
           </section>
@@ -211,26 +200,20 @@ export default function HighlightsPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {loading ? (
-                    Array.from({ length: 6 }).map((_, i) => (
-                      <div key={i} className="border border-border rounded-lg p-4 animate-pulse">
-                        <div className="aspect-video bg-muted rounded mb-4"></div>
-                        <div className="h-4 bg-muted rounded mb-2"></div>
-                        <div className="h-3 bg-muted rounded w-2/3"></div>
-                      </div>
-                    ))
-                  ) : (
-                    (risingStars.length > 0 ? risingStars : fallbackRisingStars.map(car => ({ car, reviewCount: 0, avgRating: 0 }))).map(({ car, reviewCount, avgRating }) => (
+                {loading ? (
+                  <CarGridSkeleton count={6} className="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" />
+                ) : (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {(risingStars.length > 0 ? risingStars : fallbackRisingStars.map(car => ({ car, reviewCount: 0, avgRating: 0 }))).map(({ car, reviewCount, avgRating }) => (
                       <CarCard
                         key={car.id}
                         car={car}
                         averageRating={avgRating}
                         reviewCount={reviewCount}
                       />
-                    ))
-                  )}
-                </div>
+                    ))}
+                  </div>
+                )}
               </CardContent>
             </Card>
           </section>

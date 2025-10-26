@@ -9,6 +9,7 @@ import { CarCard } from "@/components/car/card-car";
 import { Search, TrendingUp, Star, Zap } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
 import type { Car } from "@/types/car";
+import { CarGridSkeleton, BrandSkeleton, PageLoader } from "@/components/common/advanced-loading";
 
 interface CarStats {
   carId: string;
@@ -212,18 +213,22 @@ export default function HomePage() {
       {/* Popular Brands */}
       <section className="container mx-auto px-6 md:px-8 lg:px-12 py-12 md:py-16 max-w-7xl">
         <h2 className="text-2xl font-bold mb-6">Popüler Markalar</h2>
-        <div className="flex flex-wrap gap-2">
-          {brands.slice(0, 10).map((brand) => (
-            <Link key={brand} href={`/cars?brand=${brand}`}>
-              <Badge
-                variant="outline"
-                className="px-4 py-2 text-sm hover:bg-accent cursor-pointer"
-              >
-                {brand}
-              </Badge>
-            </Link>
-          ))}
-        </div>
+        {loading ? (
+          <BrandSkeleton count={10} />
+        ) : (
+          <div className="flex flex-wrap gap-2">
+            {brands.slice(0, 10).map((brand) => (
+              <Link key={brand} href={`/cars?brand=${brand}`}>
+                <Badge
+                  variant="outline"
+                  className="px-4 py-2 text-sm hover:bg-accent cursor-pointer transition-all duration-200 hover:scale-105"
+                >
+                  {brand}
+                </Badge>
+              </Link>
+            ))}
+          </div>
+        )}
       </section>
 
       {/* Trending Models */}
@@ -239,26 +244,20 @@ export default function HomePage() {
             </Button>
           </Link>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {loading ? (
-            Array.from({ length: 4 }).map((_, i) => (
-              <div key={i} className="border border-border rounded-lg p-4 animate-pulse">
-                <div className="aspect-video bg-muted rounded mb-4"></div>
-                <div className="h-4 bg-muted rounded mb-2"></div>
-                <div className="h-3 bg-muted rounded w-2/3"></div>
-              </div>
-            ))
-          ) : (
-            (trending.length > 0 ? trending : fallbackCars.map(car => ({ car, reviewCount: 0, avgRating: 0 }))).map(({ car, reviewCount, avgRating }) => (
+        {loading ? (
+          <CarGridSkeleton count={4} />
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {(trending.length > 0 ? trending : fallbackCars.map(car => ({ car, reviewCount: 0, avgRating: 0 }))).map(({ car, reviewCount, avgRating }) => (
               <CarCard
                 key={car.id}
                 car={car}
                 averageRating={avgRating}
                 reviewCount={reviewCount}
               />
-            ))
-          )}
-        </div>
+            ))}
+          </div>
+        )}
       </section>
 
       {/* Top Rated */}
@@ -274,26 +273,20 @@ export default function HomePage() {
             </Button>
           </Link>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {loading ? (
-            Array.from({ length: 4 }).map((_, i) => (
-              <div key={i} className="border border-border rounded-lg p-4 animate-pulse">
-                <div className="aspect-video bg-muted rounded mb-4"></div>
-                <div className="h-4 bg-muted rounded mb-2"></div>
-                <div className="h-3 bg-muted rounded w-2/3"></div>
-              </div>
-            ))
-          ) : (
-            (topRated.length > 0 ? topRated : fallbackTopRated.map(car => ({ car, reviewCount: 0, avgRating: 0 }))).map(({ car, reviewCount, avgRating }) => (
+        {loading ? (
+          <CarGridSkeleton count={4} />
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {(topRated.length > 0 ? topRated : fallbackTopRated.map(car => ({ car, reviewCount: 0, avgRating: 0 }))).map(({ car, reviewCount, avgRating }) => (
               <CarCard
                 key={car.id}
                 car={car}
                 averageRating={avgRating}
                 reviewCount={reviewCount}
               />
-            ))
-          )}
-        </div>
+            ))}
+          </div>
+        )}
       </section>
 
       {/* Rising Stars */}
@@ -309,26 +302,20 @@ export default function HomePage() {
             </Button>
           </Link>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {loading ? (
-            Array.from({ length: 4 }).map((_, i) => (
-              <div key={i} className="border border-border rounded-lg p-4 animate-pulse">
-                <div className="aspect-video bg-muted rounded mb-4"></div>
-                <div className="h-4 bg-muted rounded mb-2"></div>
-                <div className="h-3 bg-muted rounded w-2/3"></div>
-              </div>
-            ))
-          ) : (
-            (risingStars.length > 0 ? risingStars : cars.slice(8, 12).map(car => ({ car, reviewCount: 0, avgRating: 0 }))).map(({ car, reviewCount, avgRating }) => (
+        {loading ? (
+          <CarGridSkeleton count={4} />
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {(risingStars.length > 0 ? risingStars : cars.slice(8, 12).map(car => ({ car, reviewCount: 0, avgRating: 0 }))).map(({ car, reviewCount, avgRating }) => (
               <CarCard
                 key={car.id}
                 car={car}
                 averageRating={avgRating}
                 reviewCount={reviewCount}
               />
-            ))
-          )}
-        </div>
+            ))}
+          </div>
+        )}
       </section>
     </div>
   );

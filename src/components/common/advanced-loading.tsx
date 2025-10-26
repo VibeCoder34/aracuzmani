@@ -116,3 +116,6 @@ export function BrandSkeleton({ count = 10 }: BrandSkeletonProps) {
     </div>
   );
 }
+
+// Re-export CarGridSkeleton from car-skeleton.tsx
+export { CarGridSkeleton } from "./car-skeleton";

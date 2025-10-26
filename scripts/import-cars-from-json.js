@@ -1,7 +1,7 @@
 /**
  * Import Cars from JSON to Supabase
  * 
- * This script reads cars_data_complete_final.json and imports:
+ * This script reads cars_data_final.json and imports:
  * - Brands → car_brands
  * - Models → car_models  
  * - Trims (year/engine/transmission variants) → car_trims
@@ -359,7 +359,7 @@ async function importCars() {
   console.log('🚀 Starting car data import...\n');
   
   // Read JSON file
-  const jsonPath = path.join(__dirname, '..', 'cars_data_complete_final.json');
+  const jsonPath = path.join(__dirname, '..', 'cars_data_final.json');
   console.log('📖 Reading JSON file...');
   const rawData = fs.readFileSync(jsonPath, 'utf-8');
   const data = JSON.parse(rawData);

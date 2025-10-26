@@ -1,4 +1,4 @@
-import carsData from '../../cars_data_complete_final.json';
+import carsData from '../../cars_data_final.json';
 
 // Type definitions for the JSON structure
 type PropertyData = {
@@ -53,26 +53,58 @@ export function loadCarSpecsFromJSON(
 ): Record<string, string | number | null> {
   const data = carsData as CarsDataStructure;
   
+  // Normalize strings for better matching
+  const normalizeName = (str: string) => 
+    str.toLowerCase()
+       .replace(/[^\w\s-]/g, '') // Remove special chars except dash and space
+       .replace(/\s+/g, '-')      // Replace spaces with dash
+       .replace(/-+/g, '-')       // Remove duplicate dashes
+       .trim();
+  
+  const normalizedBrand = normalizeName(brandName);
+  const normalizedModel = normalizeName(modelName);
+  
   // Find the brand
   const brand = data.brands.find(
-    (b) => b.name.toLowerCase() === brandName.toLowerCase()
+    (b) => normalizeName(b.name) === normalizedBrand ||
+           normalizeName(b.slug) === normalizedBrand
   );
   
   if (!brand) {
-    console.warn(`Brand "${brandName}" not found in JSON data`);
+    console.warn(`[JSON-Loader] Brand "${brandName}" not found in JSON data`);
     return {};
   }
   
-  // Find the model
-  const model = brand.models.find(
-    (m) => m.model.toLowerCase() === modelName.toLowerCase() ||
-           m.name.toLowerCase().includes(modelName.toLowerCase())
-  );
+  // Find the model - try multiple matching strategies
+  const model = brand.models.find((m) => {
+    const modelSlug = normalizeName(m.model);
+    const modelName = normalizeName(m.name);
+    
+    // Exact match with slug
+    if (modelSlug === normalizedModel) return true;
+    
+    // Exact match with name
+    if (modelName === normalizedModel) return true;
+    
+    // Partial match (model contains search term)
+    if (modelSlug.includes(normalizedModel)) return true;
+    if (modelName.includes(normalizedModel)) return true;
+    
+    // Search term contains model (for short names)
+    if (normalizedModel.includes(modelSlug) && modelSlug.length > 2) return true;
+    
+    return false;
+  });
   
   if (!model) {
-    console.warn(`Model "${modelName}" not found for brand "${brandName}"`);
+    console.warn(`[JSON-Loader] Model "${modelName}" not found for brand "${brandName}" (tried: ${normalizedModel})`);
+    // Show available models for debugging
+    const availableModels = brand.models.slice(0, 5).map(m => m.model).join(', ');
+    console.warn(`[JSON-Loader] Available models in ${brandName}: ${availableModels}...`);
     return {};
   }
+  
+  console.log(`[JSON-Loader] ✓ Found match: ${brand.name} ${model.name} (${Object.keys(model.properties).length} properties)`);
   
   const specs: Record<string, string | number | null> = {};
   
@@ -148,11 +180,27 @@ export function loadCarSpecsFromJSON(
         }
         break;
         
-      case 'fuel-consumption-combined':
-        const consumptionValue = dataEntry['Fuel consumption combined'];
-        if (consumptionValue && consumptionValue !== 'N/A') {
+      case 'combined-consumption':
+        const consumptionValue = dataEntry['Combined consumption'];
+        if (consumptionValue && consumptionValue !== 'N/A' && consumptionValue !== '-' && !consumptionValue.startsWith('-')) {
           const match = consumptionValue.match(/[\d.]+/);
           if (match) specs.avgConsumption = parseFloat(match[0]);
+        }
+        break;
+        
+      case 'urban-consumption':
+        const urbanValue = dataEntry['Urban consumption'];
+        if (urbanValue && urbanValue !== 'N/A' && urbanValue !== '-' && !urbanValue.startsWith('-')) {
+          const match = urbanValue.match(/[\d.]+/);
+          if (match) specs.urbanConsumption = parseFloat(match[0]);
+        }
+        break;
+        
+      case 'extra-urban-consumption':
+        const extraUrbanValue = dataEntry['Extra-urban consumption'];
+        if (extraUrbanValue && extraUrbanValue !== 'N/A' && extraUrbanValue !== '-' && !extraUrbanValue.startsWith('-')) {
+          const match = extraUrbanValue.match(/[\d.]+/);
+          if (match) specs.extraUrbanConsumption = parseFloat(match[0]);
         }
         break;
         
@@ -164,24 +212,24 @@ export function loadCarSpecsFromJSON(
         }
         break;
         
-      case 'maximum-torque':
-        const torqueValue = dataEntry['Maximum torque'];
-        if (torqueValue && torqueValue !== 'N/A') {
+      case 'max-torque':
+        const torqueValue = dataEntry['Max torque'];
+        if (torqueValue && torqueValue !== 'N/A' && torqueValue !== 'n.b.' && torqueValue !== '-') {
           const match = torqueValue.match(/\d+/);
           if (match) specs.maxTorque = parseInt(match[0]);
         }
         break;
         
-      case 'maximum-speed':
-        const speedValue = dataEntry['Maximum speed'];
+      case 'top-speed':
+        const speedValue = dataEntry['Top speed'];
         if (speedValue && speedValue !== 'N/A') {
           const match = speedValue.match(/\d+/);
           if (match) specs.maxSpeed = parseInt(match[0]);
         }
         break;
         
-      case 'acceleration-0-100-kmh':
-        const accelValue = dataEntry['Acceleration 0 - 100 km/h'];
+      case 'acceleration':
+        const accelValue = dataEntry['Acceleration 0-100 km / h'] || dataEntry['Acceleration 0 - 100 km/h'];
         if (accelValue && accelValue !== 'N/A') {
           const match = accelValue.match(/[\d.]+/);
           if (match) specs.acceleration0to100 = parseFloat(match[0]);
